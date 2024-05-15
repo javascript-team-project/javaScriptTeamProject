@@ -134,8 +134,7 @@
   top: 0; left: 0;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
-  /* top: 210px; left: 70px; */
-  top: 60%; left: 23%;
+  top: 55%; left: 23%;
   z-index: -99;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
@@ -163,7 +162,7 @@
 .brand-intro-wrapper .family-site-box {
   text-align: center;
   position: relative;
-  margin-top: 250px;
+  margin-top: 200px;
 }
 .brand-intro-wrapper .family-site-box .brand-intro .brand-logo img {
   margin: 100px 0 20px;
@@ -177,7 +176,7 @@
 .brand-intro-wrapper .family-site-box .brand-intro li #haterine { color: var(--color-Hatherine);}
 .brand-intro-wrapper .family-site-box .brand-intro .des {
   font-size: var(--font-m-md);
-  margin: 60px 0;
+  margin: 20px 0 65px;
   line-height: 1.7;
 }
 .brand-intro-wrapper .family-site-box .brand-intro .des span {
@@ -187,13 +186,14 @@
 .brand-intro-wrapper .family-site-box .go-to-brand {
   font-size: var(--font-m-sm);
   font-weight: var(--font-bold);
-  padding: 7px 20px;
+  padding: 7px 30px;
   color: var(--color-white);
   border-radius: 20px;
 }
 .brand-intro-wrapper .family-site-box a#dearown { background-color: var(--color-DearOwn);}
 .brand-intro-wrapper .family-site-box a#slowhumming { background-color: var(--color-SlowHumming);}
 .brand-intro-wrapper .family-site-box a#haterine { background-color: var(--color-Hatherine);}
+/*- 데코 이미지 -*/
 .brand-intro-wrapper .family-site-box .brand-intro-img-box img {
   position: absolute;
 }
@@ -202,11 +202,11 @@
   top: 0; left: 0;
 }
 .brand-intro-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
-  top: 50%; left: 27%;
+  top: 45%; left: 23%;
   z-index: -99;
 }
 .brand-intro-wrapper .family-site-box .brand-intro-img-box img[alt="arrow-icon"] {
-  top: 80%; left: 47%;
+  top: 76%; left: 47%;
 }
 
 /***** event *****/
@@ -234,16 +234,17 @@
 }
 .event-wrapper .event-box .event-title {
   font-family: var(--font-m-en);
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 900;
   background-color: var(--color-white);
-  width: 70%;
+  width: 80%;
   margin: 50px auto;
   position: absolute;
+  white-space: nowrap;
 }
 .event-wrapper .event-box .front {
   color: var(--color-white);
-  -webkit-text-stroke: 1.5px var(--color-primary);
+  -webkit-text-stroke: 1.2px var(--color-primary);
   top: 30px; left: 55%;
   transform: translateX(-50%);
   z-index: 1;
@@ -263,7 +264,7 @@
   color: var(--color-white);
   font-weight: 200;
   line-height: 2;
-  margin: 30px 0;
+  margin: 20px 0 50px;
 }
 .event-wrapper .event-box .event-btn {
   color: var(--color-primary);
@@ -281,7 +282,7 @@
 
 /***** youtube *****/
 .youtube-wrapper {
-  margin: 400px 0 0;
+  margin: 300px 0 0;
   position: relative;
 }
 /*- 텍스트 박스 -*/
