@@ -76,7 +76,7 @@ footer .contact-wrapper {
   height: 400px;
   background-color: var(--color-primary);
   border-radius: 30px;
-  background: url(./images/footer-grid.png) no-repeat 50% / cover, url(./images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
+  background: url(../../images/footer-grid.png) no-repeat 50% / cover, url(../../images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
   position: relative;
 }
 footer .contact-wrapper .footer-contact {
@@ -118,7 +118,7 @@ footer .contact-wrapper .contact-box .contact-sub {
   text-align: left;
   padding-left: 60px;
   margin: 15px 0;
-  background: url(./images/footer-icon-call.svg) no-repeat 10%;
+  background: url(../../images/footer-icon-call.svg) no-repeat 10%;
 }
 footer .contact-wrapper .contact-box .contact-btn {
   background-color: var(--color-white);
