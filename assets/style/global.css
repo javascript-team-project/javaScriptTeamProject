@@ -2,6 +2,7 @@
 
 body {
   font-family: var(--font-m-ko);
+  overflow-x: hidden;
 }
 
 section {
@@ -24,8 +25,10 @@ header {
   position: fixed;
   top: 0; left: 50%;
   transform: translateX(-50%);
+  transition: .4s;
+  z-index: 999;
 }
-header img {
+header .logo a img {
   display: none;
 }
 header .global-menu {
@@ -40,12 +43,13 @@ header .global-menu li a {
   display: block;
   height: 50px; line-height: 50px;
   text-align: center;
+  opacity: 0.5;
 }
 
 /***** 스크롤시 header 변경 *****/
 header.active{
   margin: 0; padding: 0 20px;
-  height: 50px; width: 100%;
+  width: 100%;
   border-radius: 0;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
@@ -58,8 +62,11 @@ header.active{
   align-items: center;
   justify-content: space-between;
 }
-header.active .global-menu {
-  width: 70%;
+header.active .logo a img {
+  display: block;
+}
+header.active .global-menu li {
+  margin: 0 10px;
 }
 header.active img {
   width: 80px; 
@@ -106,7 +113,6 @@ footer .contact-wrapper .contact-box::after {
   bottom: -20px; right: 60px;
   border-top: solid 20px var(--color-footer);
   border-left: solid 50px var(--color-primary);
-  /* border-right: solid 0px var(--color-primary); */
 }
 footer .contact-wrapper .contact-box .contact-num {
   font-size: 30px;
@@ -152,5 +158,7 @@ footer address .copy {
 
 /***** pc 버전 *****/
 @media (min-width: 768px) {
-  
+  header .global-menu li a:hover {
+    opacity: 1;
+  }
 }

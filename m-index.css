@@ -13,8 +13,12 @@
   text-align: center;
   overflow: hidden;
 }
+.main-page-wrapper .brand-name-box {
+  position: relative;
+  width: 100%; height: 100%;
+}
 /*- 웰컴투릴리바이레드 -*/
-.main-page-wrapper .title {
+.main-page-wrapper .brand-name-box .title {
   text-transform: capitalize;
   background-color: var(--color-white);
   color: var(--color-primary);
@@ -26,7 +30,7 @@
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
-.main-page-wrapper .title span {
+.main-page-wrapper .brand-name-box .title span {
   background-color: var(--color-white);
   width: 105%;
   display: block;
@@ -36,7 +40,8 @@
   top: 90%; left: 20px;
 }
 /*- 릴리바이레드 핑크색 -*/
-.main-page-wrapper .main-text {
+.main-page-wrapper .brand-name-box::after {
+  content: "lilybyred";
   background-color: var(--color-main-pink);
   color: var(--color-white);
   font-size: 15px;
@@ -48,6 +53,30 @@
   z-index: 1;
 }
 /* 핑크색 뒤로 들어가는 검정 박스 */
+.main-page-wrapper .brand-name-box::before {
+  content: "lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred";
+  background-color: var(--color-black);
+  color: var(--color-main-yellow);
+  padding: 5px 10px;
+  position: absolute;
+  left: -25px; top: 10%;
+  transform: rotate(-40deg);
+  width: 500px;
+  white-space: nowrap;
+}
+/* 
+기존에 작성된 lilybyred 및 ::before 코드
+.main-page-wrapper .main-text {
+  background-color: var(--color-main-pink);
+  color: var(--color-white);
+  font-size: 15px;
+  padding: 5px 10px;
+  width: 250px;
+  position: absolute;
+  top: 43%; left: 35%;
+  transform: translate(-44%, -35%) rotate(-3deg);
+  z-index: 1;
+}
 .main-page-wrapper .back-text {
   background-color: var(--color-black);
   color: var(--color-main-yellow);
@@ -57,9 +86,9 @@
   transform: rotate(-40deg);
   width: 500px;
   white-space: nowrap;
-}
+} */
 /*- 릴리!체키!샤시! -*/
-.main-page-wrapper .main-intro {
+.main-page-wrapper .brand-name-box .main-intro {
   font-size: var(--font-m-lg);
   color: var(--color-primary);
   text-transform: uppercase;
@@ -70,22 +99,18 @@
   white-space: nowrap;
 }
 /*- main-imgs -*/
-.main-page-wrapper .main-img-box {
-  width: 100%; height: 100%;
-  position: relative;
-}
-.main-page-wrapper .main-img-box img {
+.main-page-wrapper .brand-name-box .main-img-box img {
   position: absolute;
 }
-.main-page-wrapper .main-img-box img[alt="black-star"] {
+.main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
   width: 50px;
   top: 20%; right: 15%;
 }
-.main-page-wrapper .main-img-box img[alt="cheery"] {
+.main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
   width: 110px;
   top: 35%; right: -7%;
 }
-.main-page-wrapper .main-img-box img[alt="tint"] {
+.main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
   width: 200px;
   top: 53%; left: -7%;
 }
@@ -93,12 +118,15 @@
 /***** brand-intro *****/
 .brand-intro-wrapper {
   margin-top: 30px;
+  position: relative;
 }
 /*- pagenation -*/
 .brand-intro-wrapper .pagenation {
   text-indent: -9999px;
   display: flex;
   justify-content: center;
+  /* position: absolute;
+  bottom: 0; left: 40%; */
 }
 .brand-intro-wrapper .pagenation li {
   width: 10px; height: 10px;
