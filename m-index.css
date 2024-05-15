@@ -234,17 +234,17 @@
 }
 .event-wrapper .event-box .event-title {
   font-family: var(--font-m-en);
-  font-size: 30px;
+  font-size: 27px;
   font-weight: 900;
   background-color: var(--color-white);
-  width: 85%;
+  width: 80%;
   margin: 50px auto;
   position: absolute;
   white-space: nowrap;
 }
 .event-wrapper .event-box .front {
   color: var(--color-white);
-  -webkit-text-stroke: 1.5px var(--color-primary);
+  -webkit-text-stroke: 1.2px var(--color-primary);
   top: 30px; left: 55%;
   transform: translateX(-50%);
   z-index: 1;
@@ -264,7 +264,7 @@
   color: var(--color-white);
   font-weight: 200;
   line-height: 2;
-  margin: 30px 0;
+  margin: 20px 0 50px;
 }
 .event-wrapper .event-box .event-btn {
   color: var(--color-primary);
@@ -282,7 +282,7 @@
 
 /***** youtube *****/
 .youtube-wrapper {
-  margin: 400px 0 0;
+  margin: 300px 0 0;
   position: relative;
 }
 /*- 텍스트 박스 -*/
