@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body {
+  font-family: var(--font-m-ko);
+}
+
 /***** 모바일 버전 *****/
 /***** header *****/
 header {
@@ -42,13 +46,14 @@ footer .contact-wrapper {
   background-color: var(--color-primary);
   border-radius: 30px;
   background: url(./images/footer-grid.png) no-repeat 50% / cover, url(./images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
+  position: relative;
 }
 footer .contact-wrapper .footer-contact {
   font-family: var(--font-m-en);
   color: var(--color-white);
   text-align: center;
   font-size: 28px;
-  padding-top: 30px;
+  padding-top: 200px;
   line-height: 1.5;
 }
 /*- 말풍선 박스 -*/
@@ -59,14 +64,15 @@ footer .contact-wrapper .contact-box {
   width: 250px;
   padding: 20px;
   border-radius: 20px;
-  position: relative;
-  top: -15px; left: 15px;
+  position: absolute;
+  top: -30px; left: 70%;
+  transform: translateX(-70%);
 }
 footer .contact-wrapper .contact-box::after {
   content: "";
   background-color: var(--color-footer);
   position: absolute;
-  bottom: -20.5px; right: 60px;
+  bottom: -20px; right: 60px;
   border-top: solid 20px var(--color-footer);
   border-left: solid 50px var(--color-primary);
   /* border-right: solid 0px var(--color-primary); */
@@ -93,8 +99,9 @@ footer .contact-wrapper .contact-box .contact-btn {
 }
 footer .contact-wrapper .contact-box img {
   position: absolute;
-  top: 60px;
-  right: -130px;
+  top: 100px;
+  left: 70%;
+  z-index: 99;
 }
 /*- footer address -*/
 footer address {
