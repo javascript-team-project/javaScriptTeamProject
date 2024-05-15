@@ -20,7 +20,7 @@
   color: var(--color-primary);
   font-weight: 900;
   font-size: 32px;
-  width: 300px;
+  width: 250px;
   padding: 5px;
   position: absolute;
   top: 50%; left: 50%;
@@ -41,9 +41,9 @@
   color: var(--color-white);
   font-size: 15px;
   padding: 5px 10px;
-  width: 270px;
+  width: 250px;
   position: absolute;
-  top: 44%; left: 35%;
+  top: 43%; left: 35%;
   transform: translate(-44%, -35%) rotate(-3deg);
   z-index: 1;
 }
@@ -53,12 +53,11 @@
   color: var(--color-main-yellow);
   padding: 5px 10px;
   position: absolute;
-  left: -10%; top: 10%;
+  left: -5%; top: 10%;
   transform: rotate(-40deg);
   width: 500px;
   white-space: nowrap;
 }
-
 /*- 릴리!체키!샤시! -*/
 .main-page-wrapper .main-intro {
   font-size: var(--font-m-lg);
@@ -66,8 +65,9 @@
   text-transform: uppercase;
   -webkit-text-stroke: 0.3px var(--color-white);
   position: absolute;
-  top: 67%; left: 50%;
+  top: 67%; left: 55%;
   transform: translateX(-50%);
+  white-space: nowrap;
 }
 /*- main-imgs -*/
 .main-page-wrapper .main-img-box {
@@ -83,11 +83,11 @@
 }
 .main-page-wrapper .main-img-box img[alt="cheery"] {
   width: 110px;
-  top: 35%; right: 1%;
+  top: 35%; right: -7%;
 }
 .main-page-wrapper .main-img-box img[alt="tint"] {
   width: 200px;
-  top: 53%; left: 0;
+  top: 53%; left: -7%;
 }
 
 /***** brand-intro *****/
@@ -112,14 +112,14 @@
   position: relative;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
-  margin: 100px 0 20px;
+  margin: 70px 0 20px;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro li strong {
   font-size: 15px;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro li .des {
   font-size: var(--font-m-md);
-  margin: 60px 0;
+  margin: 20px 0;
   line-height: 1.7;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro li .des span {
@@ -134,23 +134,29 @@
   top: 0; left: 0;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
-  top: 63%; left: 27%;
+  /* top: 210px; left: 70px; */
+  top: 60%; left: 23%;
   z-index: -99;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
-  top: 60%; left: 20%;
+  top: 55%; left: 10%;
+
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="dotted-icon"] {
-  left: 2%; bottom: -35%;
+  left: 0; bottom: -30%;
+  width: 170px;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img1 {
-  left: 0; bottom: -55%;
+  left: 0; bottom: -47%;
+  width: 190px;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img2 {
-  left: 30%; bottom: -55%;
+  left: 30%; bottom: -47%;
+  width: 150px;
 }
 .brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img3 {
-  left: 50%; bottom: -55%;
+  left: 50%; bottom: -47%;
+  width: 170px;
   z-index: -99;
 }
 /*- 패밀리사이트 소개 -*/

@@ -19,6 +19,7 @@ header {
   width: 80%; height: 50px;
   border-radius: 25px;
   margin: 20px auto;
+  padding: 0 10px;
   border: 1px solid rgba(254, 241, 195, 0.5);
   position: fixed;
   top: 0; left: 50%;
