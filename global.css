@@ -150,7 +150,12 @@ footer address .copy {
   margin-top: 25px;
 }
 
-/***** pc 버전 *****/
-@media (min-width: 768px) {
+/***** tablet *****/
+@media (min-width: 834px) {
   
+}
+
+/***** pc *****/
+@media (min-width: 1200px) {
+
 }
