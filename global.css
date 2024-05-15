@@ -143,6 +143,7 @@ footer address {
 }
 footer address .address-list {
   font-size: 11px;
+  list-style: none;
 }
 footer address .copy {
   font-size: 12px;
