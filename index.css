@@ -2,6 +2,7 @@
 
 /***** main-page *****/
 .main-page-wrapper {
+  margin: 0;
   width: 100%;
   height: 500px;
   font-family: var(--font-m-en);
@@ -62,7 +63,7 @@
   font-size: var(--font-m-lg);
   color: var(--color-primary);
   text-transform: uppercase;
-  text-shadow: 0px 0px var(--color-white);
+  -webkit-text-stroke: 0.3px var(--color-white);
   position: absolute;
   top: 67%; left: 50%;
   transform: translateX(-50%);
@@ -89,22 +90,211 @@
 }
 
 /***** brand-intro *****/
-.brand-intro-wrapper {}
+.brand-intro-wrapper {
+  margin-top: 30px;
+}
 /*- pagenation -*/
-.brand-intro-wrapper .pagenation {}
-.brand-intro-wrapper .pagenation li {}
-.brand-intro-wrapper .pagenation .btn1 {}
-.brand-intro-wrapper .pagenation .btn2 {}
-.brand-intro-wrapper .pagenation .btn3 {}
-.brand-intro-wrapper .pagenation .btn4 {}
+.brand-intro-wrapper .pagenation {
+  text-indent: -9999px;
+  display: flex;
+  justify-content: center;
+}
+.brand-intro-wrapper .pagenation li {
+  width: 10px; height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 3px;
+}
 /*- 릴리바이레드 소개 -*/
-.brand-intro-wrapper .lilyByRed-box {}
-.brand-intro-wrapper .lilyByRed-box .brand-intro {}
-.brand-intro-wrapper .lilyByRed-box .brand-intro li {}
-.brand-intro-wrapper .lilyByRed-box .brand-intro li .brand-logo {}
-.brand-intro-wrapper .lilyByRed-box .brand-intro li strong {}
-.brand-intro-wrapper .lilyByRed-box .brand-intro li .des {}
-.brand-intro-wrapper .lilyByRed-box .brand-intro li .des strong {}
+.brand-intro-wrapper .lilyByRed-box {
+  text-align: center;
+  position: relative;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
+  margin: 100px 0 20px;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li strong {
+  font-size: 15px;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li .des {
+  font-size: var(--font-m-md);
+  margin: 60px 0;
+  line-height: 1.7;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li .des span {
+  display: block;
+}
 /*- 릴리바이레드 이미지 -*/
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box {}
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img {
+  position: absolute;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-box {
+  width: 100%;
+  top: 0; left: 0;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
+  top: 63%; left: 27%;
+  z-index: -99;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
+  top: 60%; left: 20%;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="dotted-icon"] {
+  left: 2%; bottom: -35%;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img1 {
+  left: 0; bottom: -55%;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img2 {
+  left: 30%; bottom: -55%;
+}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img3 {
+  left: 50%; bottom: -55%;
+  z-index: -99;
+}
+/*- 패밀리사이트 소개 -*/
+.brand-intro-wrapper .family-site-box {
+  text-align: center;
+  position: relative;
+  margin-top: 250px;
+}
+.brand-intro-wrapper .family-site-box .brand-intro .brand-logo img {
+  margin: 100px 0 20px;
+  width: 150px;
+}
+.brand-intro-wrapper .family-site-box .brand-intro strong {
+  font-size: 15px;
+}
+.brand-intro-wrapper .family-site-box .brand-intro li #dearown { color: var(--color-DearOwn);}
+.brand-intro-wrapper .family-site-box .brand-intro li #slowhumming { color: var(--color-SlowHumming);}
+.brand-intro-wrapper .family-site-box .brand-intro li #haterine { color: var(--color-Hatherine);}
+.brand-intro-wrapper .family-site-box .brand-intro .des {
+  font-size: var(--font-m-md);
+  margin: 60px 0;
+  line-height: 1.7;
+}
+.brand-intro-wrapper .family-site-box .brand-intro .des span {
+  display: block;
+}
+/*- 바로가기 버튼 -*/
+.brand-intro-wrapper .family-site-box .go-to-brand {
+  font-size: var(--font-m-sm);
+  font-weight: var(--font-bold);
+  padding: 7px 20px;
+  color: var(--color-white);
+  border-radius: 20px;
+}
+.brand-intro-wrapper .family-site-box a#dearown { background-color: var(--color-DearOwn);}
+.brand-intro-wrapper .family-site-box a#slowhumming { background-color: var(--color-SlowHumming);}
+.brand-intro-wrapper .family-site-box a#haterine { background-color: var(--color-Hatherine);}
+.brand-intro-wrapper .family-site-box .brand-intro-img-box img {
+  position: absolute;
+}
+.brand-intro-wrapper .family-site-box .brand-intro-img-box .brand-box {
+  width: 100%;
+  top: 0; left: 0;
+}
+.brand-intro-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
+  top: 50%; left: 27%;
+  z-index: -99;
+}
+.brand-intro-wrapper .family-site-box .brand-intro-img-box img[alt="arrow-icon"] {
+  top: 80%; left: 47%;
+}
+
+/***** event *****/
+.event-wrapper {
+  margin-top: 300px;
+  position: relative;
+}
+/*- 움직이는 텍스트 -*/
+.event-wrapper .event-move-text {
+  font-size: 30px;
+  color: var(--color-main-pink);
+  opacity: 0.45;
+  position: absolute;
+  top: -30px; left: 0;
+  margin: 0 -30px;
+}
+/*- 이벤트 내용 박스 -*/
+.event-wrapper .event-box {
+  border-radius: 20px;
+  height: 500px;
+  text-align: center;
+  background: url(./images/footer-grid.png) no-repeat 50% / cover, var(--color-primary);
+  position: relative;
+}
+.event-wrapper .event-box .event-title {
+  font-family: var(--font-m-en);
+  font-size: 30px;
+  font-weight: 900;
+  background-color: var(--color-white);
+  width: 70%;
+  margin: 50px auto;
+  position: absolute;
+}
+.event-wrapper .event-box .front {
+  color: var(--color-white);
+  -webkit-text-stroke: 1.5px var(--color-primary);
+  top: 30px; left: 55%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.event-wrapper .event-box .back {
+  color: var(--color-primary);
+  top: 0; left: 45%;
+  transform: translateX(-50%);
+}
+.event-wrapper .event-box .title {
+  padding-top: 150px;
+  color: var(--color-white);
+  background: url(./images/event-star.svg) no-repeat 50% 100% / 150px;
+}
+.event-wrapper .event-box .event-des {
+  font-size: 12px;
+  color: var(--color-white);
+  font-weight: 200;
+  line-height: 2;
+  margin: 30px 0;
+}
+.event-wrapper .event-box .event-btn {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  font-size: 12px;
+  font-weight: 900;
+  padding: 7px 20px;
+  border-radius: 20px;
+}
+.event-wrapper img {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+}
+
+/***** youtube *****/
+.youtube-wrapper {
+  margin-top: 400px;
+}
+/*- 텍스트 박스 -*/
+.youtube-wrapper .edition-box {
+  padding-top: 50px;
+  text-align: center;
+}
+.youtube-wrapper .edition-box .edition-sub-title {
+  font-weight: 400;
+}
+.youtube-wrapper .edition-box .edition-main-title {
+  font-size: var(--font-m-xlg);
+  color: var(--color-primary);
+  font-weight: 900;
+}
+.youtube-wrapper .edition-box .edition-des {
+  margin: 20px 0;
+}
+/*- 텍스트 데코 이미지 -*/
+.youtube-wrapper .edition-img-box {}
+.youtube-wrapper .edition-img-box img[alt="icon-arrow"] {
+  position: absolute;
+  left: 0; top: 20%;
+}
+.youtube-wrapper .edition-img-box img[alt="icon-star"] {}
