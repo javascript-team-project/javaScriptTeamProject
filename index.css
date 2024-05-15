@@ -11,6 +11,7 @@
   position: relative;
   z-index: -9999;
   text-align: center;
+  overflow: hidden;
 }
 /*- 웰컴투릴리바이레드 -*/
 .main-page-wrapper .title {
@@ -44,20 +45,20 @@
   position: absolute;
   top: 44%; left: 35%;
   transform: translate(-44%, -35%) rotate(-3deg);
-  z-index: 2;
+  z-index: 1;
 }
-/* 수정 필요, ::before가 .main-text 뒤로 가야하는데 안감 ㅠㅠㅠㅠㅠㅠ */
-.main-page-wrapper .main-text::before {
-  content: "lilybyred lilybyred lilybyred";
+/* 핑크색 뒤로 들어가는 검정 박스 */
+.main-page-wrapper .back-text {
   background-color: var(--color-black);
   color: var(--color-main-yellow);
   padding: 5px 10px;
   position: absolute;
-  left: -25px; top: -70px;
+  left: -10%; top: 10%;
   transform: rotate(-40deg);
-  width: max-content;
-  z-index: -1;
+  width: 500px;
+  white-space: nowrap;
 }
+
 /*- 릴리!체키!샤시! -*/
 .main-page-wrapper .main-intro {
   font-size: var(--font-m-lg);
