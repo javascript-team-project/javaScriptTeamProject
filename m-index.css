@@ -222,6 +222,7 @@
   position: absolute;
   top: -30px; left: 0;
   margin: 0 -30px;
+  white-space: nowrap;
 }
 /*- 이벤트 내용 박스 -*/
 .event-wrapper .event-box {
