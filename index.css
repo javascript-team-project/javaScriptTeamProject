@@ -274,15 +274,17 @@
 
 /***** youtube *****/
 .youtube-wrapper {
-  margin-top: 400px;
+  margin: 400px 0 0;
+  position: relative;
 }
 /*- 텍스트 박스 -*/
 .youtube-wrapper .edition-box {
-  padding-top: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 .youtube-wrapper .edition-box .edition-sub-title {
   font-weight: 400;
+  margin: 15px 0;
 }
 .youtube-wrapper .edition-box .edition-main-title {
   font-size: var(--font-m-xlg);
@@ -293,9 +295,49 @@
   margin: 20px 0;
 }
 /*- 텍스트 데코 이미지 -*/
-.youtube-wrapper .edition-img-box {}
-.youtube-wrapper .edition-img-box img[alt="icon-arrow"] {
+.youtube-wrapper .edition-img-box img {
   position: absolute;
-  left: 0; top: 20%;
 }
-.youtube-wrapper .edition-img-box img[alt="icon-star"] {}
+.youtube-wrapper .edition-img-box img[alt="icon-arrow"] {
+  left: 0; top: 16%;
+  width: 70%;
+}
+.youtube-wrapper .edition-img-box img[alt="icon-star"] {
+  top: 32%; left: 72%;
+}
+.youtube-wrapper .video-wrapper #player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/***** best seller *****/
+.best-wrapper {
+  text-align: center;
+  margin-top: 70px;
+}
+/*- 텍스트 박스 -*/
+.best-wrapper .best-text-box {}
+.best-wrapper .best-text-box .best-main-title {}
+.best-wrapper .best-text-box .best-sub-title {}
+/*- 제품 리스트 -*/
+.best-wrapper .best-list-box {}
+.best-wrapper .best-list-box li {
+  height: 450px;
+  background-color: #FAFAFA;
+  border-radius: 30px;
+  margin: 30px 0;
+}
+.best-wrapper .best-list-box li:nth-child(even) .product-img {
+  padding: 50px 0;
+}
+.best-wrapper .best-list-box li:nth-child(3) .product-img {
+  padding: 30px 0;
+}
+.best-wrapper .best-list-box li .product-title {
+  font-size: var(--font-m-lg);
+  color: var(--color-primary);
+  padding: 20px 0;
+}
+.best-wrapper .best-list-box li .product-des {
+  font-size: var(--font-m-sm);
+}
