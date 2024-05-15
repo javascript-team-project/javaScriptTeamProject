@@ -3,6 +3,7 @@
 /***** main-page *****/
 .main-page-wrapper {
   width: 100%;
+  height: 500px;
   font-family: var(--font-m-en);
   font-weight: var(--font-bold);
   background: url(./images/footer-grid.png) no-repeat 50% / cover, var(--color-primary);
@@ -10,55 +11,100 @@
   z-index: -9999;
   text-align: center;
 }
-.main-page-wrapper .main-text {
-  background-color: var(--color-main-pink);
-  color: var(--color-white);
-  font-size: 15px;
-  padding: 5px 10px;
-  width: 50%;
-  position: absolute;
-  top: 44%; left: 35%;
-  transform: translate(-44%, -35%) rotate(-3deg);
-  z-index: 2;
-}
-/* 수정 필요, ::before가 .main-text 뒤로 가야하는데 안감 ㅠㅠㅠㅠㅠㅠ */
-.main-page-wrapper .main-text::before, 
-.main-page-wrapper .main-text::after {
-  content: "lilybyred lilybyred lilybyred";
-  background-color: var(--color-black);
-  color: var(--color-main-yellow);
-  padding: 5px 10px;
-  position: absolute;
-  left: -40px; top: -135px;
-  transform: rotate(-40deg);
-  width: 100%;
-  z-index: -999;
-}
+/*- 웰컴투릴리바이레드 -*/
 .main-page-wrapper .title {
   text-transform: capitalize;
   background-color: var(--color-white);
   color: var(--color-primary);
   font-weight: 900;
   font-size: 32px;
-  width: 55%;
+  width: 300px;
+  padding: 5px;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
 .main-page-wrapper .title span {
   background-color: var(--color-white);
-  width: 100%;
+  width: 105%;
   display: block;
+  padding: 5px;
   border-top: 1px solid var(--color-main-pink);
   position: absolute;
   top: 90%; left: 20px;
 }
+/*- 릴리바이레드 핑크색 -*/
+.main-page-wrapper .main-text {
+  background-color: var(--color-main-pink);
+  color: var(--color-white);
+  font-size: 15px;
+  padding: 5px 10px;
+  width: 270px;
+  position: absolute;
+  top: 44%; left: 35%;
+  transform: translate(-44%, -35%) rotate(-3deg);
+  z-index: 2;
+}
+/* 수정 필요, ::before가 .main-text 뒤로 가야하는데 안감 ㅠㅠㅠㅠㅠㅠ */
+.main-page-wrapper .main-text::before {
+  content: "lilybyred lilybyred lilybyred";
+  background-color: var(--color-black);
+  color: var(--color-main-yellow);
+  padding: 5px 10px;
+  position: absolute;
+  left: -25px; top: -70px;
+  transform: rotate(-40deg);
+  width: max-content;
+  z-index: -1;
+}
+/*- 릴리!체키!샤시! -*/
 .main-page-wrapper .main-intro {
   font-size: var(--font-m-lg);
   color: var(--color-primary);
-  /* color: transparent; */
   text-transform: uppercase;
   text-shadow: 0px 0px var(--color-white);
+  position: absolute;
+  top: 67%; left: 50%;
+  transform: translateX(-50%);
 }
-.main-page-wrapper .main-img-box {}
-.main-page-wrapper .main-img-box img {}
+/*- main-imgs -*/
+.main-page-wrapper .main-img-box {
+  width: 100%; height: 100%;
+  position: relative;
+}
+.main-page-wrapper .main-img-box img {
+  position: absolute;
+}
+.main-page-wrapper .main-img-box img[alt="black-star"] {
+  width: 50px;
+  top: 20%; right: 15%;
+}
+.main-page-wrapper .main-img-box img[alt="cheery"] {
+  width: 110px;
+  top: 35%; right: 1%;
+}
+.main-page-wrapper .main-img-box img[alt="tint"] {
+  width: 200px;
+  top: 53%; left: 0;
+}
+
+/***** brand-intro *****/
+.brand-intro-wrapper {}
+/*- pagenation -*/
+.brand-intro-wrapper .pagenation {}
+.brand-intro-wrapper .pagenation li {}
+.brand-intro-wrapper .pagenation .btn1 {}
+.brand-intro-wrapper .pagenation .btn2 {}
+.brand-intro-wrapper .pagenation .btn3 {}
+.brand-intro-wrapper .pagenation .btn4 {}
+/*- 릴리바이레드 소개 -*/
+.brand-intro-wrapper .lilyByRed-box {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li .brand-logo {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li strong {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li .des {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro li .des strong {}
+/*- 릴리바이레드 이미지 -*/
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box {}
+.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img {}
