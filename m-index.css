@@ -115,126 +115,158 @@
   top: 53%; left: -7%;
 }
 
-/***** brand-intro *****/
+/***** brand-intro / 사용자가 보는 slide 영역  *****/
 .brand-intro-wrapper {
-  margin-top: 30px;
+  width: 100%;
+  height: 570px;
+  margin: 30px 0;
   position: relative;
+  /* overflow: hidden; */
 }
 /*- pagenation -*/
-.brand-intro-wrapper .pagenation {
+.brand-intro-wrapper .slide-button {
   text-indent: -9999px;
   display: flex;
   justify-content: center;
-  /* position: absolute;
-  bottom: 0; left: 40%; */
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
 }
-.brand-intro-wrapper .pagenation li {
+.brand-intro-wrapper .slide-button li {
   width: 10px; height: 10px;
   background-color: #ddd;
   border-radius: 50%;
   margin: 0 3px;
 }
+.brand-intro-wrapper .slide-button li.active {
+  background-color: var(--color-primary);
+}
+/*- 슬라이드 영역 -*/
+.brand-intro-wrapper .slide-wrapper {
+  /* background-color: wheat; */
+  margin: 0 30px;
+  display: flex;
+  align-items: flex-start;
+  width: 400%;
+  height: 100%;
+  position: relative;
+  /* margin-left: -393px; */
+}
+.brand-intro-wrapper .slide-wrapper .slide-item {
+  margin: 0 30px;
+}
 /*- 릴리바이레드 소개 -*/
-.brand-intro-wrapper .lilyByRed-box {
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box {
+  width: 100%;
   text-align: center;
   position: relative;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
   margin: 70px 0 20px;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro li strong {
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li strong {
   font-size: 15px;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro li .des {
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .des {
   font-size: var(--font-m-md);
   margin: 20px 0;
   line-height: 1.7;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro li .des span {
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .des span {
   display: block;
 }
 /*- 릴리바이레드 이미지 -*/
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img {
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img {
   position: absolute;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-box {
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-box {
   width: 100%;
   top: 0; left: 0;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
-  top: 55%; left: 23%;
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
+  top: 53%; left: 23%;
   z-index: -99;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
-  top: 55%; left: 10%;
-
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
+  top: 53%; left: 18%;
+  width: 220px;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box img[alt="dotted-icon"] {
-  left: 0; bottom: -30%;
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="dotted-icon"] {
+  left: 0; bottom: -18%;
   width: 170px;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img1 {
-  left: 0; bottom: -47%;
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img1 {
+  left: 0; bottom: -35%;
   width: 190px;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img2 {
-  left: 30%; bottom: -47%;
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img2 {
+  left: 30%; bottom: -35%;
   width: 150px;
 }
-.brand-intro-wrapper .lilyByRed-box .brand-intro-img-box .brand-img3 {
-  left: 50%; bottom: -47%;
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img3 {
+  left: 50%; bottom: -35%;
   width: 170px;
   z-index: -99;
 }
 /*- 패밀리사이트 소개 -*/
-.brand-intro-wrapper .family-site-box {
+.brand-intro-wrapper .slide-wrapper .family-site-box {
+  width: 100%;
   text-align: center;
   position: relative;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
-.brand-intro-wrapper .family-site-box .brand-intro .brand-logo img {
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo img {
   margin: 100px 0 20px;
   width: 150px;
 }
-.brand-intro-wrapper .family-site-box .brand-intro strong {
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro strong {
   font-size: 15px;
 }
-.brand-intro-wrapper .family-site-box .brand-intro li #dearown { color: var(--color-DearOwn);}
-.brand-intro-wrapper .family-site-box .brand-intro li #slowhumming { color: var(--color-SlowHumming);}
-.brand-intro-wrapper .family-site-box .brand-intro li #haterine { color: var(--color-Hatherine);}
-.brand-intro-wrapper .family-site-box .brand-intro .des {
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #dearown { color: var(--color-DearOwn);}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #slowhumming { color: var(--color-SlowHumming);}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #haterine { color: var(--color-Hatherine);}
+/*- 패밀리사이트 설명 -*/
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des {
   font-size: var(--font-m-md);
-  margin: 20px 0 65px;
+  margin: 20px 0 45px;
   line-height: 1.7;
 }
-.brand-intro-wrapper .family-site-box .brand-intro .des span {
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .haterine-des {
+  margin: 20px 0 70px;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des span {
   display: block;
 }
 /*- 바로가기 버튼 -*/
-.brand-intro-wrapper .family-site-box .go-to-brand {
+.brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand {
   font-size: var(--font-m-sm);
   font-weight: var(--font-bold);
   padding: 7px 30px;
   color: var(--color-white);
   border-radius: 20px;
 }
-.brand-intro-wrapper .family-site-box a#dearown { background-color: var(--color-DearOwn);}
-.brand-intro-wrapper .family-site-box a#slowhumming { background-color: var(--color-SlowHumming);}
-.brand-intro-wrapper .family-site-box a#haterine { background-color: var(--color-Hatherine);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#dearown { background-color: var(--color-DearOwn);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#slowhumming { background-color: var(--color-SlowHumming);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#haterine { background-color: var(--color-Hatherine);}
 /*- 데코 이미지 -*/
-.brand-intro-wrapper .family-site-box .brand-intro-img-box img {
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img {
   position: absolute;
 }
-.brand-intro-wrapper .family-site-box .brand-intro-img-box .brand-box {
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box .brand-box {
   width: 100%;
   top: 0; left: 0;
 }
-.brand-intro-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
-  top: 45%; left: 23%;
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
+  top: 47%; left: 23%;
   z-index: -99;
 }
-.brand-intro-wrapper .family-site-box .brand-intro-img-box img[alt="arrow-icon"] {
-  top: 76%; left: 47%;
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="arrow-icon"] {
+  width: 90px;
+  top: 80%; left: 47%;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box .haterine-arrow-icon {
+  top: 30%;
 }
 
 /***** event *****/
