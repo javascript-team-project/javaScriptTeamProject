@@ -10,6 +10,7 @@
   position: relative;
   z-index: -9999;
   text-align: center;
+  overflow: hidden;
 }
 /*- 웰컴투릴리바이레드 -*/
 .main-page-wrapper .title {
@@ -51,9 +52,9 @@
   color: var(--color-main-yellow);
   padding: 5px 10px;
   position: absolute;
-  left: -35px; top: 30px;
+  left: -10%; top: 10%;
   transform: rotate(-40deg);
-  width: 150%;
+  width: 500px;
   white-space: nowrap;
 }
 
