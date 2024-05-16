@@ -345,7 +345,7 @@
 .event-wrapper .event-box .title {
   padding-top: 150px;
   color: var(--color-white);
-  background: url(./images/event-star.svg) no-repeat 50% 100% / 150px;
+  background: url(./images/event-star.svg) no-repeat 40% 100% / 150px;
 }
 .event-wrapper .event-box .event-des {
   font-size: 12px;
@@ -368,6 +368,9 @@
   position: absolute;
   top: 70%; left: 50%;
   transform: translateX(-50%);
+}
+.event-wrapper .event-box {
+  margin-bottom: 40px;
 }
 
 /***** youtube *****/
