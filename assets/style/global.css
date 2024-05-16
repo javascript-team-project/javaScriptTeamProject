@@ -157,7 +157,7 @@ footer address .copy {
 }
 
 /***** pc 버전 *****/
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   header .global-menu li a:hover {
     opacity: 1;
   }
