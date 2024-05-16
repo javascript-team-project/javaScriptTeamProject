@@ -7,7 +7,185 @@
 
 /***** pc *****/
 @media (min-width: 1200px) {
-    .main-page-wrapper {
+    body {
+        margin: 0px;
+      }
+      
+      /* brand main */
+      .brand-main {
+        height: 100%;
+        background:  url(./images/grid-small.png) no-repeat 50% / cover, var(--color-primary);
+      }
+      
+      .brand-main .main-title-wrapper {
+        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% / 50%;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .brand-main .main-title-wrapper .main-title {
+        line-height: 70px;
+        font-size: 70px;
+        margin: 70px 0px 30px;
+        z-index: 2;
+      }
+      
+      .brand-main .main-title-wrapper .lbr-sticker {
+        background-color: var(--color-primary);
+        width: 170px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px;
+        border-radius: 50px;
+      }
+      
+      .brand-main .main-img-box {
+        width: 100%;
+        height: 630px;
+      }
+      
+      .brand-main .main-img-box img {
+        position: absolute;
+      }
+      
+      .brand-main .main-img-box img[alt="tint2"] {
+        top: 15px;
+        left: 5px;
+      }
+      
+      .brand-main .main-img-box img[alt="cherry1"] {
+        bottom: 110px;
+        left: -10px;
+      }
+      
+      .brand-main .main-img-box img[alt="grape"] {
+        bottom: 0px;
+        left: 0px;
+        width: 153px;
+      }
+      
+      .brand-main .main-img-box img[alt="cherry2"] {
+        top: -10px;
+        right: 0px;
+      }
+      
+      .brand-main .main-img-box img[alt="berry"] {
+        top: 130px;
+        right: 20px;
+      }
+      
+      .brand-main .main-img-box img[alt="tint1"] {
+        bottom: 10px;
+        right: 0px;
+      }
+      
+      
+      /* brand info */
+      .brand-info {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 30px 1fr 1fr 30px;
+      }
+      
+      .brand-info img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        margin: 0;
+      }
+      
+      .brand-info .left-box {
+        grid-column: 2 / 3;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 9px;
+        grid-template-rows: 30px 1fr 18px 1fr 30px;
+      }
+      
+      .brand-info .left-box img:nth-child(1) {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+      }
+      
+      .brand-info .left-box img:nth-child(2) {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+      }
+      
+      .brand-info .right-box {
         
-    }
+        grid-column: 3 / 4;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 9px 1fr;
+        grid-template-rows: 100px 1fr 18px 1fr 30px;
+      }
+      
+      .brand-info .right-box img {
+        grid-row: 2 / 4;
+        grid-column: 2 / 3;
+      }
+      
+      .brand-info .right-box .brand-info-txt {
+        grid-row: 4 / 6;
+        grid-column: 2 / 3;
+        align-content: center;
+        margin-left: 10px;
+      }
+      
+      .brand-info .right-box .brand-info-txt img {
+        margin: 0;
+        width: 107px;
+        height: 36px;
+      }
+      
+      .brand-info .right-box .brand-info-txt .sub-title {
+        font-size: 11px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin: 17px 0px 0px;
+      }
+      
+      .brand-info .right-box .brand-info-txt p {
+        font-size: 10px;
+        font-weight: var(--font-regular);
+        margin: 13px 0px 0px;
+        line-height: 1.8;
+      }
+      
+      .brand-info .right-box .brand-info-txt p strong {
+        font-weight: 700;
+      }
+      
+      
+      /* brand img list */
+      .brand-img-list {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 30px 1fr 30px;
+        grid-template-rows: 30px 1fr 15px 1fr 15px 1fr 30px;
+      }
+      
+      .brand-img-list img {
+        width: 100%;
+        border-radius: 30px;
+        grid-column: 2 / 3;
+      }
+      
+      .brand-img-list img:nth-child(1) {
+        grid-row: 2 / 3;
+      }
+      
+      .brand-img-list img:nth-child(2) {
+        grid-row: 4 / 5;
+      }
+      
+      .brand-img-list img:nth-child(3) {
+        grid-row: 6 / 7;
+      }
 }
