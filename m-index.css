@@ -7,11 +7,12 @@
   height: 500px;
   font-family: var(--font-m-en);
   font-weight: var(--font-bold);
-  background: url(./images/footer-grid.png) no-repeat 50% / cover, var(--color-primary);
+  background: url(./images/main-grid.svg) 50% / contain, var(--color-primary);
   position: relative;
   z-index: -9999;
   text-align: center;
   overflow: hidden;
+  animation: grid-move 5s infinite linear;
 }
 .main-page-wrapper .brand-name-box {
   position: relative;
@@ -32,6 +33,7 @@
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
+  animation: moving-box-title .3s .6s 1 linear;
 }
 .main-page-wrapper .brand-name-box .title span {
   background-color: var(--color-white);
@@ -54,6 +56,7 @@
   top: 43%; left: 35%;
   transform: translate(-44%, -35%) rotate(-3deg);
   z-index: 1;
+  animation: moving-box .3s 1 linear;
 }
 /* 핑크색 뒤로 들어가는 검정 박스 */
 .main-page-wrapper .brand-name-box::before {
@@ -67,29 +70,6 @@
   width: 500px;
   white-space: nowrap;
 }
-/* 
-기존에 작성된 lilybyred 및 ::before 코드
-.main-page-wrapper .main-text {
-  background-color: var(--color-main-pink);
-  color: var(--color-white);
-  font-size: 15px;
-  padding: 5px 10px;
-  width: 250px;
-  position: absolute;
-  top: 43%; left: 35%;
-  transform: translate(-44%, -35%) rotate(-3deg);
-  z-index: 1;
-}
-.main-page-wrapper .back-text {
-  background-color: var(--color-black);
-  color: var(--color-main-yellow);
-  padding: 5px 10px;
-  position: absolute;
-  left: -5%; top: 10%;
-  transform: rotate(-40deg);
-  width: 500px;
-  white-space: nowrap;
-} */
 /*- 릴리!체키!샤시! -*/
 .main-page-wrapper .brand-name-box .main-intro {
   font-size: var(--font-m-lg);
@@ -193,6 +173,7 @@
 .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
   top: 53%; left: 18%;
   width: 220px;
+  animation: glitter 1s linear infinite;
 }
 /* 움직이는 데코 이미지 */
 .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="dotted-icon"] {
@@ -299,7 +280,7 @@
   position: absolute; 
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 60s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 .event-wrapper .animated-box .animated-box-track .animated-content {
   font-size: 30px;
@@ -485,6 +466,7 @@
 .insta-img-box img {
   width: 100%;
 }
+
 /***** 하단 움직이는 텍스트 *****/
 .insta-animated-box {
   position: relative; 
@@ -499,7 +481,7 @@
   position: absolute; 
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 60s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 .insta-animated-box .insta-animated-box-track .insta-animated-content {
   font-family: var(--font-m-en);

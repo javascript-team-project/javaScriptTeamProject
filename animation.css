@@ -5,11 +5,37 @@
   100% { transform: translateX(-50%); }
 }
 
+/* 격자무늬 움직임 */
+@keyframes grid-move {
+  0% {
+    background-position: 300px 300px;
+  } 
+  100% {
+    background-position: 500px 500px;
+  }
+}
+
+/* main-page 릴리바이레드 핑크색 박스 움직임 */
+@keyframes moving-box {
+  0% { width: 0; }
+  100% { width: 250px; }
+}
+/* 웰컴투릴리바이레드 움직임 */
+@keyframes moving-box-title {
+  0% { width: 0; }
+  100% { width: 250px; }
+}
+
 /***** tablet *****/
 @media (min-width: 834px) {}
 
 /***** pc *****/
 @media (min-width: 1200px) {
+  /* brand-intro-lilybured 반짝반짝 */
+  @keyframes glitter {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
   /* brand-intro-lilybyred 데코 이미지 움직임 */
   @keyframes brand-mov {
     0%, 100% {

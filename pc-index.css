@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+/* 한나========마우스 허버 이벤트 */
+@media (min-width: 1200px) {
+
+}
+
 /***** tablet *****/
 @media (min-width: 834px) {
   
