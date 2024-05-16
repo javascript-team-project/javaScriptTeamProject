@@ -207,16 +207,15 @@ footer address .copy {
   }
 
   footer .contact-wrapper .contact-box .contact-num {
-    font-size: 35px;
-    letter-spacing: 1px;
-    margin: 10px 0px 0px;
+    font-size: 33px;
+    margin: 5px 0px 0px;
   }
 
   footer .contact-wrapper .contact-box .contact-sub {
-    font-size: 15px;
-    padding-left: 65px;
-    margin: 10px 0px 30px;
-    background: url(./images/footer-icon-call.svg) no-repeat 10%;
+    font-size: 13px;
+    padding-left: 60px;
+    margin: 5px 0px 20px;
+    background: url(../../images/footer-icon-call.svg) no-repeat 10%;
   }
 
   footer .contact-wrapper .contact-box .contact-btn {
