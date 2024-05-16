@@ -9,13 +9,25 @@ $(window).on('scroll', () => {
 });
 
 // 로고 클릭 시 페이지 맨 위로 이동
-$('header.active .logo a').on('click', (e) => {
+$('header .logo a').on('click', (e) => {
   e.preventDefault();
   scrollTo({
     top: 0,
     behavior: 'smooth'
-  })
+  });
 });
+
+// header에 마우스 허버시 svg 그려짐
+$('header .global-menu li').each(function(index) {
+  $(this).on('mouseenter', function() {
+    $(this).find('svg').addClass('event');
+  });
+  $(this).on('mouseleave', function() {
+    $(this).find('svg').removeClass('event');
+  });
+});
+
+
 
 // 자동으로 브랜드 소개 넘겨지기
 const $slideBtn = $('.brand-intro-wrapper .slide-button li');

@@ -11,6 +11,17 @@
   100% { background-position: 500px 500px; }
 }
 
+/* svg 차례대로 움직임 */
+@keyframes drawing {
+  0% {
+    stroke-dashoffset: 500;
+  } 50% {
+    stroke-dashoffset: 0;
+  } 100% {
+    stroke-dashoffset: -500;
+  }
+}
+
 /* main-page 릴리바이레드 핑크색 박스 움직임 */
 @keyframes moving-box {
   0% { width: 0; }

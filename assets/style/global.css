@@ -2,7 +2,7 @@
 
 body {
   font-family: var(--font-m-ko);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* cursor: none; */
   cursor: url(../../images/mouse-deco.png), pointer;
 }
@@ -32,21 +32,24 @@ header {
   transition: .4s;
   z-index: 999;
 }
-
 header .logo a img {
   display: none;
 }
-
 header .global-menu {
   height: 100%;
   display: flex;
   justify-content: center;
 }
-
 header .global-menu li {
   width: calc(100% / 3);
+  position: relative;
 }
-
+header .global-menu li svg {
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
 header .global-menu li a {
   display: block;
   height: 50px;
@@ -72,18 +75,20 @@ header.active {
   align-items: center;
   justify-content: space-between;
 }
-
 header.active .logo a img {
   display: block;
 }
-
 header.active .global-menu li {
   margin: 0 10px;
+  position: relative;
 }
-
+header.active .global-menu li svg {
+  display: none;
+}
 header.active img {
   width: 80px;
 }
+
 
 /***** footer *****/
 footer {
@@ -280,6 +285,13 @@ footer address .copy {
   /***** header ***********/
   header .global-menu li a:hover {
     opacity: 1;
+  }
+  /*- svg 나타남 -*/
+  header .global-menu li svg.event {
+    display: block;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    animation: drawing 3s linear 1;
   }
 
   /***** footer *****/
