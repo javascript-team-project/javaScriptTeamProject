@@ -70,6 +70,7 @@ header.active img {
 footer {
   font-family: var(--font-m-ko);
   margin: 0 30px;
+  padding-top: 30px;
 }
 /*- contact -*/
 footer .contact-wrapper {
