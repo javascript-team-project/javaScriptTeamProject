@@ -283,9 +283,9 @@ footer address .copy {
 @media (min-width: 1200px) {
 
   /***** header ***********/
-  header .global-menu li a:hover {
+  /* header .global-menu li a:hover {
     opacity: 1;
-  }
+  } */
   /*- svg 나타남 -*/
   header .global-menu li svg.event {
     display: block;

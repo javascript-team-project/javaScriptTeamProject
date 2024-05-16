@@ -17,17 +17,17 @@ $('header .logo a').on('click', (e) => {
   });
 });
 
-// header에 마우스 허버시 svg 그려짐
-$('header .global-menu li').each(function(index) {
-  $(this).on('mouseenter', function() {
+// header에 마우스 허버시 svg 그려지고, 'a'의 투명도 1
+$('header .global-menu li').hover(
+  function() {
+    $(this).find('a').css('opacity', 1);
     $(this).find('svg').addClass('event');
-  });
-  $(this).on('mouseleave', function() {
+  },
+  function() {
+    $(this).find('a').css('opacity', '');
     $(this).find('svg').removeClass('event');
-  });
-});
-
-
+  }
+);
 
 // 자동으로 브랜드 소개 넘겨지기
 const $slideBtn = $('.brand-intro-wrapper .slide-button li');
