@@ -15,7 +15,10 @@
 }
 .main-page-wrapper .brand-name-box {
   position: relative;
-  width: 100%; height: 100%;
+  /* width: 100%;  */
+  height: 100%;
+  max-width: 390px; 
+  margin: 0 auto;
 }
 /*- 웰컴투릴리바이레드 -*/
 .main-page-wrapper .brand-name-box .title {
@@ -59,7 +62,7 @@
   color: var(--color-main-yellow);
   padding: 5px 10px;
   position: absolute;
-  left: -25px; top: 10%;
+  left: -23px; top: 10%;
   transform: rotate(-40deg);
   width: 500px;
   white-space: nowrap;
@@ -117,9 +120,10 @@
 
 /***** brand-intro / 사용자가 보는 slide 영역  *****/
 .brand-intro-wrapper {
+  max-width: 390px;
   width: 100%;
   height: 500px;
-  margin: 60px 0;
+  margin: 60px auto;
   position: relative;
   /* background-color: whitesmoke; */
   /* overflow: hidden; */
@@ -244,9 +248,9 @@
   color: var(--color-white);
   border-radius: 20px;
 }
-.brand-intro-wrapper .slide-wrapper .family-site-box a#dearown { background-color: var(--color-DearOwn);}
-.brand-intro-wrapper .slide-wrapper .family-site-box a#slowhumming { background-color: var(--color-SlowHumming);}
-.brand-intro-wrapper .slide-wrapper .family-site-box a#haterine { background-color: var(--color-Hatherine);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#dearown-btn { background-color: var(--color-DearOwn);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#slowhumming-btn { background-color: var(--color-SlowHumming);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#haterine-btn { background-color: var(--color-Hatherine);}
 /*- 데코 이미지 -*/
 .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img {
   position: absolute;
@@ -284,6 +288,8 @@
 }
 /*- 이벤트 내용 박스 -*/
 .event-wrapper .event-box {
+  max-width: 390px;
+  margin: 0 auto;
   border-radius: 20px;
   height: 500px;
   text-align: center;
@@ -334,8 +340,10 @@
 }
 .event-wrapper img {
   width: 100%;
+  max-width: 390px;
   position: absolute;
-  top: 70%;
+  top: 70%; left: 50%;
+  transform: translateX(-50%);
 }
 
 /***** youtube *****/
@@ -347,6 +355,8 @@
 .youtube-wrapper .edition-box {
   padding: 50px 0;
   text-align: center;
+  max-width: 390px;
+  margin: 0 auto;
 }
 .youtube-wrapper .edition-box .edition-sub-title {
   font-weight: 400;
@@ -379,9 +389,9 @@
 /***** best seller *****/
 .best-wrapper {
   text-align: center;
-  margin-top: 70px;
+  margin: 70px auto;
+  max-width: 390px;
 }
-
 /*- 베스트셀러 텍스트 박스 -*/
 .best-wrapper .best-text-box {
   padding-top: 50px;
@@ -423,6 +433,10 @@
 }
 
 /*- 인스타그램 -*/
+.insta-wrapper {
+  max-width: 390px;
+  margin: 0 auto;
+}
 .insta-wrapper .insta-text-box {
   padding-top: 50px;
   text-align: center;
