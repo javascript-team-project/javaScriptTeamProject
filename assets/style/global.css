@@ -97,7 +97,7 @@ footer .contact-wrapper {
   height: 400px;
   background-color: var(--color-primary);
   border-radius: 30px;
-  background: url(../../images/footer-grid.png) no-repeat 50% / cover, url(../../images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
+  background: url(../../images/main-grid.svg) 50% / contain, url(../../images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
   position: relative;
 }
 

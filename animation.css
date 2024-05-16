@@ -7,12 +7,8 @@
 
 /* 격자무늬 움직임 */
 @keyframes grid-move {
-  0% {
-    background-position: 300px 300px;
-  } 
-  100% {
-    background-position: 500px 500px;
-  }
+  0% { background-position: 300px 300px; } 
+  100% { background-position: 500px 500px; }
 }
 
 /* main-page 릴리바이레드 핑크색 박스 움직임 */
@@ -21,9 +17,13 @@
   100% { width: 250px; }
 }
 /* 웰컴투릴리바이레드 움직임 */
-@keyframes moving-box-title {
-  0% { width: 0; }
-  100% { width: 250px; }
+@keyframes main-title-mov {
+  0% { opacity: 0; } 
+  100% { opacity: 1; }
+}
+@keyframes mobile-glitter {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /***** tablet *****/

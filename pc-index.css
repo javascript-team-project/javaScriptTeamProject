@@ -122,16 +122,21 @@
         font-size: 80px;
     }
     /*- 이벤트 내용 -*/
-    .event-box-flex {
-        display: flex;
-        width: 100%;
-    }
-    .event-wrapper .event-box-flex .event-box {
-        /* width: 80vw; */
-        /* min-width: 1200px; */
+    .event-wrapper .event-box {
+        width: 80vw;
+        min-width: 1200px;
         max-width: none;
         height: 62vh;
-        margin: 0;
+    }
+    .event-wrapper .event-box .event-title {
+        width: 35%;
+        font-size: 35px;
+        position: absolute;
+        top: 3%;left: 25%;
+    }
+    .event-wrapper .event-box .front {
+        top:10%; left: 10%;
+        transform: rotate(-1deg);
     }
 
     /***** best seller *****/

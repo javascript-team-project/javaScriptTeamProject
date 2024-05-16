@@ -10,7 +10,7 @@
     /* brand main */
     .brand-main {
         height: 105vh;
-        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 50%, url(./images/brand-main-line.png) no-repeat 30% 30%/ 150%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 522px 554px, url(./images/brand-main-line.png) no-repeat 30% 30%/ 150%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
     }
 
     .brand-main .main-title-wrapper {
@@ -214,7 +214,7 @@
     .brand-main {
         height: 105vh;
         /* height: 690px; */
-        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 33%, url(./images/brand-main-line.png) no-repeat 24% 10%/ 130%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 623px 661px, url(./images/brand-main-line.png) no-repeat 24% 10%/ 130%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
     }
 
     .brand-main .main-title-wrapper {
