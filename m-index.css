@@ -244,9 +244,9 @@
   color: var(--color-white);
   border-radius: 20px;
 }
-.brand-intro-wrapper .slide-wrapper .family-site-box a#dearown { background-color: var(--color-DearOwn);}
-.brand-intro-wrapper .slide-wrapper .family-site-box a#slowhumming { background-color: var(--color-SlowHumming);}
-.brand-intro-wrapper .slide-wrapper .family-site-box a#haterine { background-color: var(--color-Hatherine);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#dearown-btn { background-color: var(--color-DearOwn);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#slowhumming-btn { background-color: var(--color-SlowHumming);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#haterine-btn { background-color: var(--color-Hatherine);}
 /*- 데코 이미지 -*/
 .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img {
   position: absolute;
