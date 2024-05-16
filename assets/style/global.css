@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+body {
+  font-family: var(--font-m-ko);
+  overflow-x: hidden;
+}
+
+section {
+  margin: 0 30px;
+}
+
 /***** 모바일 버전 *****/
 /***** header *****/
 header {
@@ -11,10 +20,16 @@ header {
   width: 80%; height: 50px;
   border-radius: 25px;
   margin: 20px auto;
+  padding: 0 10px;
   border: 1px solid rgba(254, 241, 195, 0.5);
   position: fixed;
   top: 0; left: 50%;
   transform: translateX(-50%);
+  transition: .4s;
+  z-index: 999;
+}
+header .logo a img {
+  display: none;
 }
 header .global-menu {
   height: 100%;
@@ -28,6 +43,33 @@ header .global-menu li a {
   display: block;
   height: 50px; line-height: 50px;
   text-align: center;
+  opacity: 0.5;
+}
+
+/***** 스크롤시 header 변경 *****/
+header.active{
+  margin: 0; padding: 0 20px;
+  width: 100%;
+  border-radius: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  color: var(--color-primary);
+  font-family: var(--font-m-kr);
+  font-weight: var(--font-regular);
+  text-transform: uppercase;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header.active .logo a img {
+  display: block;
+}
+header.active .global-menu li {
+  margin: 0 10px;
+}
+header.active img {
+  width: 80px; 
 }
 
 /***** footer *****/
@@ -41,14 +83,15 @@ footer .contact-wrapper {
   height: 400px;
   background-color: var(--color-primary);
   border-radius: 30px;
-  background: url(./images/footer-grid.png) no-repeat 50% / cover, url(./images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
+  background: url(../../images/footer-grid.png) no-repeat 50% / cover, url(../../images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
+  position: relative;
 }
 footer .contact-wrapper .footer-contact {
   font-family: var(--font-m-en);
   color: var(--color-white);
   text-align: center;
   font-size: 28px;
-  padding-top: 30px;
+  padding-top: 200px;
   line-height: 1.5;
 }
 /*- 말풍선 박스 -*/
@@ -59,17 +102,17 @@ footer .contact-wrapper .contact-box {
   width: 250px;
   padding: 20px;
   border-radius: 20px;
-  position: relative;
-  top: -15px; left: 15px;
+  position: absolute;
+  top: -30px; left: 70%;
+  transform: translateX(-70%);
 }
 footer .contact-wrapper .contact-box::after {
   content: "";
   background-color: var(--color-footer);
   position: absolute;
-  bottom: -20.5px; right: 60px;
+  bottom: -20px; right: 60px;
   border-top: solid 20px var(--color-footer);
   border-left: solid 50px var(--color-primary);
-  /* border-right: solid 0px var(--color-primary); */
 }
 footer .contact-wrapper .contact-box .contact-num {
   font-size: 30px;
@@ -81,7 +124,7 @@ footer .contact-wrapper .contact-box .contact-sub {
   text-align: left;
   padding-left: 60px;
   margin: 15px 0;
-  background: url(./images/footer-icon-call.svg) no-repeat 10%;
+  background: url(../../images/footer-icon-call.svg) no-repeat 10%;
 }
 footer .contact-wrapper .contact-box .contact-btn {
   background-color: var(--color-white);
@@ -93,8 +136,9 @@ footer .contact-wrapper .contact-box .contact-btn {
 }
 footer .contact-wrapper .contact-box img {
   position: absolute;
-  top: 60px;
-  right: -130px;
+  top: 100px;
+  left: 70%;
+  z-index: 99;
 }
 /*- footer address -*/
 footer address {
@@ -113,6 +157,8 @@ footer address .copy {
 }
 
 /***** pc 버전 *****/
-@media (min-width: 768px) {
-  
+@media (min-width: 1280px) {
+  header .global-menu li a:hover {
+    opacity: 1;
+  }
 }

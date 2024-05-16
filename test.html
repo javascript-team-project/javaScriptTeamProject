@@ -1,19 +1,340 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="utf-8">
   <title>test</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
   <script src="../assets/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./assets/style/reset.css">
+  <style>
+    /***** brand-intro / 사용자가 보는 slide 영역  *****/
+    .brand-intro-wrapper {
+      width: 100%;
+      height: 500px;
+      margin: 60px 0;
+      position: relative;
+      /* overflow: hidden; */
+    }
+
+    /*- pagenation -*/
+    .brand-intro-wrapper .slide-button {
+      text-indent: -9999px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+    }
+
+    .brand-intro-wrapper .slide-button li {
+      width: 10px;
+      height: 10px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin: 0 3px;
+    }
+
+    .brand-intro-wrapper .slide-button li.active {
+      background-color: var(--color-primary);
+    }
+
+    /*- 슬라이드 영역 -*/
+    .brand-intro-wrapper .slide-wrapper {
+      display: flex;
+      align-items: flex-start;
+      width: 400%;
+      height: 100%;
+      position: relative;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .slide-item {
+      margin: 0 30px;
+    }
+
+    /*- 릴리바이레드 소개 -*/
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box {
+      width: 100%; height: 100%;
+      text-align: center;
+      position: relative;
+      background: url(./images/pc-brand_intro-lilybyred-box.png) no-repeat 50% / 100% 100%;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
+      margin: 70px 0 20px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li strong {
+      font-size: 15px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .des {
+      font-size: var(--font-m-md);
+      margin: 20px 0;
+      line-height: 1.7;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .des span {
+      display: block;
+    }
+
+    /*- 릴리바이레드 이미지 -*/
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img {
+      position: absolute;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-box {
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
+      top: 53%;
+      left: 23%;
+      z-index: -99;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
+      top: 53%;
+      left: 18%;
+      width: 220px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="dotted-icon"] {
+      left: 0;
+      bottom: -18%;
+      width: 170px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img1 {
+      left: 0;
+      bottom: -35%;
+      width: 190px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img2 {
+      left: 30%;
+      bottom: -35%;
+      width: 150px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img3 {
+      left: 50%;
+      bottom: -35%;
+      width: 170px;
+      z-index: -99;
+    }
+
+    /*- 패밀리사이트 소개 -*/
+    .brand-intro-wrapper .slide-wrapper .family-site-box {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      /* margin-top: 200px; */
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo img {
+      margin: 100px 0 20px;
+      width: 150px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro strong {
+      font-size: 15px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #dearown {
+      color: var(--color-DearOwn);
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #slowhumming {
+      color: var(--color-SlowHumming);
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #haterine {
+      color: var(--color-Hatherine);
+    }
+
+    /*- 패밀리사이트 설명 -*/
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des {
+      font-size: var(--font-m-md);
+      margin: 20px 0 45px;
+      line-height: 1.7;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .haterine-des {
+      margin: 20px 0 70px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des span {
+      display: block;
+    }
+
+    /*- 바로가기 버튼 -*/
+    .brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand {
+      font-size: var(--font-m-sm);
+      font-weight: var(--font-bold);
+      padding: 7px 30px;
+      color: var(--color-white);
+      border-radius: 20px;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box a#dearown {
+      background-color: var(--color-DearOwn);
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box a#slowhumming {
+      background-color: var(--color-SlowHumming);
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box a#haterine {
+      background-color: var(--color-Hatherine);
+    }
+
+    /*- 데코 이미지 -*/
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img {
+      position: absolute;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box .brand-box {
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
+      top: 47%;
+      left: 23%;
+      z-index: -99;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="arrow-icon"] {
+      width: 90px;
+      top: 80%;
+      left: 47%;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box .haterine-arrow-icon {
+      top: 30%;
+    }
+  </style>
 </head>
 
 <body>
-  <img src="./릴리바이레드-코딩용/pc-brand_intro-dearown-box.png" alt="">
+  <!-- brand-intro / 사용자가 보는 slide 영역 -->
+  <section class="brand-intro-wrapper">
+    <!-- pagenation -->
+    <ul class="slide-button">
+      <li class="btn1"><a href="#">원모양 버튼1</a></li>
+      <li class="btn2"><a href="#">원모양 버튼2</a></li>
+      <li class="btn3"><a href="#">원모양 버튼3</a></li>
+      <li class="btn4"><a href="#">원모양 버튼4</a></li>
+    </ul>
+    <!-- 이미지가 나열되는 영역 -->
+    <div class="slide-wrapper">
+      <!-- 릴리바이레드 -->
+      <div class="lilyByRed-box slide-item">
+        <ul class="brand-intro">
+          <li>
+            <h2 class="brand-logo"><img src="./images/brand_intro-logo-lilybyred.png" alt="lilybyred-logo"></h2>
+            <strong>#순수 능란 앙큼 메이크업</strong>
+            <p class="des"><strong>릴리바이레드</strong>는<br>
+              순수한 듯 능란한 소녀,<span> 때로는 대담한 듯 은밀한</span> <span>숙녀들의
+                반전매력을 표현하는</span> <strong>컬러 메이크업</strong> 브랜드입니다.</p>
+          </li>
+        </ul>
+        <!-- 릴리바이레드 이미지 -->
+        <div class="brand-intro-img-box">
+          <!-- 박스 이미지 -->
+          <!-- <img src="./images/m-brand-lilybyred.svg" class="brand-box" alt="릴리바이레드 박스"> -->
+          <!-- 내용 데코 이미지 -->
+          <img src="./images/brand_intro-icon-heart-pink.svg" alt="heart-icon">
+          <img src="./images/brand_intro-icon-star.svg" alt="star-icon">
+          <!-- 화장품 이미지 -->
+          <img src="./images/brand_intro-icon-dotted.svg" alt="dotted-icon">
+          <img src="./images/pc-brand_intro-lily-img1.png" alt="블러셔" class="brand-img1">
+          <img src="./images/pc-brand_intro-lily-img2.png" alt="틴트" class="brand-img2">
+          <img src="./images/pc-brand_intro-lily-img3.png" alt="섀도우" class="brand-img3">
+        </div>
+      </div>
+      <!-- 디어오운 -->
+      <div class="family-site-box slide-item">
+        <ul class="brand-intro">
+          <li>
+            <h2 class="brand-logo"><img src="./images/brand_intro-logo-dearown.png" alt="dearown-logo"></h2>
+            <strong id="dearown">#Family site</strong>
+            <p class="des"><strong>디어오운</strong>은<br>
+              일상의 순간 속 모습에서 <span>다양한 매력을 이끌어내,</span>
+              <strong>주체적인 나의 아름다움</strong>을 <span>표현하는 브랜드입니다.</span>
+            </p>
+          </li>
+        </ul>
+        <!-- 모바일에서는 바로가기, pc에서는 홈 아이콘 -->
+        <a href="#" class="go-to-brand" id="dearown">바로가기</a>
+        <!-- 디어오운 이미지 -->
+        <div class="brand-intro-img-box">
+          <!-- 박스 이미지 -->
+          <img src="./images/m-brand-Dearown.png" class="brand-box" alt="디어오운박스">
+          <!-- 내용 데코 이미지 -->
+          <img src="./images/brand_intro-icon-heart-yellow.svg" alt="heart-icon">
+          <img src="./images/mobile-brand_intro-icon-arrow-yellow.svg" alt="arrow-icon">
+        </div>
+      </div>
+      <!-- 슬로우 허밍 -->
+      <div class="family-site-box slide-item">
+        <ul class="brand-intro">
+          <li>
+            <h2 class="brand-logo"><img src="./images/brand_intro-logo-slowhumming.png" alt="slowhumming-logo"></h2>
+            <strong id="slowhumming">#Family site</strong>
+            <p class="des"><strong>슬로우 허밍</strong>은<br>
+              당신의 내밀한 일상을 <span>변주하고 하이 센티드 테라피로</span>
+              시공간을 풍부하게 설계하는 <span><strong>비건 리추얼</strong> 브랜드입니다.</span></p>
+          </li>
+        </ul>
+        <!-- 모바일에서는 바로가기, pc에서는 홈 아이콘 -->
+        <a href="#" class="go-to-brand" id="slowhumming">바로가기</a>
+        <!-- 슬로우허밍 이미지 -->
+        <div class="brand-intro-img-box">
+          <!-- 박스 이미지 -->
+          <img src="./images/m-brand-slowHumming.png" class="brand-box" alt="슬로우허밍박스">
+          <!-- 내용 데코 이미지 -->
+          <img src="./images/brand_intro-icon-heart-brown.svg" alt="heart-icon">
+          <img src="./images/mobile-brand_intro-icon-arrow-brown.svg" alt="arrow-icon">
+        </div>
+      </div>
+      <!-- 해서린 -->
+      <div class="family-site-box slide-item">
+        <ul class="brand-intro">
+          <li>
+            <h2 class="brand-logo"><img src="./images/brand_intro-logo-haterine.png" alt="haterine-logo"></h2>
+            <strong id="haterine">#Family site</strong>
+            <p class="des haterine-des"><strong>해서린</strong>은<br>
+              매일 밝게 빛나는 해처럼, <span>눈뜨는 아침부터
+                잠드는 저녁까지</span> 당신의 하루를 완성해갑니다.</p>
+          </li>
+        </ul>
+        <!-- 모바일에서는 바로가기, pc에서는 홈 아이콘 -->
+        <a href="#" class="go-to-brand" id="haterine">바로가기</a>
+        <!-- 해서린 이미지 -->
+        <div class="brand-intro-img-box">
+          <!-- 박스 이미지 -->
+          <img src="./images/m-brand-hatherine.png" class="brand-box" alt="해서린박스">
+          <!-- 내용 데코 이미지 -->
+          <img src="./images/brand_intro-icon-heart-sky.svg" alt="heart-icon">
+          <img src="./images/mobile-brand_intro-icon-arrow-sky.svg" alt="arrow-icon" class="haterine-arrow-icon">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- <img src="./릴리바이레드-코딩용/pc-brand_intro-dearown-box.png" alt="">
   <img src="./릴리바이레드-코딩용/pc-brand_intro-lilybyred-box.png" alt="">
   <img src="./릴리바이레드-코딩용/pc-brand_intro-slowhumming-box.png" alt="">
   <img src="./릴리바이레드-코딩용/best-seller-img1.png" alt="">
   <img src="./릴리바이레드-코딩용/best-seller-img2.png" alt="">
   <img src="./릴리바이레드-코딩용/best-seller-img3.png" alt="">
-  <img src="./릴리바이레드-코딩용/best-seller-img4.png" alt="">
+  <img src="./릴리바이레드-코딩용/best-seller-img4.png" alt=""> -->
 </body>
+
 </html>

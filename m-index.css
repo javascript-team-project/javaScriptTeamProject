@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+/***** main-page *****/
+.main-page-wrapper {
+  margin: 0;
+  width: 100%;
+  height: 500px;
+  font-family: var(--font-m-en);
+  font-weight: var(--font-bold);
+  background: url(./images/footer-grid.png) no-repeat 50% / cover, var(--color-primary);
+  position: relative;
+  z-index: -9999;
+  text-align: center;
+  overflow: hidden;
+}
+.main-page-wrapper .brand-name-box {
+  position: relative;
+  width: 100%; height: 100%;
+}
+/*- 웰컴투릴리바이레드 -*/
+.main-page-wrapper .brand-name-box .title {
+  text-transform: capitalize;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: 32px;
+  width: 250px;
+  padding: 5px;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-page-wrapper .brand-name-box .title span {
+  background-color: var(--color-white);
+  width: 105%;
+  display: block;
+  padding: 5px;
+  border-top: 1px solid var(--color-main-pink);
+  position: absolute;
+  top: 90%; left: 20px;
+}
+/*- 릴리바이레드 핑크색 -*/
+.main-page-wrapper .brand-name-box::after {
+  content: "lilybyred";
+  background-color: var(--color-main-pink);
+  color: var(--color-white);
+  font-size: 15px;
+  padding: 5px 10px;
+  width: 250px;
+  position: absolute;
+  top: 43%; left: 35%;
+  transform: translate(-44%, -35%) rotate(-3deg);
+  z-index: 1;
+}
+/* 핑크색 뒤로 들어가는 검정 박스 */
+.main-page-wrapper .brand-name-box::before {
+  content: "lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred";
+  background-color: var(--color-black);
+  color: var(--color-main-yellow);
+  padding: 5px 10px;
+  position: absolute;
+  left: -25px; top: 10%;
+  transform: rotate(-40deg);
+  width: 500px;
+  white-space: nowrap;
+}
+/* 
+기존에 작성된 lilybyred 및 ::before 코드
+.main-page-wrapper .main-text {
+  background-color: var(--color-main-pink);
+  color: var(--color-white);
+  font-size: 15px;
+  padding: 5px 10px;
+  width: 250px;
+  position: absolute;
+  top: 43%; left: 35%;
+  transform: translate(-44%, -35%) rotate(-3deg);
+  z-index: 1;
+}
+.main-page-wrapper .back-text {
+  background-color: var(--color-black);
+  color: var(--color-main-yellow);
+  padding: 5px 10px;
+  position: absolute;
+  left: -5%; top: 10%;
+  transform: rotate(-40deg);
+  width: 500px;
+  white-space: nowrap;
+} */
+/*- 릴리!체키!샤시! -*/
+.main-page-wrapper .brand-name-box .main-intro {
+  font-size: var(--font-m-lg);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.3px var(--color-white);
+  position: absolute;
+  top: 67%; left: 55%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+/*- main-imgs -*/
+.main-page-wrapper .brand-name-box .main-img-box img {
+  position: absolute;
+}
+.main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
+  width: 50px;
+  top: 20%; right: 15%;
+}
+.main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
+  width: 110px;
+  top: 35%; right: -7%;
+}
+.main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
+  width: 200px;
+  top: 53%; left: -7%;
+}
+
+/***** brand-intro / 사용자가 보는 slide 영역  *****/
+.brand-intro-wrapper {
+  width: 100%;
+  height: 500px;
+  margin: 60px 0;
+  position: relative;
+  /* background-color: whitesmoke; */
+  /* overflow: hidden; */
+}
+/*- pagenation -*/
+.brand-intro-wrapper .slide-button {
+  text-indent: -9999px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+.brand-intro-wrapper .slide-button li {
+  width: 10px; height: 10px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+.brand-intro-wrapper .slide-button li.active {
+  background-color: var(--color-primary);
+}
+/*- 슬라이드 영역 -*/
+.brand-intro-wrapper .slide-wrapper {
+  display: flex;
+  align-items: flex-start;
+  width: 400%;
+  height: 100%;
+  position: relative;
+}
+.brand-intro-wrapper .slide-wrapper .slide-item {
+  margin: 0 30px;
+}
+/*- 릴리바이레드 소개 -*/
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
+  margin: 70px 0 20px;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li strong {
+  font-size: 15px;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .des {
+  font-size: var(--font-m-md);
+  margin: 20px 0;
+  line-height: 1.7;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .des span {
+  display: block;
+}
+/*- 릴리바이레드 이미지 -*/
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img {
+  position: absolute;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-box {
+  width: 100%;
+  top: 0; left: 0;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
+  top: 53%; left: 23%;
+  z-index: -99;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="star-icon"] {
+  top: 53%; left: 18%;
+  width: 220px;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="dotted-icon"] {
+  left: 0; bottom: -18%;
+  width: 170px;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img1 {
+  left: 0; bottom: -35%;
+  width: 190px;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img2 {
+  left: 30%; bottom: -35%;
+  width: 150px;
+}
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-img3 {
+  left: 50%; bottom: -35%;
+  width: 170px;
+  z-index: -99;
+}
+/*- 패밀리사이트 소개 -*/
+.brand-intro-wrapper .slide-wrapper .family-site-box {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  /* margin-top: 200px; */
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo img {
+  margin: 100px 0 20px;
+  width: 150px;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro strong {
+  font-size: 15px;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #dearown { color: var(--color-DearOwn);}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #slowhumming { color: var(--color-SlowHumming);}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro li #haterine { color: var(--color-Hatherine);}
+/*- 패밀리사이트 설명 -*/
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des {
+  font-size: var(--font-m-md);
+  margin: 20px 0 45px;
+  line-height: 1.7;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .haterine-des {
+  margin: 20px 0 70px;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des span {
+  display: block;
+}
+/*- 바로가기 버튼 -*/
+.brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand {
+  font-size: var(--font-m-sm);
+  font-weight: var(--font-bold);
+  padding: 7px 30px;
+  color: var(--color-white);
+  border-radius: 20px;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#dearown-btn { background-color: var(--color-DearOwn);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#slowhumming-btn { background-color: var(--color-SlowHumming);}
+.brand-intro-wrapper .slide-wrapper .family-site-box a#haterine-btn { background-color: var(--color-Hatherine);}
+/*- 데코 이미지 -*/
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img {
+  position: absolute;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box .brand-box {
+  width: 100%;
+  top: 0; left: 0;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
+  top: 47%; left: 23%;
+  z-index: -99;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="arrow-icon"] {
+  width: 90px;
+  top: 80%; left: 47%;
+}
+.brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box .haterine-arrow-icon {
+  top: 30%;
+}
+
+/***** event *****/
+.event-wrapper {
+  margin-top: 150px;
+  position: relative;
+}
+/*- 움직이는 텍스트 -*/
+.event-wrapper .event-move-text {
+  font-size: 30px;
+  color: var(--color-main-pink);
+  opacity: 0.45;
+  position: absolute;
+  top: -30px; left: 0;
+  margin: 0 -30px;
+  white-space: nowrap;
+}
+/*- 이벤트 내용 박스 -*/
+.event-wrapper .event-box {
+  border-radius: 20px;
+  height: 500px;
+  text-align: center;
+  background: url(./images/footer-grid.png) no-repeat 50% / cover, var(--color-primary);
+  position: relative;
+}
+.event-wrapper .event-box .event-title {
+  font-family: var(--font-m-en);
+  font-size: 27px;
+  font-weight: 900;
+  background-color: var(--color-white);
+  width: 80%;
+  margin: 50px auto;
+  position: absolute;
+  white-space: nowrap;
+}
+.event-wrapper .event-box .front {
+  color: var(--color-white);
+  -webkit-text-stroke: 1.2px var(--color-primary);
+  top: 30px; left: 55%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.event-wrapper .event-box .back {
+  color: var(--color-primary);
+  top: 0; left: 45%;
+  transform: translateX(-50%);
+}
+.event-wrapper .event-box .title {
+  padding-top: 150px;
+  color: var(--color-white);
+  background: url(./images/event-star.svg) no-repeat 50% 100% / 150px;
+}
+.event-wrapper .event-box .event-des {
+  font-size: 12px;
+  color: var(--color-white);
+  font-weight: 200;
+  line-height: 2;
+  margin: 20px 0 50px;
+}
+.event-wrapper .event-box .event-btn {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  font-size: 12px;
+  font-weight: 900;
+  padding: 7px 20px;
+  border-radius: 20px;
+}
+.event-wrapper img {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+}
+
+/***** youtube *****/
+.youtube-wrapper {
+  margin: 300px 0 0;
+  position: relative;
+}
+/*- 텍스트 박스 -*/
+.youtube-wrapper .edition-box {
+  padding: 50px 0;
+  text-align: center;
+}
+.youtube-wrapper .edition-box .edition-sub-title {
+  font-weight: 400;
+  margin: 15px 0;
+}
+.youtube-wrapper .edition-box .edition-main-title {
+  font-size: var(--font-m-xlg);
+  color: var(--color-primary);
+  font-weight: 900;
+}
+.youtube-wrapper .edition-box .edition-des {
+  margin: 20px 0;
+}
+/*- 텍스트 데코 이미지 -*/
+.youtube-wrapper .edition-img-box img {
+  position: absolute;
+}
+.youtube-wrapper .edition-img-box img[alt="icon-arrow"] {
+  left: 0; top: 16%;
+  width: 70%;
+}
+.youtube-wrapper .edition-img-box img[alt="icon-star"] {
+  top: 32%; left: 72%;
+}
+.youtube-wrapper .video-wrapper #player {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/***** best seller *****/
+.best-wrapper {
+  text-align: center;
+  margin-top: 70px;
+}
+
+/*- 베스트셀러 텍스트 박스 -*/
+.best-wrapper .best-text-box {
+  padding-top: 50px;
+  text-align: center;
+}
+.best-wrapper .best-text-box .best-main-title {
+  font-size: var(--font-m-xlg);
+  color: var(--color-primary);
+  font-weight: 900;  
+  padding-bottom: 15px;
+}
+.best-wrapper .best-text-box .best-sub-title {
+  font-size: var(--font-m-md);
+  color: var(--color-black);
+  font-weight: var(--font-regular);
+  padding-bottom: 25px;
+}
+
+/*- 제품 리스트 -*/
+.best-wrapper .best-list-box li {
+  height: 450px;
+  background-color: #FAFAFA;
+  border-radius: 30px;
+  margin: 30px 0;
+}
+.best-wrapper .best-list-box li:nth-child(even) .product-img {
+  padding: 50px 0;
+}
+.best-wrapper .best-list-box li:nth-child(3) .product-img {
+  padding: 30px 0;
+}
+.best-wrapper .best-list-box li .product-title {
+  font-size: var(--font-m-lg);
+  color: var(--color-primary);
+  padding: 20px 0;
+}
+.best-wrapper .best-list-box li .product-des {
+  font-size: var(--font-m-sm);
+}
+
+/*- 인스타그램 -*/
+.insta-wrapper .insta-text-box {
+  padding-top: 50px;
+  text-align: center;
+}
+.insta-wrapper .insta-text-box .insta-main-title{
+  font-size: var(--font-m-xlg);
+  color: var(--color-primary);
+  font-weight: 900;  
+  padding-bottom: 15px;
+}
+.insta-wrapper .insta-text-box .insta-sub-title {
+  font-size: var(--font-m-md);
+  color: var(--color-black);
+  font-weight: var(--font-regular);
+  padding-bottom: 25px;
+}
+.insta-img-box {
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 25px;
+  overflow: hidden;
+  gap: 5px;
+}
+.insta-img-box img {
+  width: 100%;
+}
+/*- 움직이는 텍스트 -*/
+.insta-move-text {
+  padding: 38px 0 68px;
+  font-size: 36px;
+  white-space: nowrap;
+  font-family: var(--font-m-en);
+  font-weight: var(--font-bold);
+  color: #fff;
+  -webkit-text-stroke: 1px var(--color-black);
+  margin: 0 -50px;
+}
