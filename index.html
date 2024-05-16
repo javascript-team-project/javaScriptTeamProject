@@ -15,14 +15,13 @@
   <meta property="og:type" content="website">
   <!-- reset css -->
   <link rel="stylesheet" href="./assets/style/reset.css">
-  <!-- fonts -->
-  <link rel="stylesheet" href="">
   <!-- 공통된 css style -->
   <link rel="stylesheet" href="./assets/style/common.css">
   <link rel="stylesheet" href="./assets/style/global.css">
   <!-- page 별 css style -->
   <link rel="stylesheet" href="./m-index.css">
   <link rel="stylesheet" href="./pc-index.css">
+  <link rel="stylesheet" href="./animation.css">
   <!-- jQuery -->
   <script src="./assets/style/jquery-3.7.1.min.js"></script>
   <!-- 공통으로 사용되는 js -->
@@ -56,9 +55,6 @@
         <img src="./images/main-tint.png" alt="tint">
       </div>
     </div>
-    <!-- <div class="main-text">lilybyred</div>
-    뒤쪽 검정 박스
-    <div class="back-text">lilybyred&nbsp; lilybyred&nbsp; lilybyred&nbsp; lilybyred&nbsp; lilybyred&nbsp; lilybyred&nbsp; lilybyred&nbsp; lilybyred&nbsp;</div> -->
   </section>
 
   <!-- brand-intro / 사용자가 보는 slide 영역 -->
@@ -170,7 +166,11 @@
   <!-- event -->
   <section class="event-wrapper">
     <!-- 움직이는 텍스트 -->
-    <div class="event-move-text">LILY HAPPY STATION LILY HAPPY STATION LILY HAPPY STATI</div>
+    <div class="animated-box">
+      <div class="animated-box-track">
+        <div class="animated-content event-move-text">&nbsp;LILY HAPPY STATION&nbsp;LILY HAPPY STATION&nbsp;LILY HAPPY STATION&nbsp;LILY HAPPY STATION&nbsp;LILY HAPPY STATION&nbsp;LILY HAPPY STATION&nbsp;LILY HAPPY STATION</div>
+      </div>
+    </div>
     <!-- 이벤트 내용 -->
     <div class="event-box">
       <h2 class="event-title front">Lily Happy Station</h2>
@@ -266,11 +266,14 @@
       <img src="./images/pc-instagram-img5.png" alt="insta-img5">
       <img src="./images/pc-instagram-img6.png" alt="insta-img6">
     </div>
-    <!-- 움직이는 텍스트 -->
-    <div class="insta-move-text">
-      LILY! CHEEKY! SASSY! LILY! CHEEKY! SASSY! LILY! CHEEKY! SASSY! LILY! CHEEKY! SASSY!LILY! CHEEKY! SASSY!
-    </div>
   </section>
+
+  <!-- 움직이는 텍스트 -->
+  <div class="insta-animated-box">
+    <div class="insta-animated-box-track">
+      <div class="insta-animated-content">&nbsp;LILY!&nbsp;CHEEKY!&nbsp;SASSY!&nbsp;LILY!&nbsp;CHEEKY!&nbsp;SASSY!&nbsp;LILY!&nbsp;CHEEKY!&nbsp;SASSY!&nbsp;LILY!&nbsp;CHEEKY!&nbsp;SASSY!&nbsp;LILY!&nbsp;CHEEKY!&nbsp;SASSY!</div>
+    </div>
+  </div>
 
   <!-- footer -->
   <footer>
