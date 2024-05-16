@@ -7,7 +7,39 @@
 
 /***** pc *****/
 @media (min-width: 1200px) {
-    .main-page-wrapper {
-        
+    /***** main-page *****/
+
+    /***** brand-intro  *****/
+
+    /***** event *****/
+    .event-wrapper {
+
+    }
+    .event-wrapper .event-move-text {
+        font-size: 80px;
+    }
+
+    /***** best seller *****/
+    .best-wrapper .best-text-box .best-main-title {
+        font-size: var(--font-pc-lg);
+    }
+
+    /*- 제품 리스트 -*/
+    .best-wrapper .best-list-box {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    .best-wrapper .best-list-box li {
+        padding: 20px;
+    }
+    .best-wrapper .best-list-box li .product-title {
+        font-size: var(--font-pc-md);
+    }
+    .best-wrapper .best-list-box li .product-des {
+        font-size: var(--font-pc-sm);
+        width: 230px; 
+        margin: 0 auto;
+        word-wrap: break-word;
     }
 }
