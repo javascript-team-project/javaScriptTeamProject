@@ -110,7 +110,7 @@
 .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
   width: 50px;
   top: 20%; right: 15%;
-  animation: glitter 1s linear infinite;
+  animation: mobile-glitter 1.5s linear infinite;
 }
 .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
   width: 110px;
