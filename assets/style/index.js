@@ -17,11 +17,6 @@ $('header.active .logo a').on('click', (e) => {
   })
 });
 
-/* // 헤더 메뉴 클릭 시 투명도 값 변경
-$('header .global-menu li a').on('click', (e) => {
-  $(e.target).css({opacity : 1});
-}); */
-
 // 자동으로 브랜드 소개 넘겨지기
 const $slideBtn = $('.brand-intro-wrapper .slide-button li');
 let currentIdx = 0;
