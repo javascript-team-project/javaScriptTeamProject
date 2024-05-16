@@ -21,3 +21,10 @@ github organization 생성.</br>
  모바일 공통 헤더와푸터 작업 완료<br>
  서브페이지 작업 중<br> 
  메인페이지 pc와 tablet 작업을 목표로 함.
+
+ ## 240516
+ 메인페이지 html, css 작업 마무리 중 여러번 수정.<br>
+ 메인페이지 js,jQuery 작업
+ 서브페이지 brand html, css 작업 완료<br>
+ 서브페이지 community html,css 작업중<br>
+ svg가 그려지는 효과 학습 후 적용을 목표로 함.
