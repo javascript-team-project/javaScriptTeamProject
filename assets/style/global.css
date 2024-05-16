@@ -181,7 +181,96 @@ footer address .copy {
 }
 
 /***** tablet *****/
-@media (min-width: 834px) {}
+@media (min-width: 834px) {
+    /***** footer *****/
+    footer {
+      margin: 0 50px;
+      padding: 100px 0px 40px;
+    }
+  
+    /*- contact -*/
+    footer .contact-wrapper {
+      width: 100%;
+      height: 300px;
+      background: url(../../images/footer-grid.png) no-repeat 50% / 100%, url(../../images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
+    }
+  
+    footer .contact-wrapper .footer-contact {
+      text-align: left;
+      font-size: 35px;
+      padding: 100px 0px 0px 50px;
+    }
+  
+    /*- 말풍선 박스 -*/
+    footer .contact-wrapper .contact-box {
+      width: 250px;
+      height: 190px;
+      padding: 15px 20px 20px;
+      top: -70px;
+      left: 70%;
+      transform: translateX(-70%);
+    }
+  
+    footer .contact-wrapper .contact-box::after {
+      content: "";
+      background-color: var(--color-footer);
+      position: absolute;
+      bottom: -19px;
+      right: 60px;
+      border-top: solid 20px var(--color-footer);
+      border-left: solid 50px var(--color-primary);
+      /* border-right: solid 0px var(--color-primary); */
+    }
+  
+    footer .contact-wrapper .contact-box .contact-num {
+      font-size: 33px;
+      margin: 10px 0px 0px;
+    }
+  
+    footer .contact-wrapper .contact-box .contact-sub {
+      font-size: 13px;
+      padding-left: 60px;
+      margin: 5px 0px 20px;
+      background: url(../../images/footer-icon-call.svg) no-repeat 10%;
+    }
+  
+    footer .contact-wrapper .contact-box .contact-btn {
+      font-size: var(--font-pc-md);
+      padding: 5px 25px 10px;
+    }
+  
+    footer .contact-wrapper .contact-box img {
+      position: absolute;
+      top: 120px;
+      left: 100%;
+      z-index: 99;
+    }
+  
+    /*- footer address -*/
+    footer address {
+      margin: 30px auto;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    footer address .address-list {
+      padding: 0;
+      margin: 0;
+      font-size: 11px;
+      list-style: none;
+      display: flex;
+      text-align: left;
+    }
+  
+    footer address .address-list li:last-child {
+      margin-left: 10px;
+    }
+  
+    footer address .copy {
+      margin: 0;
+    }
+}
 
 /***** pc *****/
 @media (min-width: 1200px) {
