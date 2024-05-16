@@ -220,7 +220,7 @@ footer address .copy {
 
   footer .contact-wrapper .contact-box .contact-btn {
     font-size: var(--font-pc-md);
-    padding: 7px 30px;
+    padding: 5px 25px 10px;
   }
 
   footer .contact-wrapper .contact-box img {
