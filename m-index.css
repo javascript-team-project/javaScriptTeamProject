@@ -12,7 +12,7 @@
   z-index: -9999;
   text-align: center;
   overflow: hidden;
-  animation: grid-move 5s infinite linear;
+  animation: grid-move 7s infinite linear;
 }
 .main-page-wrapper .brand-name-box {
   position: relative;
@@ -22,27 +22,28 @@
   margin: 0 auto;
 }
 /*- 웰컴투릴리바이레드 -*/
-.main-page-wrapper .brand-name-box .title {
-  text-transform: capitalize;
-  background-color: var(--color-white);
-  color: var(--color-primary);
+.main-page-wrapper .brand-name-box .title-box {
   font-weight: 900;
   font-size: 32px;
-  width: 250px;
-  padding: 5px;
+  white-space: nowrap;
+  animation: moving-box-title .3s .6s 1 linear;
+}
+.main-page-wrapper .brand-name-box .title-box .title-back {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  padding: 5px 60px;
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  animation: moving-box-title .3s .6s 1 linear;
 }
-.main-page-wrapper .brand-name-box .title span {
+.main-page-wrapper .brand-name-box .title-box .title-front {
   background-color: var(--color-white);
-  width: 105%;
-  display: block;
-  padding: 5px;
+  color: var(--color-primary);
+  padding: 5px 50px;
   border-top: 1px solid var(--color-main-pink);
   position: absolute;
-  top: 90%; left: 20px;
+  top: 60%; left: 60%;
+  transform: translate(-50%, -50%);
 }
 /*- 릴리바이레드 핑크색 -*/
 .main-page-wrapper .brand-name-box::after {
@@ -298,7 +299,7 @@
   border-radius: 20px;
   height: 500px;
   text-align: center;
-  background: url(./images/footer-grid.png) no-repeat 50% / cover, var(--color-primary);
+  background: url(./images/main-grid.svg) 50% / contain, var(--color-primary);
   position: relative;
 }
 .event-wrapper .event-box .event-title {
