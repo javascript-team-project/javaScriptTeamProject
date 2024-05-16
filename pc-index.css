@@ -21,20 +21,23 @@
         min-width: 1280px;
     }
     /*- 웰컴 투 릴리바이레드 -*/
-    .main-page-wrapper .brand-name-box .title {
+    .main-page-wrapper .brand-name-box .title-box {
         font-size: 75px;
-        width: 560px; height: 97px;
-        top: 40%;
-        line-height: 97px;
     }
-    .main-page-wrapper .brand-name-box .title span {
-        top: 90%; left: 50px;
+    .main-page-wrapper .brand-name-box .title-box .title-back {
+        top: 45%; left: 50%;
+        width: 45%;
+    }
+    .main-page-wrapper .brand-name-box .title-box .title-front {
+        top: 53%;
+        width: 50%;
     }
     /*- 릴리바이레드 핑크색 -*/
     .main-page-wrapper .brand-name-box::after {
-        width: 430px;
+        width: 430px; height: 4.5vh;
+        line-height: 3.5vh;
         position: absolute;
-        top: 30.8%;
+        top: 38%;
         font-size: 30px;
         padding: 5px;
     }
@@ -42,9 +45,10 @@
     .main-page-wrapper .brand-name-box::before {
         position: absolute;
         font-size: 28px;
-        left: 17%; top: 10%;
+        left: 15%; top: 13%;
         transform: rotate(-35deg);
-        width: 600px;
+        width: 1000px; height: 4.5vh;
+        line-height: 3.5vh;
     }
     /*- 릴리!체키!샤시! -*/
     .main-page-wrapper .brand-name-box .main-intro {
@@ -55,15 +59,15 @@
     /*- main-imgs -*/
     .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
         width: 9%;
-        right: 1%;
+        right: -5%;
     }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
         width: 13%;
-        right: 15%; top: 27%;
+        right: 8%; top: 36%;
     }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
-        width: 27%;
-        left: 5%;
+        width: 30%;
+        left: 2%;
     }
     /***** brand-intro  *****/
     .brand-intro-wrapper {
