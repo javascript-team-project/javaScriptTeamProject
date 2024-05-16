@@ -38,5 +38,8 @@
     }
     .best-wrapper .best-list-box li .product-des {
         font-size: var(--font-pc-sm);
+        width: 230px; 
+        margin: 0 auto;
+        word-wrap: break-word;
     }
 }
