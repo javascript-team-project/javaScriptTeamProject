@@ -144,22 +144,24 @@
 
     .brand-info .right-box .brand-info-txt img {
         margin: 0;
-        width: 187px;
-        height: 63px;
+        width: 230px;
+        height: 77.32px;
     }
 
     .brand-info .right-box .brand-info-txt .sub-title {
-        font-size: var(--font-pc-lg);
+        font-size: 30px;
         font-weight: 700;
         color: var(--color-primary);
         margin: 17px 0px 0px;
     }
 
     .brand-info .right-box .brand-info-txt p {
-        font-size: var(--font-pc-md);
+        font-size: 20px;
         font-weight: var(--font-regular);
         margin: 13px 0px 0px;
         line-height: 1.8;
+        width: 500px;
+        white-space: nowrap;
     }
 
     .brand-info .right-box .brand-info-txt p strong {

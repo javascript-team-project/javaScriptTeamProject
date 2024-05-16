@@ -75,7 +75,7 @@ header.active img {
 /***** footer *****/
 footer {
   font-family: var(--font-m-ko);
-  margin: 0 30px;
+  margin: 50px 30px;
 }
 /*- contact -*/
 footer .contact-wrapper {
@@ -99,11 +99,11 @@ footer .contact-wrapper .contact-box {
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-footer);
-  width: 250px;
-  padding: 20px;
+  width: 230px;
+  padding: 20px 0px 30px;
   border-radius: 20px;
   position: absolute;
-  top: -30px; left: 70%;
+  top: -30px; left: 50%;
   transform: translateX(-70%);
 }
 footer .contact-wrapper .contact-box::after {
@@ -123,7 +123,7 @@ footer .contact-wrapper .contact-box .contact-sub {
   font-weight: 300;
   text-align: left;
   padding-left: 60px;
-  margin: 15px 0;
+  margin: 3px 25px 15px;
   background: url(../../images/footer-icon-call.svg) no-repeat 10%;
 }
 footer .contact-wrapper .contact-box .contact-btn {
@@ -136,8 +136,8 @@ footer .contact-wrapper .contact-box .contact-btn {
 }
 footer .contact-wrapper .contact-box img {
   position: absolute;
-  top: 100px;
-  left: 70%;
+  top: 80px;
+  left: 75%;
   z-index: 99;
 }
 /*- footer address -*/
@@ -170,7 +170,7 @@ footer address .copy {
   /***** footer *****/
   footer {
     margin: 0 80px;
-    padding-top: 80px;
+    padding: 80px 0px 40px;
   }
 
   /*- contact -*/
