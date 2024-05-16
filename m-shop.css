@@ -27,7 +27,11 @@ body {
     color: #6d6d6d;
 }
 
-.sub-shop-wrapper .sub-shop-box .main-title .main-list li {}
+.sub-shop-wrapper .sub-shop-box .main-list .active {
+    font-weight: 700;
+    columns: #000;
+    text-decoration: underline;
+}
 
 .sub-shop-wrapper .main-btn {
     display: flex;
