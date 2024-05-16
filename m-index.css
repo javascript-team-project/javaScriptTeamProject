@@ -268,6 +268,10 @@
   width: 100%;
   top: 0; left: 0;
 }
+/* pc용 박스 이미지 display:none 처리 */
+.brand-intro-wrapper .slide-wrapper .family-site-box .pc-brand-box {
+  display: none;
+}
 .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
   top: 47%; left: 23%;
   z-index: -99;
