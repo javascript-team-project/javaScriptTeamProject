@@ -249,6 +249,10 @@
   width: 100%;
   top: 0; left: 0;
 }
+/* pc용 박스 이미지 display:none 처리 */
+.brand-intro-wrapper .slide-wrapper .family-site-box .pc-brand-box {
+  display: none;
+}
 .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"] {
   top: 47%; left: 23%;
   z-index: -99;
@@ -322,7 +326,7 @@
 .event-wrapper .event-box .title {
   padding-top: 150px;
   color: var(--color-white);
-  background: url(./images/event-star.svg) no-repeat 50% 100% / 150px;
+  background: url(./images/event-star.svg) no-repeat 40% 100% / 150px;
 }
 .event-wrapper .event-box .event-des {
   font-size: 12px;
@@ -345,6 +349,9 @@
   position: absolute;
   top: 70%; left: 50%;
   transform: translateX(-50%);
+}
+.event-wrapper .event-box {
+  margin-bottom: 40px;
 }
 
 /***** youtube *****/
