@@ -17,38 +17,46 @@ header {
   font-weight: var(--font-bold);
   color: var(--color-white);
   font-size: 15px;
-  width: 80%; height: 50px;
+  width: 80%;
+  height: 50px;
   border-radius: 25px;
   margin: 20px auto;
   padding: 0 10px;
   border: 1px solid rgba(254, 241, 195, 0.5);
   position: fixed;
-  top: 0; left: 50%;
+  top: 0;
+  left: 50%;
   transform: translateX(-50%);
   transition: .4s;
   z-index: 999;
 }
+
 header .logo a img {
   display: none;
 }
+
 header .global-menu {
   height: 100%;
   display: flex;
   justify-content: center;
 }
+
 header .global-menu li {
   width: calc(100% / 3);
 }
+
 header .global-menu li a {
   display: block;
-  height: 50px; line-height: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   opacity: 0.5;
 }
 
 /***** 스크롤시 header 변경 *****/
-header.active{
-  margin: 0; padding: 0 20px;
+header.active {
+  margin: 0;
+  padding: 0 20px;
   width: 100%;
   border-radius: 0;
   background-color: #fff;
@@ -62,14 +70,17 @@ header.active{
   align-items: center;
   justify-content: space-between;
 }
+
 header.active .logo a img {
   display: block;
 }
+
 header.active .global-menu li {
   margin: 0 10px;
 }
+
 header.active img {
-  width: 80px; 
+  width: 80px;
 }
 
 /***** footer *****/
@@ -77,6 +88,7 @@ footer {
   font-family: var(--font-m-ko);
   margin: 50px 30px;
 }
+
 /*- contact -*/
 footer .contact-wrapper {
   width: 100%;
@@ -86,6 +98,7 @@ footer .contact-wrapper {
   background: url(../../images/footer-grid.png) no-repeat 50% / cover, url(../../images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
   position: relative;
 }
+
 footer .contact-wrapper .footer-contact {
   font-family: var(--font-m-en);
   color: var(--color-white);
@@ -94,6 +107,7 @@ footer .contact-wrapper .footer-contact {
   padding-top: 200px;
   line-height: 1.5;
 }
+
 /*- 말풍선 박스 -*/
 footer .contact-wrapper .contact-box {
   text-align: center;
@@ -103,21 +117,26 @@ footer .contact-wrapper .contact-box {
   padding: 20px 0px 30px;
   border-radius: 20px;
   position: absolute;
-  top: -30px; left: 50%;
+  top: -30px;
+  left: 50%;
   transform: translateX(-70%);
 }
+
 footer .contact-wrapper .contact-box::after {
   content: "";
   background-color: var(--color-footer);
   position: absolute;
-  bottom: -20px; right: 60px;
+  bottom: -20px;
+  right: 60px;
   border-top: solid 20px var(--color-footer);
   border-left: solid 50px var(--color-primary);
 }
+
 footer .contact-wrapper .contact-box .contact-num {
   font-size: 30px;
   font-family: var(--font-m-en);
 }
+
 footer .contact-wrapper .contact-box .contact-sub {
   font-size: 12px;
   font-weight: 300;
@@ -126,6 +145,7 @@ footer .contact-wrapper .contact-box .contact-sub {
   margin: 3px 25px 15px;
   background: url(../../images/footer-icon-call.svg) no-repeat 10%;
 }
+
 footer .contact-wrapper .contact-box .contact-btn {
   background-color: var(--color-white);
   color: var(--color-footer);
@@ -134,12 +154,14 @@ footer .contact-wrapper .contact-box .contact-btn {
   padding: 5px 30px;
   border-radius: 7px;
 }
+
 footer .contact-wrapper .contact-box img {
   position: absolute;
   top: 80px;
   left: 75%;
   z-index: 99;
 }
+
 /*- footer address -*/
 footer address {
   font-style: normal;
@@ -147,9 +169,11 @@ footer address {
   text-align: center;
   color: #888888;
 }
+
 footer address .address-list {
   font-size: 11px;
 }
+
 footer address .copy {
   font-size: 12px;
   font-weight: var(--font-bold);
@@ -177,6 +201,7 @@ footer address .copy {
   footer .contact-wrapper {
     width: 100%;
     height: 335px;
+    background: url(../../images/footer-grid.png) no-repeat 50% / 100%, url(../../images/footer-backgroud-lets-talk.png) no-repeat 50% 85% / contain, var(--color-primary);
   }
 
   footer .contact-wrapper .footer-contact {
@@ -187,11 +212,11 @@ footer address .copy {
 
   /*- 말풍선 박스 -*/
   footer .contact-wrapper .contact-box {
-    width: 230px;
-    height: 184px;
+    width: 250px;
+    height: 190px;
     padding: 15px 20px 20px;
     top: -70px;
-    left: 78%;
+    left: 80%;
     transform: translateX(-70%);
   }
 
@@ -199,7 +224,7 @@ footer address .copy {
     content: "";
     background-color: var(--color-footer);
     position: absolute;
-    bottom: -20px;
+    bottom: -19px;
     right: 60px;
     border-top: solid 20px var(--color-footer);
     border-left: solid 50px var(--color-primary);
@@ -208,7 +233,7 @@ footer address .copy {
 
   footer .contact-wrapper .contact-box .contact-num {
     font-size: 33px;
-    margin: 5px 0px 0px;
+    margin: 10px 0px 0px;
   }
 
   footer .contact-wrapper .contact-box .contact-sub {
@@ -225,8 +250,8 @@ footer address .copy {
 
   footer .contact-wrapper .contact-box img {
     position: absolute;
-    top: 140px;
-    left: 90%;
+    top: 120px;
+    left: 100%;
     z-index: 99;
   }
 
@@ -246,6 +271,7 @@ footer address .copy {
     display: flex;
     text-align: left;
   }
+
   footer address .address-list li:last-child {
     margin-left: 10px;
   }
