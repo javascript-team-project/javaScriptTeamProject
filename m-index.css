@@ -136,17 +136,16 @@
   text-indent: -9999px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: absolute;
   bottom: 10px;
   width: 100%;
-  background-color: violet;
 }
 .brand-intro-wrapper .slide-button li {
-  width: 15px; height: 15px;
+  width: 10px; height: 10px;
   background-color: #ddd;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 3px;
 }
 .brand-intro-wrapper .slide-button li.active {
   background-color: var(--color-primary);
@@ -154,23 +153,19 @@
 /*- 슬라이드 영역 -*/
 .brand-intro-wrapper .slide-wrapper {
   display: flex;
-  justify-content: space-evenly;
   align-items: flex-start;
   width: 400%;
   height: 100%;
   position: relative;
-  margin: 0 auto;
 }
 .brand-intro-wrapper .slide-wrapper .slide-item {
   margin: 0 30px;
 }
-
 /*- 릴리바이레드 소개 -*/
 .brand-intro-wrapper .slide-wrapper .lilyByRed-box {
   width: 100%;
   text-align: center;
   position: relative;
-  background-color: aquamarine;
 }
 .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
   margin: 70px 0 20px;
@@ -305,7 +300,7 @@
   max-width: 100%; 
   height: auto; 
   padding: 50px 0; 
-  overflow-x: hidden; 
+  overflow-x: hidden;
   overflow-y: hidden;
 }
 .event-wrapper .animated-box .animated-box-track {
@@ -356,12 +351,21 @@
   color: var(--color-white);
   background: url(./images/event-star.svg) no-repeat 40% 100% / 150px;
 }
+/*- 텍스트 하나씩 나열 -*/
 .event-wrapper .event-box .event-des {
   font-size: 12px;
   color: var(--color-white);
   font-weight: 200;
-  line-height: 2;
-  margin: 20px 0 50px;
+  /* line-height: 2; */
+  /* margin: 20px auto 50px; */
+  word-spacing: 2px;
+  overflow: hidden;
+  vertical-align: -webkit-baseline-middle;
+}
+.letter {
+  display: inline-block;
+  transform: translateY(100%);
+  animation: text-move .7s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 .event-wrapper .event-box .event-btn {
   color: var(--color-primary);
@@ -509,8 +513,7 @@
   max-width: 100%; 
   height: auto; 
   padding: 50px 0 100px; 
-  overflow-x: hidden; 
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .insta-animated-box .insta-animated-box-track {
   position: absolute; 
