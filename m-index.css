@@ -471,6 +471,7 @@
   border-radius: 30px;
   margin: 30px 0;
   border: 3px solid transparent;
+  transition: .4s;
 }
 /*- 마우스허버 이벤트 -*/
 .best-wrapper .best-list-box li:hover {

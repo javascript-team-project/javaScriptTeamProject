@@ -234,7 +234,6 @@ footer address .copy {
       right: 60px;
       border-top: solid 20px var(--color-footer);
       border-left: solid 50px var(--color-primary);
-      /* border-right: solid 0px var(--color-primary); */
     }
   
     footer .contact-wrapper .contact-box .contact-num {
