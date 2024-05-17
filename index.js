@@ -61,10 +61,12 @@ $('header .global-menu li').hover(
 );
 
 // 자동으로 브랜드 소개 넘겨지기
+/*
 const $slideBtns = $('.brand-intro-wrapper .slide-button li');
 let currentIdx = 0;
 const $slides = $('.slide-wrapper .slide-item');
 const slideCount = $slides.length;
+*/
 
 // 페이지네이션
 $slideBtns.on('click', (e) => {

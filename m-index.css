@@ -291,6 +291,8 @@
 .event-wrapper {
   margin: 100px 0;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 /*- 움직이는 텍스트 -*/
 .event-wrapper .animated-box {
@@ -299,7 +301,7 @@
   max-width: 100%; 
   height: auto; 
   padding: 50px 0; 
-  overflow-x: hidden;
+  overflow-x: hidden; 
   overflow-y: hidden;
 }
 .event-wrapper .animated-box .animated-box-track {

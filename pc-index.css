@@ -29,7 +29,7 @@
         width: 45%;
     }
     .main-page-wrapper .brand-name-box .title-box .title-front {
-        top: 53%;
+        top: 57%;
         width: 50%;
     }
     /*- 릴리바이레드 핑크색 -*/
@@ -45,16 +45,16 @@
     .main-page-wrapper .brand-name-box::before {
         position: absolute;
         font-size: 28px;
-        left: 15%; top: 13%;
+        left: 16%; top: 11%;
         transform: rotate(-35deg);
-        width: 1000px; height: 4.5vh;
+        width: 800px; height: 4.5vh;
         line-height: 3.5vh;
     }
     /*- 릴리!체키!샤시! -*/
     .main-page-wrapper .brand-name-box .main-intro {
         font-size: 45px;
         position: absolute;
-        top: 60%;
+        top: 65%;
     }
     /*- main-imgs -*/
     .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
@@ -63,18 +63,19 @@
     }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
         width: 13%;
-        right: 8%; top: 36%;
+        right: 8%; top: 34%;
     }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
-        width: 30%;
-        left: 2%;
+        width: 28%;
+        left: 7%;
     }
     /***** brand-intro  *****/
     .brand-intro-wrapper {
         margin: 130px auto;
         min-width: 1200px;
         max-width: 2000px;
-        width: 660px;
+        height: 100%; width: 80%;
+        overflow: unset;
     }
     /*- 버튼 비활성화 -*/
     .brand-intro-wrapper .slide-button {
@@ -85,15 +86,17 @@
         display: grid;
         justify-content: center;
         margin: 0 auto;
-        width: 100%;
+        width: 100%; height: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        gap: 40px;
     }
     /*- 릴리바이레드 소개 -*/
-    .slide-wrapper .lilyByRed-box {
-        padding: 60px;
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box {
+        /* padding: 60px; */
         grid-row: 1 / 4;
         grid-column: 1;
+        margin: 0;
     }
     .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
         width: 170px;
@@ -111,19 +114,62 @@
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img {
         width: 100%;
     }
-    /* 여기부터 이어서 작업하기 */
     .brand-intro-wrapper .slide-wrapper .family-site-box .pc-brand-box {
         display: block;
         top: 0; left: 0;
     }
+    /*- 패밀리 사이트 소개 -*/
+    .brand-intro-wrapper .slide-wrapper .family-site-box {
+        padding: 0; margin: 0;
+        width: 100%;
+    }
+    .family-site-box .brand-intro {
+        text-align: left;
+        padding-left: 40px;
+    }
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo {
+        width: 25%;
+    }
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo img {
+        margin-top: 30px;
+    }
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des {
+        width: 70%;
+        text-align: left;
+        margin-bottom: 0;
+        word-break: keep-all;
+    }
 
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des span {
+        display: inline;
+    }
+    /* 바로가기 버튼 */
+    .brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand {
+        position: absolute;
+        top: 35%; right: 5%;
+        display: block;
+        padding: 0;
+        width: 50px; height: 50px;
+        border-radius: 50%;
+        text-indent: -9999px;
+        background: url(./images/brand_intro-icon-home.png) no-repeat 50%;
+    }
+    /* 모바일 요소 제거 */
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="heart-icon"],
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro-img-box img[alt="arrow-icon"]
+     {
+        display: none;
+    }
     /***** event *****/
     .event-wrapper {
         padding-top: 25px;    
     }
     /*- 움직이는 텍스트 -*/
+    .event-wrapper .animated-box {
+        padding: 75px 0;
+    }
     .event-wrapper .animated-box .animated-box-track .animated-content {
-        font-size: 80px;
+        font-size: 50px;
     }
     /*- 이벤트 내용 -*/
     .event-wrapper .event-box {
@@ -142,6 +188,46 @@
         top:10%; left: 10%;
         transform: rotate(-1deg);
     }
+    .event-wrapper .event-box .title {
+        font-size: var(--font-pc-lg);
+        width: 100%; height: 100%;
+        position: absolute;
+        top: 10%; left: -25%;
+        background: url(./images/event-star.svg) no-repeat 50% 26% /300px;
+    }
+    .event-wrapper .event-box .event-des {
+        font-size: var(--font-pc-md);
+        position: absolute;
+        top: 45%; left: 10%;
+    }
+    .event-wrapper .event-box .event-btn {
+        position: absolute;
+        top: 80%; left: 17%;
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    /* 이벤트 사진 */
+    .event-wrapper .event-box img {
+        position: absolute;
+        top: 10%; left: 78%;
+    }
+    /***** 유튜브 *****/
+    .youtube-wrapper {
+        margin: 0;
+        background: rgba(239, 118, 176,0.1);
+    }
+    .youtube-wrapper .edition-box {
+        display: flex;
+        /* margin: 0; */
+        justify-content: center;
+        width: 100%;
+    }
+    /*- 유튜브 박스 -*/
+    .youtube-wrapper .video-wrapper {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 70px;
+    } 
 
     /***** best seller *****/
     .best-wrapper .best-text-box .best-main-title {
@@ -149,10 +235,15 @@
     }
 
     /*- 제품 리스트 -*/
+    .best-wrapper {
+        min-width: 1200px; 
+        max-width: 2000px;
+    }
     .best-wrapper .best-list-box {
         display: flex;
         justify-content: space-evenly;
         gap: 20px;
+        margin: 0 60px;
     }
     .best-wrapper .best-list-box li {
         padding: 20px;
@@ -164,6 +255,26 @@
         font-size: var(--font-pc-sm);
         width: 230px; 
         margin: 0 auto;
-        word-wrap: break-word;
+        word-wrap: break-word 
+    }
+    
+    /***** 인스타 *****/
+    .insta-wrapper {
+        min-width: 1200px; max-width: 2000px;
+    }
+    .insta-wrapper .insta-text-box {
+        margin-bottom: 60px;
+    }
+    .insta-wrapper .insta-img-box {
+        display: flex;
+        border-radius: 0;
+    }
+    /*- 움직이는 텍스트 -*/
+    .insta-animated-box {
+        padding: 90px 0 135px 0;
+    }
+    .insta-animated-box .insta-animated-box-track .insta-animated-content {
+        font-size: 80px;
+        -webkit-text-stroke: 2px var(--color-black)
     }
 }
