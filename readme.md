@@ -28,3 +28,6 @@ github organization 생성.</br>
  서브페이지 brand html, css 작업 완료<br>
  서브페이지 community html,css 작업중<br>
  svg가 그려지는 효과 학습 후 적용을 목표로 함.
+
+***svg가 그려지는 효과***
+stroke-dasharray: 선을 대쉬 형태로 만듦
