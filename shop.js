@@ -1,22 +1,10 @@
-
-/*
-$(function () {
-  $('.btn-arrange > li').on({
-    'mouseenter': (e) => {
-      $('.btn-arrange > ul').stop().slideDown();
-    },
-    'mouseleave': () => {
-    $('.btn-arrange > ul').stop().slideUp();
-  }
-  })
-});
-*/
+// 상품 배치 드롭다운 메뉴 (작동안됨)
 
 document.addEventListener('DOMContentLoaded', function () {
-  const newProduct = document.getElementById('new-product');
-  const categoryMenu = document.querySelector('.category');
+  const btnArrange = document.querySelector('.btn-arrange');
+  const categoryMenu = btnArrange.querySelector('.category');
 
-  newProduct.addEventListener('click', function () {
+  btnArrange.addEventListener('click', function () {
     categoryMenu.classList.toggle('show');
   });
 });

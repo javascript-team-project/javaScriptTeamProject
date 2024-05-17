@@ -25,9 +25,10 @@
   <link rel="stylesheet" href="./pc-shop.css">
   <!-- jQuery -->
   <script src="./assets/style/jquery-3.7.1.min.js"></script>
+  <!-- 공통으로 사용되는 js -->
+  <script defer src="./assets/style/index.js"></script>
+  <!-- page 별 사용되는 js -->
   <link rel="stylesheet" href="./shop.js">
-    <!-- 공통으로 사용되는 js -->
-    <script defer src="./assets/style/index.js"></script>
 </head>
 
 <body>
@@ -60,7 +61,7 @@
       </div>
       <div class="main-btn">
         <ul class="btn-arrange">
-          <li id="new-product">신상품
+          <li>신상품
             <ul class="category">
               <li class="active">신상품</li>
               <li>상품명</li>
@@ -77,7 +78,8 @@
       </div>
       <ul class="product">
         <li class="product-box">
-          <img src="./images/sub-shop/romentictint.jpg" alt="img1">
+          <img src="./images/sub-shop/romentictint.jpg" alt="img1" class="main-img">
+          <img src="./images/sub-shop/romentictint-hover.jpg" alt="hoverimg1" class="hover-img">
           <h3>[회원only] 릴리바이레드 로맨틱 라이어 무스 틴트</h3>
           <p>51% <strong>4,900원</strong> <span>10,000원</span></p>
         </li>
@@ -132,7 +134,8 @@
           <p>46% <strong>5,900원</strong> <span>11,000원</span></p>
         </li>
         <li class="product-box">
-          <img src="./images/sub-shop/fixingtint.jpg" alt="img12">
+          <img src="./images/sub-shop/fixingtint.jpg" alt="img12" class="main-img">
+          <img src="./images/sub-shop/fixingtint-hover.jpg" alt="hoverimg2" class="hover-img">
           <h3>[회원only] 릴리바이레드 글래시 레이어 픽싱 틴트</h3>
           <p>58% <strong>5,000원</strong> <span>12,000원</span></p>
         </li>

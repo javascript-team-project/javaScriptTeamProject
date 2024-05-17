@@ -75,6 +75,7 @@
         min-width: 1200px;
         max-width: 2000px;
         height: 100%; width: 80%;
+        overflow: unset;
     }
     /*- 버튼 비활성화 -*/
     .brand-intro-wrapper .slide-button {
@@ -91,10 +92,11 @@
         gap: 40px;
     }
     /*- 릴리바이레드 소개 -*/
-    .slide-wrapper .lilyByRed-box {
-        padding: 60px;
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box {
+        /* padding: 60px; */
         grid-row: 1 / 4;
         grid-column: 1;
+        margin: 0;
     }
     .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
         width: 170px;
@@ -117,12 +119,13 @@
         top: 0; left: 0;
     }
     /*- 패밀리 사이트 소개 -*/
-    .family-site-box {
-        padding-left: 40px;
+    .brand-intro-wrapper .slide-wrapper .family-site-box {
+        padding: 0; margin: 0;
         width: 100%;
     }
     .family-site-box .brand-intro {
         text-align: left;
+        padding-left: 40px;
     }
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo {
         width: 25%;
@@ -131,9 +134,14 @@
         margin-top: 30px;
     }
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des {
-        width: 60%;
+        width: 70%;
         text-align: left;
         margin-bottom: 0;
+        word-break: keep-all;
+    }
+
+    .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des span {
+        display: inline;
     }
     /* 바로가기 버튼 */
     .brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand {

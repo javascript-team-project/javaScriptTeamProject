@@ -57,14 +57,18 @@ body {
     margin: 7px 22px 0px 0px;
 }
 
+/* 기본적으로 .category 목록을 숨김 */
 .sub-shop-wrapper .main-btn .btn-arrange li .category {
-    border: 1px solid #000;
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    /* border: 1px solid #000;
     background-color: white;
     width: 92px;
     height: 125px;
-    margin-top: 8px;
-
-    display: none;
+    margin-top: 8px; */
 }
 
 .sub-shop-wrapper .main-btn .btn-arrange li .category li {
@@ -81,11 +85,9 @@ body {
 }
 
 /* 드롭다운이 열렸을 때 표시 */
-.sub-shop-wrapper .main-btn .btn-arrange li .category.show {
+.sub-shop-wrapper .main-btn .btn-arrange li .category .show {
     display: block;
-  }
-
-
+}
 
 .sub-shop-wrapper .main-btn .btn-arr {
     width: 71px;
@@ -99,12 +101,16 @@ body {
     width: 34px;
     height: 34px;
     border: 1px solid #000;
+    display: grid;
+    align-items: center;
 }
 
 .sub-shop-wrapper .main-btn .btn-arr li:last-of-type {
     width: 34px;
     height: 34px;
     border: 1px solid #8d8d8d;
+    display: grid;
+    align-items: center;
 }
 
 .sub-shop-wrapper .main-btn .btn-arr li img {
@@ -217,3 +223,28 @@ body {
     font-size: var(--font-m-sm);
     background: url(./images/arrow-white.png) no-repeat 80% 50% var(--color-primary);
 }
+
+/* 상품 이미지 hover */
+
+/* 기본적으로 .hover-img 숨김 */
+.product-box .hover-img {
+    display: none;
+  }
+  
+  /* 마우스를 올렸을 때 이미지 교체 */
+  .product-box:hover .main-img {
+    display: none;
+  }
+  
+  .product-box:hover .hover-img {
+    display: block;
+  }
+  
+  .product-box {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .product-box img {
+    width: 100%;
+  }
