@@ -35,13 +35,48 @@ body {
 
 .sub-shop-wrapper .main-btn {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
 }
 
-.sub-shop-wrapper .main-btn .btn-arrange {}
+.sub-shop-wrapper .main-btn .btn-arrange {
+    width: 92px;
+    height: 32px;
+    margin-left: 30px;
+    border: 1px solid #000;
+    background: url(./images/arrow.png) no-repeat 80% 50%;
+    z-index: 999;
+    background-color: #fff;
+}
 
-.sub-shop-wrapper .main-btn .btn-arr {}
+.sub-shop-wrapper .main-btn .btn-arrange li {
+    font-size: 11px;
+    font-weight: 400;
+    margin: 7px 22px 0px 0px;
+}
+
+.sub-shop-wrapper .main-btn .btn-arr {
+    width: 71px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.sub-shop-wrapper .main-btn .btn-arr li {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #000;
+}
+.sub-shop-wrapper .main-btn .btn-arr li:last-of-type {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #8d8d8d;
+}
+.sub-shop-wrapper .main-btn .btn-arr li img {
+    margin: 0px auto;
+}
 
 .sub-shop-wrapper .product {
     text-align: left;
@@ -129,10 +164,9 @@ body {
 .sub-shop-wrapper .more-btn {
     color: #fff;
     background-color: var(--color-primary);
-    padding: 12px 40px;
+    padding: 12px 50px 12px 30px;
     border-radius: 50px;
     font-weight: 400;
     font-size: var(--font-m-sm);
-    /* background: url();  */
-    /* 화살표 아이콘 */
+    background: url(./images/arrow-white.png) no-repeat 80% 50% var(--color-primary);
 }
