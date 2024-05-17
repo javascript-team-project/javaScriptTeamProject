@@ -98,6 +98,13 @@
         grid-column: 1;
         margin: 0;
     }
+    .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img {
+        /* display: none; */
+    }
+    /* .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .pc-brand-box {
+        display: block;
+        position: absolute;
+    } */
     .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro li .brand-logo img {
         width: 170px;
     }
