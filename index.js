@@ -15,6 +15,8 @@ $(window).on('scroll', () => {
   // 스크롤이 이벤트 박스에 도착했을 때 텍스트 하나씩 나열
   const eventHt = $('.brand-intro-wrapper').offset().top * 0.9;
   if (scrollY > eventHt) {
+    $('.event-wrapper .event-box .event-title').addClass('scroll');
+
     const waveElements = document.querySelectorAll(".wave-text");
 
     let delay = 0;
@@ -32,6 +34,8 @@ $(window).on('scroll', () => {
         wave.appendChild(span);
       });
     });
+  } else {
+    $('.event-wrapper .event-box .event-title').removeClass('scroll');
   }
 });
 
