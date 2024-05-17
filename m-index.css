@@ -300,6 +300,8 @@
   max-width: 100%; 
   height: auto; 
   padding: 50px 0; 
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .event-wrapper .animated-box .animated-box-track {
   position: absolute; 
@@ -349,14 +351,21 @@
   color: var(--color-white);
   background: url(./images/event-star.svg) no-repeat 40% 100% / 150px;
 }
+/*- 텍스트 하나씩 나열 -*/
 .event-wrapper .event-box .event-des {
   font-size: 12px;
   color: var(--color-white);
   font-weight: 200;
-  line-height: 2;
-  margin: 20px 0 50px;
+  /* line-height: 2; */
+  /* margin: 20px auto 50px; */
   word-spacing: 2px;
   overflow: hidden;
+  vertical-align: -webkit-baseline-middle;
+}
+.letter {
+  display: inline-block;
+  transform: translateY(100%);
+  animation: text-move .7s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
 .event-wrapper .event-box .event-btn {
   color: var(--color-primary);
@@ -504,6 +513,7 @@
   max-width: 100%; 
   height: auto; 
   padding: 50px 0 100px; 
+  overflow-x: hidden;
 }
 .insta-animated-box .insta-animated-box-track {
   position: absolute; 
@@ -517,9 +527,4 @@
   color: #fff;
   -webkit-text-stroke: 1px var(--color-black);
   font-size: 36px;
-}
-.letter {
-  display: inline-block;
-  transform: translateY(100%);
-  animation: text-move .7s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }

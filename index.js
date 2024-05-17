@@ -36,19 +36,15 @@ $('header .global-menu li').hover(
 
 // 브랜드 소개 중 릴리바이레드 텍스트 하나씩 나열
 const wave = document.querySelector(".wave-text");
-    const text = wave.textContent;
 
-    wave.innerHTML = "";
-
-    text.split("").forEach((letter, idx) => {
-      const span = document.createElement("span");
-      span.textContent = letter;
-      if (letter !== " ") {
-        span.style.animationDelay = `${idx * 50}ms`;
-        span.classList.add("letter");
-      }
-      wave.appendChild(span);
-    });
+wave.innerHTML = wave.textContent
+  .split("")
+  .map((letter, idx) => {
+    if (letter === " ") return " ";
+    return `<p style="animation-delay:${idx * 50
+      }ms" class="letter event-des">${letter}</p>`;
+  })
+  .join("");
 
 // 자동으로 브랜드 소개 넘겨지기
 const $slideBtn = $('.brand-intro-wrapper .slide-button li');
