@@ -173,44 +173,16 @@
     }
     /*- 이벤트 내용 -*/
     .event-wrapper .event-box {
-        width: 80vw;
-        min-width: 1200px;
-        max-width: none;
-        height: 62vh;
+        min-width: 1200px; max-width: 2000px;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        position: inherit;
     }
     .event-wrapper .event-box .event-title {
-        width: 35%;
-        font-size: 35px;
-        position: absolute;
-        top: 3%;left: 25%;
+        position: inherit;
     }
-    .event-wrapper .event-box .front {
-        top:10%; left: 10%;
-        transform: rotate(-1deg);
-    }
-    .event-wrapper .event-box .title {
-        font-size: var(--font-pc-lg);
-        width: 100%; height: 100%;
-        position: absolute;
-        top: 10%; left: -25%;
-        background: url(./images/event-star.svg) no-repeat 50% 26% /300px;
-    }
-    .event-wrapper .event-box .event-des {
-        font-size: var(--font-pc-md);
-        position: absolute;
-        top: 45%; left: 10%;
-    }
-    .event-wrapper .event-box .event-btn {
-        position: absolute;
-        top: 80%; left: 17%;
-        font-size: 14px;
-        padding: 10px 25px;
-    }
-    /* 이벤트 사진 */
-    .event-wrapper .event-box img {
-        position: absolute;
-        top: 10%; left: 78%;
-    }
+
     /***** 유튜브 *****/
     .youtube-wrapper {
         margin: 0;

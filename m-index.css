@@ -109,7 +109,7 @@
 .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
   width: 50px;
   top: 20%; right: 15%;
-  animation: mobile-glitter 1.5s linear infinite;
+  animation: glitter 1.5s linear infinite;
 }
 .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
   width: 110px;
@@ -295,8 +295,6 @@
 .event-wrapper {
   margin: 100px 0;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 /*- 움직이는 텍스트 -*/
 .event-wrapper .animated-box {
@@ -414,6 +412,17 @@
   font-size: var(--font-m-xlg);
   color: var(--color-primary);
   font-weight: 900;
+  position: relative;
+}
+/*- svg 이벤트 -*/
+.youtube-wrapper .edition-box .edition-main-title .edition-arrow {
+  position: absolute;
+  left: 0; top: 0;
+}
+.youtube-wrapper .edition-box .edition-main-title .edition-arrow.edition-evnet {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: drawing 5s linear infinite;
 }
 .youtube-wrapper .edition-box .edition-des {
   margin: 20px 0;
@@ -422,12 +431,9 @@
 .youtube-wrapper .edition-img-box img {
   position: absolute;
 }
-.youtube-wrapper .edition-img-box img[alt="icon-arrow"] {
-  left: 0; top: 16%;
-  width: 70%;
-}
 .youtube-wrapper .edition-img-box img[alt="icon-star"] {
   top: 32%; left: 72%;
+  animation: glitter 1.5s linear infinite;
 }
 .youtube-wrapper .video-wrapper #player {
   width: 100%;

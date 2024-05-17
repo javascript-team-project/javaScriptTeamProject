@@ -3,9 +3,9 @@ $('a[href="#').on('click', (e) => {
   e.preventDefault();
 });
 
-// 스크롤 시 header 변경
+// 스크롤 이벤트
 $(window).on('scroll', () => {
-  // const mainHt = $('.main-page-wrapper').height();
+  // 스크롤시 헤더 변경
   if (scrollY > 100) {
     $('header').addClass('active');
   } else {
@@ -13,8 +13,8 @@ $(window).on('scroll', () => {
   }
 
   // 스크롤이 이벤트 박스에 도착했을 때 텍스트 하나씩 나열
-  const eventHt = $('.brand-intro-wrapper').offset().top * 0.9;
-  if (scrollY > eventHt) {
+  const brandHt = $('.brand-intro-wrapper').offset().top * 0.9;
+  if (scrollY > brandHt) {
     $('.event-wrapper .event-box .event-title').addClass('scroll');
 
     const waveElements = document.querySelectorAll(".wave-text");
@@ -36,6 +36,14 @@ $(window).on('scroll', () => {
     });
   } else {
     $('.event-wrapper .event-box .event-title').removeClass('scroll');
+  }
+
+  // lovecall edition에 스크롤 시 svg 차례대로 그려짐
+  const youtubeHt = $('.event-wrapper img').offset().top * 0.8;
+  if (scrollY > youtubeHt) {
+    $('.youtube-wrapper .edition-box .edition-main-title .edition-arrow').addClass('edition-evnet');
+  } else {
+    $('.youtube-wrapper .edition-box .edition-main-title .edition-arrow').removeClass('edition-evnet');
   }
 });
 
