@@ -470,6 +470,12 @@
   background-color: #FAFAFA;
   border-radius: 30px;
   margin: 30px 0;
+  border: 3px solid transparent;
+}
+/*- 마우스허버 이벤트 -*/
+.best-wrapper .best-list-box li:hover {
+  border: 3px solid #ddd;
+  transform: scale(1.1) rotate(-5deg);
 }
 .best-wrapper .best-list-box li:nth-child(even) .product-img {
   padding: 50px 0;
@@ -518,6 +524,10 @@
 }
 .insta-img-box img {
   width: 100%;
+}
+/*- 마우스 허버 이벤트 -*/
+.insta-img-box img:hover {
+  opacity: 0.7;
 }
 
 /***** 하단 움직이는 텍스트 *****/

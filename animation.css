@@ -45,10 +45,6 @@
   0% { opacity: 0; } 
   100% { opacity: 1; }
 }
-/* @keyframes mobile-glitter {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-} */
 
 /* 텍스트가 차레대로 나열되는 움직임 */
 @keyframes text-move {
