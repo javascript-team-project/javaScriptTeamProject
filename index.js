@@ -11,6 +11,28 @@ $(window).on('scroll', () => {
   } else {
     $('header').removeClass('active');
   }
+
+  // 스크롤이 이벤트 박스에 도착했을 때 텍스트 하나씩 나열
+  const eventHt = $('.brand-intro-wrapper').offset().top * 0.9;
+  if (scrollY > eventHt) {
+    const waveElements = document.querySelectorAll(".wave-text");
+
+    let delay = 0;
+    waveElements.forEach((wave) => {
+      const text = wave.textContent;
+      wave.innerHTML = "";
+      text.split("").forEach((letter) => {
+        const span = document.createElement("span");
+        span.textContent = letter;
+        if (letter !== " ") {
+          span.style.animationDelay = `${delay}ms`;
+          span.classList.add("letter");
+          delay += 40; // 각 문자당 50ms 딜레이
+        }
+        wave.appendChild(span);
+      });
+    });
+  }
 });
 
 // 로고 클릭 시 페이지 맨 위로 이동
@@ -24,56 +46,45 @@ $('header .logo a[href="#"]').on('click', (e) => {
 
 // header에 마우스 허버시 svg 그려지고, 'a'의 투명도 1
 $('header .global-menu li').hover(
-  function() {
+  function () {
     $(this).find('a').css('opacity', 1);
     $(this).find('svg').addClass('event');
   },
-  function() {
+  function () {
     $(this).find('a').css('opacity', '');
     $(this).find('svg').removeClass('event');
   }
 );
 
-// 브랜드 소개 중 릴리바이레드 텍스트 하나씩 나열
-const wave = document.querySelector(".wave-text");
-
-wave.innerHTML = wave.textContent
-  .split("")
-  .map((letter, idx) => {
-    if (letter === " ") return " ";
-    return `<p style="animation-delay:${idx * 50
-      }ms" class="letter event-des">${letter}</p>`;
-  })
-  .join("");
-
 // 자동으로 브랜드 소개 넘겨지기
-const $slideBtn = $('.brand-intro-wrapper .slide-button li');
+const $slideBtns = $('.brand-intro-wrapper .slide-button li');
 let currentIdx = 0;
+const $slides = $('.slide-wrapper .slide-item');
+const slideCount = $slides.length;
 
-// pagenation
-$slideBtn.on('click', (e) => {
-  const idx = $(e.target).index();
+// 페이지네이션
+$slideBtns.on('click', (e) => {
+  const $target = $(e.target);
+  const idx = $target.index();
 
   $('.slide-wrapper').stop().animate({
-    marginLeft : -100 * idx + '%'
+    marginLeft: -100 * idx + '%'
   }, 700);
 
-  $slideBtn.removeClass('active');
-  $(e.target).addClass('active');
+  $slideBtns.removeClass('active');
+  $target.addClass('active');
 
   currentIdx = idx;
 });
 
 const autoSlide = () => {
-  currentIdx = (currentIdx + 1) % $('.slide-wrapper .slide-item').length;
+  currentIdx = (currentIdx + 1) % slideCount;
 
   $('.slide-wrapper').stop().animate({
-    marginLeft : -100 * currentIdx + '%'
+    marginLeft: -100 * currentIdx + '%'
   }, 700);
 
-  $('.brand-intro-wrapper .slide-button li').eq(currentIdx).addClass('active').siblings().removeClass('active');
-}
+  $slideBtns.eq(currentIdx).addClass('active').siblings().removeClass('active');
+};
 
-// let mainSlide = setInterval(autoSlide, 3000);
-
-
+let mainSlide = setInterval(autoSlide, 3000);

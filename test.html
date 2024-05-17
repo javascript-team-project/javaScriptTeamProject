@@ -58,9 +58,7 @@
     @keyframes text-move {
       0% {
         transform: translateY(100%);
-      }
-
-      100% {
+      } 100% {
         transform: translateY(0);
       }
     }
@@ -68,41 +66,48 @@
 </head>
 
 <body>
-  <!-- 이벤트 내용 -->
-  <div class="event-box">
-    <h2 class="event-title front">Lily Happy Station</h2>
-    <h2 class="event-title back">Lily Happy Station</h2>
-    <h3 class="title">NOTICE</h3>
-    <p class="event-des wave">증정품은 당사의 사정에 따라 변경될 수 있습니다.<br>
-      쿠폰 사용 후 주문 취소시 유효기간 내에만 재발급 됩니다.<br>
-      쿠폰은 직접 다운로드 후 사용하실 수 있습니다.<br>
-      쿠폰 간 중복사용, 쿠폰&적립금 사용 불가합니다.<br>
-      일부 품목엔 쿠폰 사용 불가합니다.</p>
-    <a href="#" class="event-btn">이벤트 페이지 바로가기</a>
-    <!-- 이벤트 사진 -->
-    <img src="./images/pc-event-img.png" alt="event-img">
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wave Effect</title>
+  <style>
+    .letter {
+      display: inline-block;
+      animation: wave 1s infinite;
+    }
 
-  <h2 class="title wave">
-    Reveal Animation
-  </h2>
-
-  <script>
-    const wave = document.querySelector(".wave");
-    const text = wave.textContent;
-
-    wave.innerHTML = "";
-
-    text.split("").forEach((letter, idx) => {
-      const span = document.createElement("span");
-      span.textContent = letter;
-      if (letter !== " ") {
-        span.style.animationDelay = `${idx * 50}ms`;
-        span.classList.add("letter");
+    @keyframes wave {
+      0%, 100% {
+        transform: translateY(0);
       }
-      wave.appendChild(span);
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="event-des">
+    <p class="wave-text">증정품은 당사의 사정에 따라 변경될 수 있습니다.</p>
+    <p class="wave-text">쿠폰 사용 후 주문 취소시 유효기간 내에만 재발급 됩니다.</p>
+    <p class="wave-text">쿠폰은 직접 다운로드 후 사용하실 수 있습니다.</p>
+    <p class="wave-text">쿠폰 간 중복사용, 쿠폰&적립금 사용 불가합니다.</p>
+    <p class="wave-text">일부 품목엔 쿠폰 사용 불가합니다.</p>
+  </div>
+  
+  <script>
+    document.querySelectorAll(".wave-text").forEach((wave, waveIdx) => {
+      const text = wave.textContent;
+      wave.innerHTML = text.split("").map((letter, idx) => {
+        if (letter === " ") return " ";
+        return `<span style="animation-delay:${(waveIdx + idx) * 7}ms" class="letter">${letter}</span>`;
+      }).join("");
     });
   </script>
+</body>
+</html>
 </body>
 
 </html>
