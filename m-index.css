@@ -185,6 +185,10 @@
 .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img {
   position: absolute;
 }
+/*- 릴리바이레드 pc용 box -*/
+.brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .pc-brand-box {
+  display: none;
+} 
 .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-box {
   width: 100%;
   top: 0; left: 0;
