@@ -1,9 +1,4 @@
 @charset "utf-8";
-/* 움직이는 텍스트 */
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
-}
 
 /* 격자무늬 움직임 */
 @keyframes grid-move {
@@ -35,6 +30,18 @@
 @keyframes mobile-glitter {
   0% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* 텍스트가 차레대로 나열되는 움직임 */
+@keyframes text-move {
+  0% { transform: translateY(100%); } 
+  100% { transform: translateY(0); }
+}
+
+/* 가로로 흐르는 텍스트 */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 /***** tablet *****/

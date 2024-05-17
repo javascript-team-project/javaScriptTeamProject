@@ -24,78 +24,85 @@
   <link rel="stylesheet" href="./animation.css">
   <!-- jQuery -->
   <script src="./assets/style/jquery-3.7.1.min.js"></script>
+  <script src="../assets/jquery-ui.min.js"></script>
   <!-- 공통으로 사용되는 js -->
   <script defer src="./assets/style/index.js"></script>
   <style>
-    svg {
-      stroke-dasharray: 500;
-      stroke-dashoffset: 500;
-      animation: drawing 5s linear infinite;
-      /* position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); */
+    /* * {
+      box-sizing: border-box;
     }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } */
 
     .wave {
-      stroke-dasharray: 500;
-      stroke-dashoffset: 500;
-      animation: ani 5s linear infinite;
+      word-spacing: 2px;
+      overflow: hidden;
     }
 
-    @keyframes drawing {
+    /* .title {
+      margin: 0;
+      font-size: 2.5rem;
+    } */
+
+    .letter {
+      display: inline-block;
+      transform: translateY(100%);
+      animation: text-move .7s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    }
+
+    @keyframes text-move {
       0% {
-        stroke-dashoffset: 500;
-      } 50% {
-        stroke-dashoffset: 0;
-      } 100% {
-        stroke-dashoffset: -500;
+        transform: translateY(100%);
+      }
+
+      100% {
+        transform: translateY(0);
       }
     }
   </style>
 </head>
 
 <body>
-  <!-- header -->
-  <header>
-    <p class="logo">
-      <a href="#"><img src="./images/brand_intro-logo-lilybyred.png" alt="logo-img"></a>
-    </p>
-    <ul class="global-menu">
-      <li><a href="./shop.html">shop</a>
-        <svg width="116" height="55" viewBox="0 0 116 55" fill="none" xmlns="http://www.w3.org/2000/svg"
-          class="shop-circle">
-          <path
-            d="M65.1811 11.2147C48.2593 7.94225 29.9484 11.3671 15.7344 20.4589C11.2292 23.3395 6.69271 28.0342 8.34878 32.8667C9.93421 37.4598 16.0091 39.0053 21.1735 39.6874C47.2469 43.1267 73.901 42.7276 99.8409 38.5046C103.71 37.8734 108.372 36.4149 108.945 32.8232C109.581 28.7961 104.542 26.2057 100.351 24.9504C73.8147 17.0123 45.9204 12.9489 18.0262 12.9417"
-            stroke="#000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
-            class="shop-circle-path"></path>
-        </svg>
-      </li>
-      <li><a href="./brand.html">brand</a>
-        <svg width="87" height="55" viewBox="0 0 87 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="wave">
-          <path
-            d="M12.0571 46.3168C11.9751 45.0043 11.901 43.625 12.4436 42.4304C12.9862 41.2358 14.3721 40.3124 15.6019 40.7525C18.3073 41.7192 16.8824 47.0438 19.6229 47.9044C21.5514 48.5096 22.992 46.1203 23.5503 44.1634C24.1046 42.2104 25.2406 39.7504 27.2395 40.0216C30.6632 40.4892 29.4764 47.7865 32.9314 47.8219C34.6998 47.8415 35.5821 45.7117 35.9452 43.9708C36.3083 42.23 37.0344 40.0884 38.7951 39.9194C42.211 39.5972 42.0704 46.6705 45.4942 46.8591C49.1482 47.0595 48.9843 39.3417 52.6384 39.5029C56.0035 39.6522 56.2417 46.5644 59.56 45.9749C62.3825 45.472 61.5432 40.2849 64.19 39.1767C65.6228 38.5755 67.2273 39.605 68.215 40.8114C69.2027 42.0178 69.9679 43.4914 71.3186 44.2616C72.6694 45.0318 74.879 44.5013 75 42.9413"
-            stroke="#000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
-            class="wave-path"></path>
-        </svg>
-      </li>
-      <li><a href="./community.html">community</a>
-        <svg width="116" height="55" viewBox="0 0 116 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle">
-          <path
-            d="M65.1811 11.2147C48.2593 7.94225 29.9484 11.3671 15.7344 20.4589C11.2292 23.3395 6.69271 28.0342 8.34878 32.8667C9.93421 37.4598 16.0091 39.0053 21.1735 39.6874C47.2469 43.1267 73.901 42.7276 99.8409 38.5046C103.71 37.8734 108.372 36.4149 108.945 32.8232C109.581 28.7961 104.542 26.2057 100.351 24.9504C73.8147 17.0123 45.9204 12.9489 18.0262 12.9417"
-            stroke="#000" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"
-            class="circle-path"></path>
-        </svg>
-      </li>
-    </ul>
-  </header>
-  <!-- <svg width="116" height="55" viewBox="0 0 116 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="circle">
-    <path d="M65.1811 11.2147C48.2593 7.94225 29.9484 11.3671 15.7344 20.4589C11.2292 23.3395 6.69271 28.0342 8.34878 32.8667C9.93421 37.4598 16.0091 39.0053 21.1735 39.6874C47.2469 43.1267 73.901 42.7276 99.8409 38.5046C103.71 37.8734 108.372 36.4149 108.945 32.8232C109.581 28.7961 104.542 26.2057 100.351 24.9504C73.8147 17.0123 45.9204 12.9489 18.0262 12.9417" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="circle-path"></path>
-</svg> -->
+  <!-- 이벤트 내용 -->
+  <div class="event-box">
+    <h2 class="event-title front">Lily Happy Station</h2>
+    <h2 class="event-title back">Lily Happy Station</h2>
+    <h3 class="title">NOTICE</h3>
+    <p class="event-des wave">증정품은 당사의 사정에 따라 변경될 수 있습니다.<br>
+      쿠폰 사용 후 주문 취소시 유효기간 내에만 재발급 됩니다.<br>
+      쿠폰은 직접 다운로드 후 사용하실 수 있습니다.<br>
+      쿠폰 간 중복사용, 쿠폰&적립금 사용 불가합니다.<br>
+      일부 품목엔 쿠폰 사용 불가합니다.</p>
+    <a href="#" class="event-btn">이벤트 페이지 바로가기</a>
+    <!-- 이벤트 사진 -->
+    <img src="./images/pc-event-img.png" alt="event-img">
+  </div>
 
-  <!-- <svg width="87" height="55" viewBox="0 0 87 55" fill="none" xmlns="http://www.w3.org/2000/svg" class="wave">
-  <path d="M12.0571 46.3168C11.9751 45.0043 11.901 43.625 12.4436 42.4304C12.9862 41.2358 14.3721 40.3124 15.6019 40.7525C18.3073 41.7192 16.8824 47.0438 19.6229 47.9044C21.5514 48.5096 22.992 46.1203 23.5503 44.1634C24.1046 42.2104 25.2406 39.7504 27.2395 40.0216C30.6632 40.4892 29.4764 47.7865 32.9314 47.8219C34.6998 47.8415 35.5821 45.7117 35.9452 43.9708C36.3083 42.23 37.0344 40.0884 38.7951 39.9194C42.211 39.5972 42.0704 46.6705 45.4942 46.8591C49.1482 47.0595 48.9843 39.3417 52.6384 39.5029C56.0035 39.6522 56.2417 46.5644 59.56 45.9749C62.3825 45.472 61.5432 40.2849 64.19 39.1767C65.6228 38.5755 67.2273 39.605 68.215 40.8114C69.2027 42.0178 69.9679 43.4914 71.3186 44.2616C72.6694 45.0318 74.879 44.5013 75 42.9413" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" class="wave-path"></path>
-</svg> -->
+  <h2 class="title wave">
+    Reveal Animation
+  </h2>
+
+  <script>
+    const wave = document.querySelector(".wave");
+    const text = wave.textContent;
+
+    wave.innerHTML = "";
+
+    text.split("").forEach((letter, idx) => {
+      const span = document.createElement("span");
+      span.textContent = letter;
+      if (letter !== " ") {
+        span.style.animationDelay = `${idx * 50}ms`;
+        span.classList.add("letter");
+      }
+      wave.appendChild(span);
+    });
+  </script>
 </body>
 
 </html>

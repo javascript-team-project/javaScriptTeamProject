@@ -25,8 +25,9 @@
   <link rel="stylesheet" href="./pc-shop.css">
   <!-- jQuery -->
   <script src="./assets/style/jquery-3.7.1.min.js"></script>
-  <!-- 공통으로 사용되는 js -->
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="./shop.js">
+    <!-- 공통으로 사용되는 js -->
+    <script defer src="./assets/style/index.js"></script>
 </head>
 
 <body>
@@ -59,11 +60,15 @@
       </div>
       <div class="main-btn">
         <ul class="btn-arrange">
-          <li class="btn-active">신상품</li>
-          <li>상품명</li>
-          <li>낮은가격</li>
-          <li>높은가격</li>
-          <li>사용후기</li>
+          <li id="new-product">신상품
+            <ul class="category">
+              <li class="active">신상품</li>
+              <li>상품명</li>
+              <li>낮은가격</li>
+              <li>높은가격</li>
+              <li>사용후기</li>
+            </ul>
+          </li>
         </ul>
         <ul class="btn-arr">
           <li><img src="./images/shop-icon-2.png" alt="shop icon 1"></li>
