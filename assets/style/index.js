@@ -9,7 +9,7 @@ $(window).on('scroll', () => {
 });
 
 // 로고 클릭 시 페이지 맨 위로 이동
-$('header .logo a').on('click', (e) => {
+$('header .logo a[href="#"]').on('click', (e) => {
   e.preventDefault();
   scrollTo({
     top: 0,

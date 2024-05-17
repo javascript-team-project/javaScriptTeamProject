@@ -49,6 +49,7 @@ header .global-menu li svg {
   top: 0; left: 50%;
   transform: translateX(-50%);
   display: none;
+  z-index: -99;
 }
   /*- svg 나타남 -*/
   header .global-menu li svg.event {
