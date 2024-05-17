@@ -195,6 +195,9 @@ body {
 .sub-shop-wrapper .hidden {
     display: none;
 }
+.sub-shop-wrapper .hidden.show-list {
+    display: block;
+}
 
 .product {
     list-style: none;
