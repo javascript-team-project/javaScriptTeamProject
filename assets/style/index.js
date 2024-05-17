@@ -1,3 +1,8 @@
+// a 요소가 가지고 있는 기본 이벤트 제거
+$('a[href="#').on('click', (e) => {
+  e.preventDefault();
+});
+
 // 스크롤 시 header 변경
 $(window).on('scroll', () => {
   // const mainHt = $('.main-page-wrapper').height();
