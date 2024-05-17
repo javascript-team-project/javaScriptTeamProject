@@ -6,6 +6,20 @@
   100% { background-position: 500px 500px; }
 }
 
+/* 반짝반짝 */
+@keyframes glitter {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* brand-intro-lilybyred 데코 이미지 움직임 */
+@keyframes brand-mov {
+  0%, 100% {
+    transform: translateY(5px);
+  } 50% {
+    transform: translateY(0);
+  }
+}
+
 /* svg 차례대로 움직임 */
 @keyframes drawing {
   0% {
@@ -31,10 +45,10 @@
   0% { opacity: 0; } 
   100% { opacity: 1; }
 }
-@keyframes mobile-glitter {
+/* @keyframes mobile-glitter {
   0% { opacity: 0; }
   100% { opacity: 1; }
-}
+} */
 
 /* 텍스트가 차레대로 나열되는 움직임 */
 @keyframes text-move {
@@ -52,18 +66,4 @@
 @media (min-width: 834px) {}
 
 /***** pc *****/
-@media (min-width: 1200px) {
-  /* brand-intro-lilybured 반짝반짝 */
-  @keyframes glitter {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  /* brand-intro-lilybyred 데코 이미지 움직임 */
-  @keyframes brand-mov {
-    0%, 100% {
-      transform: translateY(5px);
-    } 50% {
-      transform: translateY(0);
-    }
-  }
-}
+@media (min-width: 1200px) {}
