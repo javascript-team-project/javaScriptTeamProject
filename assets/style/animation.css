@@ -11,6 +11,16 @@
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
+/*- 메인 이미지 움직임 -*/
+@keyframes main-img-mov {
+  0%, 100% {
+    transform: translateX(5px) rotate(-7deg);
+  } 50% {
+    transform: translateX(0) rotate(7deg);
+  }
+}
+
 /* brand-intro-lilybyred 데코 이미지 움직임 */
 @keyframes brand-mov {
   0%, 100% {

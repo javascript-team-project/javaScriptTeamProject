@@ -114,10 +114,12 @@
 .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
   width: 110px;
   top: 35%; right: -7%;
+  animation: main-img-mov infinite 1.5s linear;
 }
 .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
   width: 200px;
   top: 53%; left: -7%;
+  animation: main-img-mov infinite 1.5s linear;
 }
 
 /***** brand-intro / 사용자가 보는 slide 영역  *****/
@@ -128,7 +130,6 @@
   margin: 100px auto 0;
   position: relative;
   overflow: hidden;
-  /* background-color: aqua; */
 }
 /*- pagenation -*/
 .brand-intro-wrapper .slide-button {
@@ -139,7 +140,6 @@
   position: absolute;
   bottom: 0;
   width: 100%; height: 100%;
-  /* background-color: violet; */
 }
 .brand-intro-wrapper .slide-button li {
   width: 13px; height: 13px;
@@ -356,7 +356,7 @@
   padding-top: 150px;
   color: var(--color-white);
   background: url(./images/event-star.svg) no-repeat 50% 100% / 150px;
-  animation: mobile-glitter 1.5s linear infinite;
+  animation: glitter 1.5s linear infinite;
 }
 /*- 텍스트 하나씩 나열 -*/
 .event-wrapper .event-box .event-des {
@@ -522,6 +522,14 @@
   border-radius: 25px;
   overflow: hidden;
   gap: 5px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: .5s;
+}
+/*- 스크롤 시 이벤트 발생 -*/
+.insta-img-box.mov-img {
+  transform: translateY(0);
+  opacity: 1;
 }
 .insta-img-box img {
   width: 100%;

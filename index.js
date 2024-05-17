@@ -45,7 +45,28 @@ $(window).on('scroll', () => {
   } else {
     $('.youtube-wrapper .edition-box .edition-main-title .edition-arrow').removeClass('edition-evnet');
   }
+
 });
+
+// insta 스크롤 시 이미지 사진 아래에서 위로 나열
+// 작동 안됨 ㅠㅠ
+$(window).on('scroll', () => {
+  const bestHt = $('.best-wrapper').offset().top;
+  const windowHt = $(window).height();
+  const scrollY = $(window).scrollTop();
+
+  // 5분의 4 지점 계산
+  const triggerPoint = scrollY + windowHt * 0.8;
+
+  if (triggerPoint >= bestHt) {
+    $('.insta-img-box').addClass('mov-img');
+  } else {
+    $('.insta-img-box').removeClass('mov-img');
+  }
+});
+
+// 메인이미지 클릭 시 마우스 따라서 이동 
+
 
 // 로고 클릭 시 페이지 맨 위로 이동
 $('header .logo a[href="#"]').on('click', (e) => {
