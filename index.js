@@ -93,4 +93,4 @@ const autoSlide = () => {
   $slideBtns.eq(currentIdx).addClass('active').siblings().removeClass('active');
 };
 
-let mainSlide = setInterval(autoSlide, 3000);
+// let mainSlide = setInterval(autoSlide, 3000);

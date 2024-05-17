@@ -125,7 +125,7 @@
   max-width: 390px;
   width: 100%;
   height: 530px;
-  margin: 60px auto;
+  margin: 100px auto 0;
   position: relative;
   overflow: hidden;
   /* background-color: aqua; */
@@ -357,7 +357,8 @@
 .event-wrapper .event-box .title {
   padding-top: 150px;
   color: var(--color-white);
-  background: url(./images/event-star.svg) no-repeat 40% 100% / 150px;
+  background: url(./images/event-star.svg) no-repeat 50% 100% / 150px;
+  animation: mobile-glitter 1.5s linear infinite;
 }
 /*- 텍스트 하나씩 나열 -*/
 .event-wrapper .event-box .event-des {
