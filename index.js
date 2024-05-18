@@ -90,13 +90,13 @@ $('header .global-menu li').hover(
 );
 
 // 자동으로 브랜드 소개 넘겨지기
-const $slideBtns = $('.brand-intro-wrapper .slide-button li');
-let currentIdx = 0;
+const $slideBtns = $('.brand-intro-wrapper .slide-button li'); 
+let currentIdx = 0; // 현재 활성화된 슬라이드의 인덱스 추적
 const $slides = $('.slide-wrapper .slide-item');
 const slideCount = $slides.length;
 let mainSlide;
 
-// 페이지네이션
+// 사용자가 페이지네이션 버튼을 클릭할 때마다 해당 슬라이드로 이동
 $slideBtns.on('click', (e) => {
   const $target = $(e.target);
   const idx = $target.index();
@@ -110,7 +110,7 @@ $slideBtns.on('click', (e) => {
 
   currentIdx = idx;
 });
-
+// 일정 시간마다 자동으로 슬라이드를 전환하는 역할
 const autoSlide = () => {
   currentIdx = (currentIdx + 1) % slideCount;
 
