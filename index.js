@@ -90,12 +90,11 @@ $('header .global-menu li').hover(
 );
 
 // 자동으로 브랜드 소개 넘겨지기
-/*
 const $slideBtns = $('.brand-intro-wrapper .slide-button li');
 let currentIdx = 0;
 const $slides = $('.slide-wrapper .slide-item');
 const slideCount = $slides.length;
-*/
+let mainSlide;
 
 // 페이지네이션
 $slideBtns.on('click', (e) => {
@@ -122,4 +121,13 @@ const autoSlide = () => {
   $slideBtns.eq(currentIdx).addClass('active').siblings().removeClass('active');
 };
 
-// let mainSlide = setInterval(autoSlide, 3000);
+// 뷰포트의 너비가 변경될 때마다 자동 슬라이드 상태 업데이트
+$(window).on('resize', function() {
+  if (500 >= $(window).width()) {
+    clearInterval(mainSlide); // 슬라이드 중단
+    mainSlide = setInterval(autoSlide, 3000); // 슬라이드 시작
+  } else {
+    clearInterval(mainSlide); // 슬라이드 중단
+  }
+}).trigger('resize'); // 페이지 로드시 한번 실행
+
