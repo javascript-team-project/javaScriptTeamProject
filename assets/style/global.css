@@ -128,7 +128,7 @@ footer .contact-wrapper .contact-box {
   text-align: center;
   color: var(--color-white);
   background-color: var(--color-footer);
-  width: 230px;
+  width: 230px; height: 180px;
   padding: 20px 0px 30px;
   border-radius: 20px;
   position: absolute;
@@ -170,11 +170,40 @@ footer .contact-wrapper .contact-box .contact-btn {
   border-radius: 7px;
 }
 
-footer .contact-wrapper .contact-box img {
+footer .contact-wrapper .contact-box .footer-eyes {
   position: absolute;
   top: 80px;
   left: 75%;
   z-index: 99;
+}
+/*- 움직이는 눈알 -*/
+footer .contact-wrapper .contact-box .eyes {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -20px; left: 90%;
+  transform: rotate(5deg);
+  z-index: 999;
+  width: 100px;
+}
+footer .contact-wrapper .contact-box .eye {
+  position: relative;
+  top: 50%;
+  width: 40px;
+  height: 70px;
+  margin: 0 3px;
+  border-radius: 50%;
+}
+footer .contact-wrapper .contact-box .eye:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  background: #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*- footer address -*/
@@ -253,11 +282,19 @@ footer address .copy {
       padding: 5px 25px 10px;
     }
   
-    footer .contact-wrapper .contact-box img {
+    footer .contact-wrapper .contact-box .footer-eyes {
       position: absolute;
       top: 120px;
       left: 100%;
       z-index: 99;
+    }
+    /*- 움직이는 눈알 -*/
+    footer .contact-wrapper .contact-box .eyes {
+      top: 0px; left: 120%;
+    }
+    footer .contact-wrapper .contact-box .eye {
+      top: 50%;
+      margin: 0 2px;
     }
   
     /*- footer address -*/
@@ -347,7 +384,7 @@ footer address .copy {
     padding: 5px 25px 10px;
   }
 
-  footer .contact-wrapper .contact-box img {
+  footer .contact-wrapper .contact-box .footer-eyes {
     position: absolute;
     top: 120px;
     left: 100%;

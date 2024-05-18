@@ -26,226 +26,67 @@
   <link rel="stylesheet" href="./assets/style/jquery-ui.css">
 
   <style>
-    /***** main-page *****/
-    .main-page-wrapper {
-      margin: 0;
-      width: 100%;
-      height: 500px;
-      font-family: var(--font-m-en);
-      font-weight: var(--font-bold);
-      background: url(./images/main-grid.svg) 50% / contain, var(--color-primary);
+    .eyes {
+      display: flex;
+      flex-wrap: wrap;
       position: relative;
-      /* z-index: -9999; */
-      text-align: center;
-      /* overflow: hidden; */
-      animation: grid-move 7s infinite linear;
     }
 
-    .main-page-wrapper .brand-name-box {
+    .eye {
       position: relative;
-      height: 100%;
-      max-width: 390px;
-      margin: 0 auto;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      margin: 0 15px;
+      background: #fff;
+      border-radius: 50%;
+      border: 1px solid #333;
     }
 
-    /*- 웰컴투릴리바이레드 -*/
-    .main-page-wrapper .brand-name-box .title-box {
-      font-weight: 900;
-      font-size: 32px;
-      white-space: nowrap;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back {
-      background-color: var(--color-white);
-      color: var(--color-primary);
-      padding: 5px 60px;
+    .eye:before {
+      content: '';
       position: absolute;
-      top: 50%;
-      left: 50%;
+      top: 50px;
+      left: 25px;
+      width: 45px;
+      height: 45px;
+      background: #333;
+      border-radius: 50%;
       transform: translate(-50%, -50%);
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back span {
-      animation: main-title-mov .8s .3s 1 linear;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(2) {
-      animation-delay: .4s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(3) {
-      animation-delay: .5s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(4) {
-      animation-delay: .6s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(5) {
-      animation-delay: .7s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(6) {
-      animation-delay: .8s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(7) {
-      animation-delay: .9s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front {
-      background-color: var(--color-white);
-      color: var(--color-primary);
-      padding: 5px 50px;
-      border-top: 1px solid var(--color-main-pink);
-      position: absolute;
-      top: 60%;
-      left: 60%;
-      transform: translate(-50%, -50%);
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span {
-      animation: main-title-mov .8s 1s 1 linear;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(2) {
-      animation-delay: 1.1s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(3) {
-      animation-delay: 1.2s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(4) {
-      animation-delay: 1.3s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(5) {
-      animation-delay: 1.4s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(6) {
-      animation-delay: 1.5s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(7) {
-      animation-delay: 1.6s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(8) {
-      animation-delay: 1.7s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(9) {
-      animation-delay: 1.8s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(10) {
-      animation-delay: 1.9s;
-    }
-
-    .main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(11) {
-      animation-delay: 2s;
-    }
-
-    /*- 릴리바이레드 핑크색 -*/
-    .main-page-wrapper .brand-name-box::after {
-      content: "lilybyred";
-      background-color: var(--color-main-pink);
-      color: var(--color-white);
-      font-size: 15px;
-      padding: 5px 10px;
-      width: 250px;
-      position: absolute;
-      top: 43%;
-      left: 35%;
-      transform: translate(-44%, -35%) rotate(-3deg);
-      z-index: 1;
-      animation: moving-box .3s 1 linear;
-    }
-
-    /* 핑크색 뒤로 들어가는 검정 박스 */
-    .main-page-wrapper .brand-name-box::before {
-      content: "lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred";
-      background-color: var(--color-black);
-      color: var(--color-main-yellow);
-      padding: 5px 10px;
-      position: absolute;
-      left: -23px;
-      top: 10%;
-      transform: rotate(-40deg);
-      width: 500px;
-      white-space: nowrap;
-    }
-
-    /*- 릴리!체키!샤시! -*/
-    .main-page-wrapper .brand-name-box .main-intro {
-      font-size: var(--font-m-lg);
-      color: var(--color-primary);
-      text-transform: uppercase;
-      -webkit-text-stroke: 0.3px var(--color-white);
-      position: absolute;
-      top: 67%;
-      left: 55%;
-      transform: translateX(-50%);
-      white-space: nowrap;
-    }
-
-    /*- main-imgs -*/
-    .main-page-wrapper .brand-name-box .main-img-box img {
-      position: absolute;
-      z-index: 999;
-    }
-
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
-      width: 50px;
-      top: 20%;
-      right: 15%;
-      animation: glitter 1.5s linear infinite;
-    }
-
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
-      width: 110px;
-      top: 35%;
-      right: -7%;
-      animation: main-img-mov infinite 1.5s linear;
-    }
-
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
-      width: 200px;
-      top: 53%;
-      left: -7%;
-      animation: main-img-mov infinite 1.5s linear;
     }
   </style>
 </head>
 
 <body>
-  <!-- main-page -->
-  <section class="main-page-wrapper">
-    <div class="brand-name-box">
-      <h1 class="title-box">
-        <div class="title-back">
-          <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span>
-        </div>
-        <div class="title-front">
-          <span>T</span><span>o</span>
-          <span>L</span><span>i</span><span>l</span><span>y</span><span>b</span><span>y</span><span>r</span><span>e</span><span>d</span>
-        </div>
-      </h1>
-      <p class="main-intro">lily! cheeky! sassy!</p>
-      <div class="main-img-box">
-        <img src="./images/main-star.png" alt="black-star" class="draggable">
-        <img src="./images/main-cherry.png" alt="cheery" class="draggable">
-        <img src="./images/main-tint.png" alt="tint" class="draggable">
-      </div>
-    </div>
-  </section>
+  <!-- https://ctrlcccv.github.io/code/2023-11-29-cursor-eye/ -->
+  <div class="eyes">
+    <span class="eye"></span>
+    <span class="eye"></span>
+  </div>
 
   <script>
-    $(document).ready(function() {
-  $(".draggable").draggable();
-});
+    $(document).ready(function () {
+      // 마우스 움직임 이벤트 리스너를 설정합니다.
+      $(document).mousemove(function (event) {
+        // 각 '.eye' 클래스를 가진 요소에 대해 반복합니다.
+        $('.eye').each(function () {
+          // 현재 눈의 중심 좌표를 계산합니다. 
+          const centerX = $(this).offset().left + $(this).width() / 2;
+          const centerY = $(this).offset().top + $(this).height() / 2;
+
+          // 마우스 위치와 눈의 중심 사이의 각도를 계산합니다.
+          const angle = Math.atan2(event.pageX - centerX, event.pageY - centerY);
+
+          // 각도를 도(degree) 단위로 변환하고, 270도를 더해 눈동자가 마우스를 바라보도록 조정합니다.
+          const rotateDeg = (angle * (180 / Math.PI) * -1) + 270;
+
+          // 계산된 각도로 눈동자의 회전을 설정합니다.
+          $(this).css('transform', `rotate(${rotateDeg}deg)`);
+        });
+      });
+    });
+
+
   </script>
 </body>
 
