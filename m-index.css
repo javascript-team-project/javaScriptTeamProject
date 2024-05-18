@@ -569,14 +569,6 @@
   border-radius: 25px;
   overflow: hidden;
   gap: 5px;
-  transform: translateY(100%);
-  opacity: 0;
-  transition: .5s;
-}
-/*- 스크롤 시 이벤트 발생 -*/
-.insta-img-box.mov-img {
-  transform: translateY(0);
-  opacity: 1;
 }
 .insta-img-box img {
   width: 100%;
