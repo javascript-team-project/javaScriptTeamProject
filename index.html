@@ -18,15 +18,17 @@
   <!-- 공통된 css style -->
   <link rel="stylesheet" href="./assets/style/common.css">
   <link rel="stylesheet" href="./assets/style/global.css">
+  <link rel="stylesheet" href="./assets/style/animation.css">
   <!-- page 별 css style -->
   <link rel="stylesheet" href="./m-index.css">
   <link rel="stylesheet" href="./pc-index.css">
-  <link rel="stylesheet" href="./assets/style/animation.css">
   <!-- jQuery -->
-  <script src="./assets/style/jquery-3.7.1.min.js"></script>
-  <script src="../assets/jquery-ui.min.js"></script>
+  <script src="./assets/style/jquery-3.6.0.min.js"></script>
+  <script src="./assets/style/jquery-ui.min.js"></script>
   <!-- page 별 사용되는 js -->
   <script defer src="./index.js"></script>
+  <!-- jQuery UI CSS -->
+  <link rel="stylesheet" href="./assets/style/jquery-ui.css">
 </head>
 
 <body>
@@ -78,9 +80,9 @@
       </h1>
       <p class="main-intro">lily! cheeky! sassy!</p>
       <div class="main-img-box">
-        <img src="./images/main-star.png" alt="black-star">
-        <img src="./images/main-cherry.png" alt="cheery">
-        <img src="./images/main-tint.png" alt="tint">
+        <img src="./images/main-star.png" alt="black-star" class="draggable">
+        <img src="./images/main-cherry.png" alt="cheery" class="draggable">
+        <img src="./images/main-tint.png" alt="tint" class="draggable">
       </div>
     </div>
   </section>

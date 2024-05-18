@@ -9,17 +9,18 @@
   font-weight: var(--font-bold);
   background: url(./images/main-grid.svg) 50% / contain, var(--color-primary);
   position: relative;
-  z-index: -9999;
+  /* z-index: -9999; */
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
   animation: grid-move 7s infinite linear;
 }
 .main-page-wrapper .brand-name-box {
   position: relative;
   height: 100%;
-  max-width: 390px; 
+  max-width: 390px;
   margin: 0 auto;
 }
+
 /*- 웰컴투릴리바이레드 -*/
 .main-page-wrapper .brand-name-box .title-box {
   font-weight: 900;
@@ -31,40 +32,76 @@
   color: var(--color-primary);
   padding: 5px 60px;
   position: absolute;
-  top: 50%; left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
+/*- 웰컴투릴리바이레드 opacity 애니메이션 -*/
 .main-page-wrapper .brand-name-box .title-box .title-back span {
   animation: main-title-mov .8s .3s 1 linear;
 }
-.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(2) { animation-delay: .4s; }
-.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(3) { animation-delay: .5s; }
-.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(4) { animation-delay: .6s; }
-.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(5) { animation-delay: .7s; }
-.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(6) { animation-delay: .8s; }
-.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(7) { animation-delay: .9s; }
+.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(2) {
+  animation-delay: .4s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(3) {
+  animation-delay: .5s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(4) {
+  animation-delay: .6s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(5) {
+  animation-delay: .7s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(6) {
+  animation-delay: .8s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-back span:nth-child(7) {
+  animation-delay: .9s;
+}
 .main-page-wrapper .brand-name-box .title-box .title-front {
   background-color: var(--color-white);
   color: var(--color-primary);
   padding: 5px 50px;
   border-top: 1px solid var(--color-main-pink);
   position: absolute;
-  top: 60%; left: 60%;
+  top: 60%;
+  left: 60%;
   transform: translate(-50%, -50%);
 }
 .main-page-wrapper .brand-name-box .title-box .title-front span {
   animation: main-title-mov .8s 1s 1 linear;
 }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(2) { animation-delay: 1.1s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(3) { animation-delay: 1.2s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(4) { animation-delay: 1.3s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(5) { animation-delay: 1.4s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(6) { animation-delay: 1.5s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(7) { animation-delay: 1.6s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(8) { animation-delay: 1.7s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(9) { animation-delay: 1.8s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(10) { animation-delay: 1.9s; }
-.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(11) { animation-delay: 2s; }
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(2) {
+  animation-delay: 1.1s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(3) {
+  animation-delay: 1.2s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(4) {
+  animation-delay: 1.3s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(5) {
+  animation-delay: 1.4s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(6) {
+  animation-delay: 1.5s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(7) {
+  animation-delay: 1.6s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(8) {
+  animation-delay: 1.7s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(9) {
+  animation-delay: 1.8s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(10) {
+  animation-delay: 1.9s;
+}
+.main-page-wrapper .brand-name-box .title-box .title-front span:nth-child(11) {
+  animation-delay: 2s;
+}
+
 /*- 릴리바이레드 핑크색 -*/
 .main-page-wrapper .brand-name-box::after {
   content: "lilybyred";
@@ -74,11 +111,13 @@
   padding: 5px 10px;
   width: 250px;
   position: absolute;
-  top: 43%; left: 35%;
+  top: 43%;
+  left: 35%;
   transform: translate(-44%, -35%) rotate(-3deg);
   z-index: 1;
   animation: moving-box .3s 1 linear;
 }
+
 /* 핑크색 뒤로 들어가는 검정 박스 */
 .main-page-wrapper .brand-name-box::before {
   content: "lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred lilybyred";
@@ -86,11 +125,13 @@
   color: var(--color-main-yellow);
   padding: 5px 10px;
   position: absolute;
-  left: -23px; top: 10%;
+  left: -23px;
+  top: 10%;
   transform: rotate(-40deg);
   width: 500px;
   white-space: nowrap;
 }
+
 /*- 릴리!체키!샤시! -*/
 .main-page-wrapper .brand-name-box .main-intro {
   font-size: var(--font-m-lg);
@@ -98,27 +139,33 @@
   text-transform: uppercase;
   -webkit-text-stroke: 0.3px var(--color-white);
   position: absolute;
-  top: 67%; left: 55%;
+  top: 67%;
+  left: 55%;
   transform: translateX(-50%);
   white-space: nowrap;
 }
+
 /*- main-imgs -*/
 .main-page-wrapper .brand-name-box .main-img-box img {
   position: absolute;
+  z-index: 999;
 }
 .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
   width: 50px;
-  top: 20%; right: 15%;
+  top: 20%;
+  right: 15%;
   animation: glitter 1.5s linear infinite;
 }
 .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
   width: 110px;
-  top: 35%; right: -7%;
+  top: 35%;
+  right: -7%;
   animation: main-img-mov infinite 1.5s linear;
 }
 .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
   width: 200px;
-  top: 53%; left: -7%;
+  top: 53%;
+  left: -7%;
   animation: main-img-mov infinite 1.5s linear;
 }
 

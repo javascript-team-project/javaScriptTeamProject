@@ -3,6 +3,9 @@ $('a[href="#').on('click', (e) => {
   e.preventDefault();
 });
 
+// 메인 페이지 드래그 이벤트
+$(".draggable").draggable();
+
 // 스크롤 이벤트
 $(window).on('scroll', () => {
   // 스크롤시 헤더 변경
@@ -64,9 +67,6 @@ $(window).on('scroll', () => {
     $('.insta-img-box').removeClass('mov-img');
   }
 });
-
-// 메인이미지 클릭 시 마우스 따라서 이동 
-
 
 // 로고 클릭 시 페이지 맨 위로 이동
 $('header .logo a[href="#"]').on('click', (e) => {
