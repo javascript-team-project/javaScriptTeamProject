@@ -48,7 +48,7 @@
 }
 @keyframes event-moving-box {
   0% { width: 0; }
-  100% { width: 80%; }
+  100% { width: 60%; }
 }
 /* 웰컴투릴리바이레드 움직임 */
 @keyframes main-title-mov {

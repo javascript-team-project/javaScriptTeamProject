@@ -9,9 +9,7 @@
   font-weight: var(--font-bold);
   background: url(./images/main-grid.svg) 50% / contain, var(--color-primary);
   position: relative;
-  /* z-index: -9999; */
   text-align: center;
-  /* overflow: hidden; */
   animation: grid-move 7s infinite linear;
 }
 .main-page-wrapper .brand-name-box {
@@ -425,8 +423,8 @@
   background-color: var(--color-white);
   font-size: 12px;
   font-weight: 900;
-  padding: 7px 20px;
-  border-radius: 20px;
+  padding: 10px 20px;
+  transition: .4s;
 }
 .event-wrapper img {
   width: 100%;
