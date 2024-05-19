@@ -119,7 +119,6 @@
     /***** youtube *****/
     .youtube-wrapper {
         margin: 100px 0 0;
-        background: rgba(239, 118, 176, 0.1);
     }
     .youtube-wrapper .edition-box {
         display: flex;
