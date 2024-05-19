@@ -127,7 +127,7 @@ const autoSlide = () => {
 
 // 뷰포트의 너비가 변경될 때마다 자동 슬라이드 상태 업데이트
 $(window).on('resize', function() {
-  if (500 >= $(window).width()) {
+  if (800 >= $(window).width()) {
     clearInterval(mainSlide); // 슬라이드 중단
     mainSlide = setInterval(autoSlide, 3000); // 슬라이드 시작
   } else {
