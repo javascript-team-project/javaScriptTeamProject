@@ -63,19 +63,24 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 8px;
+    border: 1px solid #333;
+    width: 92px;
 }
 
 .sub-shop-wrapper .main-btn .btn-arrange li .category li {
-    width: 92px;
+    width: 90px;
     height: 25px;
     line-height: 25px;
     margin: 0;
+    background-color: #fff;
 }
 
 .sub-shop-wrapper .main-btn .btn-arrange li .category li:hover {
     cursor: pointer;
     background-color: blue;
     color: white;
+    width: 91px;
 }
 
 /* 드롭다운이 열렸을 때 표시 */
