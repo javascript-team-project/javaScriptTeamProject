@@ -62,38 +62,50 @@ body {
 }
 
 .brand-main .main-img-box img[alt="tint1"] {
-  bottom: 0px;
-  right: 10px;
+  /* bottom: 0px;
+  right: 10px; */
+  top: 10%;
+  left: 0%;
   width: 160px;
 }
 
 .brand-main .main-img-box img[alt="cherry1"] {
-  bottom: 110px;
-  left: -30px;
+  /* bottom: 110px;
+  left: -30px; */
+  top: 50%;
+  left: -13%;
   width: 180px;
 }
 
 .brand-main .main-img-box img[alt="grape"] {
-  bottom: 0px;
-  left: 0px;
+  /* bottom: 0px;
+  left: 0px; */
+  bottom: 0%;
+  left: 0%;
   width: 153px;
 }
 
 .brand-main .main-img-box img[alt="cherry2"] {
-  top: 40px;
-  right: -20px;
+  /* top: 40px;
+  right: -20px; */
+  top: 10%;
+  right: 0%;
   width: 180px;
 }
 
 .brand-main .main-img-box img[alt="berry"] {
-  top: 170px;
-  right: 30px;
+  /* top: 170px;
+  right: 30px; */
+  top: 65%;
+  right: 5%;
   width: 140px;
 }
 
 .brand-main .main-img-box img[alt="tint2"] {
-  top: 70px;
-  left: 10px;
+  /* top: 70px;
+  left: 10px; */
+  top: 75%;
+  left: 65%;
   width: 160px;
 }
 
