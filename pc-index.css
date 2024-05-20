@@ -165,7 +165,6 @@
 
     .main-page-wrapper .brand-name-box .title-box .title-back {
         top: 45%;
-        left: 50%;
         width: 45%;
     }
 
@@ -187,7 +186,6 @@
 
     /*- 핑크색 뒤로 들어가는 검정 박스 -*/
     .main-page-wrapper .brand-name-box::before {
-        position: absolute;
         font-size: 28px;
         left: 16%;
         top: 11%;
@@ -200,7 +198,6 @@
     /*- 릴리!체키!샤시! -*/
     .main-page-wrapper .brand-name-box .main-intro {
         font-size: 45px;
-        position: absolute;
         top: 65%;
     }
 
@@ -248,7 +245,6 @@
         align-items: inherit;
         margin: 0 auto;
         width: 100%;
-        height: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 224px);
         min-width: 1200px;
@@ -341,7 +337,6 @@
     .brand-intro-wrapper .slide-wrapper .family-site-box {
         padding: 0;
         margin: 0 0 0 20px;
-        width: 100%;
     }
 
     .family-site-box .brand-intro {
@@ -416,18 +411,13 @@
         width: 80%; height: initial;
         display: flex;
         justify-content: space-between;
-        position: relative;
         padding: 55px 70px;
     }
     .event-wrapper .event-box .event-box-flex {
         width: 60%;
     }
-    .event-wrapper .event-box .event-title.scroll {
-        animation: event-moving-box .4s 1 linear;
-      }
 
     .event-wrapper .event-box .event-title {
-        /* position: absolute; */
         position: initial;
         padding: 5px 0; margin: 0 auto;
         width: 25vw;
@@ -437,11 +427,9 @@
         transform: rotate(-1deg);
         position: absolute;
         top: 18%; left: 20%;
-        z-index: 1;
     }
     .event-wrapper .event-box .back {
         transform: initial;
-        /* top: 50px; left: 70px; */
     }
     .event-wrapper .event-box .title {
         font-size: 24px;
@@ -465,7 +453,6 @@
     /***** 유튜브 *****/
     .youtube-wrapper {
         margin: 0;
-        background: rgba(239, 118, 176, 0.1);
     }
     
     .youtube-wrapper .edition-box {
@@ -476,18 +463,10 @@
         justify-content: center;
         gap: 10%;
     }
-    /* .youtube-wrapper .edition-box::before {
-        content: "";
-        color: rgba(62, 30, 46, 0.8);
-        width: 3px; height: 100px;
-        position: absolute;
-        top: 50%; left: 0;
-        transform: rotate(-5deg);
-    } */
     .youtube-wrapper .edition-box .edition-box-flex .edition-sub-title::after {
         content: "";
         display: inline-block;
-        color: rgba(62, 30, 46, 0.8);
+        background-color: rgba(62, 30, 46, 0.8);
         width: 3px; height: 100px;
         position: absolute;
         top: 20%; left: 50%;
