@@ -15,6 +15,7 @@ body {
   background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 303px 318px,
     url(./images/footer-grid.png) no-repeat 50% / cover, var(--color-primary);
   position: relative;
+  overflow: hidden;
 }
 
 .brand-main .main-title-wrapper {

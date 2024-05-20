@@ -197,8 +197,8 @@
     /*- 핑크색 뒤로 들어가는 검정 박스 -*/
     .main-page-wrapper .brand-name-box::before {
         font-size: 28px;
-        left: 16%;
-        top: 11%;
+        left: 15.6%;
+        top: 10%;
         transform: rotate(-35deg);
         width: 800px;
         height: max-content;

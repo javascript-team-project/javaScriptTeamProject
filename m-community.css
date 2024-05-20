@@ -34,8 +34,10 @@
  }
 
  .notice .main-menu .active {
-   color: #000;
+  font-weight: 700;
+  color: #222;
    text-decoration: underline;
+   text-underline-offset: 4px;
  }
 
  .notice .main-menu li {}
@@ -76,6 +78,10 @@
    text-align: left;
    width: 100%;
    margin-bottom: 12px;
+ }
+ .notice .notice-contents-box li .title:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
  }
 
  .notice .notice-contents-box li .writer {

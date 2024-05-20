@@ -102,7 +102,7 @@
 
 /*- 릴리바이레드 핑크색 -*/
 .main-page-wrapper .brand-name-box::after {
-  content: "lilybyred";
+  content: "Click And Drag!";
   background-color: var(--color-main-pink);
   color: var(--color-white);
   font-size: 15px;
