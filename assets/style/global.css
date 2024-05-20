@@ -121,6 +121,23 @@ footer .contact-wrapper .footer-contact {
   padding-top: 200px;
   line-height: 1.5;
 }
+footer .contact-wrapper .footer-contact .footer-contact-num {
+  transition: .4s;
+}
+footer .contact-wrapper .footer-contact .footer-contact-email {
+  transition: .4s;
+}
+/*- 마우스 허버 이벤트 -*/
+footer .contact-wrapper .footer-contact .footer-contact-num:hover {
+  transform: skew(-10deg, 1deg) rotateY(-20deg) scale(1.05);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+footer .contact-wrapper .footer-contact .footer-contact-email:hover {
+  transform: skew(15deg, 1deg) rotateY(-20deg) scale(1.05);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 /*- 말풍선 박스 -*/
 footer .contact-wrapper .contact-box {
@@ -183,14 +200,13 @@ footer .contact-wrapper .contact-box .eyes {
   top: -20px; left: 90%;
   transform: rotate(5deg);
   z-index: 999;
-  width: 100px;
+  width: 130px;
 }
 footer .contact-wrapper .contact-box .eye {
   position: relative;
   top: 50%;
-  width: 40px;
-  height: 70px;
-  margin: 0 3px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 footer .contact-wrapper .contact-box .eye:before {
@@ -198,8 +214,8 @@ footer .contact-wrapper .contact-box .eye:before {
   position: absolute;
   top: 20px;
   left: 20px;
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   background: #333;
   border-radius: 50%;
   transform: translate(-50%, -50%);
