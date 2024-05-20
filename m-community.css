@@ -108,14 +108,21 @@
   width: 18%;
   padding: 8px 0px;
   border: 1px solid #ddd;
-  background: url(./images/arrow.png) no-repeat 90% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
  .notice .button-box .title-btn {
   width: 13%;
   padding: 8px 0px;
   border: 1px solid #ddd;
-  background: url(./images/arrow.png) no-repeat 90% 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .notice .button-box img {
+  margin-left: 11px;
  }
 
  .notice .button-box .empty-btn {
@@ -131,17 +138,29 @@
   border: 1px solid #6D6D6D;
  }
 
- .notice .prev-btn {
+ .notice .page-btn-wrapper {
+  margin: 0 auto;
+  width: 150px;
+  display: grid;
+  grid-template-columns: 1fr 45px 1fr;
+  justify-content: center;
+ }
+
+ .notice .page-btn-wrapper .prev-btn {
   background: url(./images/arrow-left.png) no-repeat 50% 50%;
-  text-indent: -9999px; /* 텍스트 안사라짐 */
+  display: block;
+  text-indent: -9999px;
  }
 
- .notice .page-btn {
+ .notice .page-btn-wrapper .page-btn {
   border: 1px solid #ddd;
-  padding: 6px 14px 8px;
+  width: 45px; height: 45px;
+  line-height: 44px;
+  /* padding: 6px 14px 8px; */
  }
 
- .notice .next-btn {
+ .notice .page-btn-wrapper .next-btn {
   background: url(./images/arrow-right.png) no-repeat 50% 50%;
+  display: block;
   text-indent: -9999px;
  }

@@ -18,14 +18,12 @@
     width: 19%;
     padding: 8px 0px;
     border: 1px solid #ddd;
-    background: url(./images/arrow.png) no-repeat 90% 50%;
    }
   
    .notice .button-box .title-btn {
     width: 14%;
     padding: 8px 0px;
     border: 1px solid #ddd;
-    background: url(./images/arrow.png) no-repeat 80% 50%;
    }
   
    .notice .button-box .empty-btn {
@@ -39,22 +37,7 @@
     padding: 8px 0px;
     border: 1px solid #6D6D6D;
    }
-  
-   .notice .prev-btn {
-    background: url(./images/arrow-left.png) no-repeat 50% 50%;
-    text-indent: -9999px;
-    /* 텍스트 안사라짐 */
-   }
-  
-   .notice .page-btn {
-    border: 1px solid #ddd;
-    padding: 6px 14px 8px;
-   }
-  
-   .notice .next-btn {
-    background: url(./images/arrow-right.png) no-repeat 50% 50%;
-    text-indent: -9999px;
-   }
+
 }
 
 /***** pc *****/
@@ -154,7 +137,7 @@
   }
 
   .notice .button-box {
-    width: 30%;
+    width: 40%;
     font-size: 12px;
     display: flex;
     justify-content: space-between;
@@ -165,14 +148,12 @@
     width: 18%;
     padding: 8px 0px;
     border: 1px solid #ddd;
-    background: url(./images/arrow.png) no-repeat 90% 50%;
   }
 
   .notice .button-box .title-btn {
     width: 13%;
     padding: 8px 0px;
     border: 1px solid #ddd;
-    background: url(./images/arrow.png) no-repeat 80% 50%;
   }
 
   .notice .button-box .empty-btn {
@@ -187,19 +168,4 @@
     border: 1px solid #6D6D6D;
   }
 
-  .notice .prev-btn {
-    background: url(./images/arrow-left.png) no-repeat 50% 50%;
-    text-indent: -9999px;
-    /* 텍스트 안사라짐 */
-  }
-
-  .notice .page-btn {
-    border: 1px solid #ddd;
-    padding: 6px 14px 8px;
-  }
-
-  .notice .next-btn {
-    background: url(./images/arrow-right.png) no-repeat 50% 50%;
-    text-indent: -9999px;
-  }
 }
