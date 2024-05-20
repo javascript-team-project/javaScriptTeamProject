@@ -31,6 +31,7 @@
    width: 140px;
    font-size: 14px;
    color: #6d6d6d;
+   cursor: pointer;
  }
 
  .notice .main-menu .active {

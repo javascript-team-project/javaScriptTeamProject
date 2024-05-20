@@ -9,22 +9,22 @@
 
     /* brand main */
     .brand-main {
-        height: 105vh;
+        height: 90vh;
         background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 522px 554px, url(./images/brand-main-line.png) no-repeat 30% 30%/ 150%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
     }
 
     .brand-main .main-title-wrapper {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         margin: 0 auto;
         /* height: 637px; */
     }
 
     .brand-main .main-title-wrapper .main-title {
-        font-size: 95px;
-        line-height: 95px;
-        margin: 120px auto 0px;
-        margin-left: -4px;
+        font-size: 90px;
+        line-height: 90px;
+        margin: 100px auto 0px;
+        /* margin-left: -4px; */
         -webkit-text-stroke: 2px var(--color-main-pink);
         font-weight: 900;
     }
@@ -36,7 +36,7 @@
         line-height: 70px;
         font-size: 35px;
         border-radius: 50px;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .brand-main .main-img-box {
@@ -50,39 +50,39 @@
     }
 
     .brand-main .main-img-box img[alt="tint1"] {
-        top: 80px;
-        left: 60px;
+        top: 10%;
+        left: 5%;
         width: 250px;
     }
 
     .brand-main .main-img-box img[alt="cherry1"] {
-        top: 430px;
-        left: 100px;
+        top: 40%;
+        left: 10%;
         width: 300px;
     }
 
     .brand-main .main-img-box img[alt="grape"] {
-        bottom: 30px;
-        left: 0px;
-        width: 280px;
+        bottom: 2%;
+        left: 0%;
+        width: 230px;
     }
 
     .brand-main .main-img-box img[alt="cherry2"] {
-        top: 50px;
-        right: 40px;
-        width: 280px;
+        top: 5%;
+        right: 10%;
+        width: 240px;
     }
 
     .brand-main .main-img-box img[alt="berry"] {
-        top: 22%;
-        right: 230px;
-        width: 200px;
+        top: 60%;
+        right: 18%;
+        width: 160px;
     }
 
     .brand-main .main-img-box img[alt="tint2"] {
-        top: 700px;
-        left: 800px;
-        width: 250px;
+        top: 70%;
+        left: 70%;
+        width: 230px;
     }
 
 
@@ -212,23 +212,22 @@
 
     /* brand main */
     .brand-main {
-        height: 105vh;
+        height: 90vh;
         /* height: 690px; */
-        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 623px 661px, url(./images/brand-main-line.png) no-repeat 24% 10%/ 130%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 522px 554px, url(./images/brand-main-line.png) no-repeat 24% 0%/ 130%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
     }
 
     .brand-main .main-title-wrapper {
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         margin: 0 auto;
         /* height: 637px; */
     }
 
     .brand-main .main-title-wrapper .main-title {
-        font-size: 110px;
-        line-height: 110px;
-        margin: 120px auto 0px;
-        margin-left: -20px;
+        font-size: 90px;
+        line-height: 90px;
+        margin: 100px auto 0;
         text-align: center;
         -webkit-text-stroke: 3px var(--color-main-pink);
         font-weight: 900;
@@ -257,37 +256,37 @@
     .brand-main .main-img-box img[alt="tint1"] {
         top: 45px;
         left: 80px;
-        width: 380px;
+        width: 320px;
     }
 
     .brand-main .main-img-box img[alt="cherry1"] {
         bottom: 70px;
         left: 420px;
-        width: 400px;
+        width: 320px;
     }
 
     .brand-main .main-img-box img[alt="grape"] {
         bottom: -10px;
         left: 0px;
-        width: 350px;
+        width: 280px;
     }
 
     .brand-main .main-img-box img[alt="cherry2"] {
         top: 40px;
         right: 200px;
-        width: 350px;
+        width: 300px;
     }
 
     .brand-main .main-img-box img[alt="berry"] {
         top: 75%;
         right: 400px;
-        width: 290px;
+        width: 230px;
     }
 
     .brand-main .main-img-box img[alt="tint2"] {
         top: 400px;
         left: 1500px;
-        width: 340px;
+        width: 280px;
     }
 
 
