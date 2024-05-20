@@ -242,6 +242,26 @@ footer address .copy {
 
 /***** tablet *****/
 @media (min-width: 834px) {
+  /***** header *****/
+  header {
+    /* font-family: var(--font-m-en);
+    background-color: var(--color-primary);
+    font-weight: var(--font-bold);
+    color: var(--color-white);
+    font-size: 15px; */
+    width: 80%;
+    /* height: 50px;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 0 10px;
+    border: 1px solid rgba(254, 241, 195, 0.5);
+    position: fixed; */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transition: .4s;
+    z-index: 999; */
+  }
     /***** footer *****/
     footer {
       margin: 0 50px;
