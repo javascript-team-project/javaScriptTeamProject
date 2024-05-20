@@ -2,6 +2,30 @@
 
 /***** tablet *****/
 @media (min-width: 834px) {
+    /***** main-page *****/
+    .main-page-wrapper .brand-name-box {
+        min-width: 834px;
+    }
+    .main-page-wrapper .brand-name-box .title-box {
+        font-size: 43px;
+    }
+    .main-page-wrapper .brand-name-box .title-box .title-front {
+        top: 62%;
+    }
+    /*- 핑크색 박스 -*/
+    .main-page-wrapper .brand-name-box::after {
+        width: 300px;
+        left: 40%; top: 42%;
+    }
+    /*- 검정색 박스 -*/
+    .main-page-wrapper .brand-name-box::before {
+        left: 18.5%; top: 9%;
+    }
+    /*- 릴리체키샤시 -*/
+    .main-page-wrapper .brand-name-box .main-intro {
+        font-size: 24px;
+        top: 70%; left: 58%;
+    }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
         max-width: 834px;
@@ -189,7 +213,7 @@
         width: 430px;
         height: max-content;
         position: absolute;
-        top: 38%;
+        top: 36%;
         font-size: 30px;
         padding: 5px;
     }
@@ -197,8 +221,8 @@
     /*- 핑크색 뒤로 들어가는 검정 박스 -*/
     .main-page-wrapper .brand-name-box::before {
         font-size: 28px;
-        left: 15.6%;
-        top: 10%;
+        left: 20.7%;
+        top: 9%;
         transform: rotate(-35deg);
         width: 800px;
         height: max-content;
