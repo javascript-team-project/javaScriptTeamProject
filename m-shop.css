@@ -29,8 +29,9 @@ body {
 
 .sub-shop-wrapper .sub-shop-box .main-list .active {
     font-weight: 700;
-    columns: #000;
+    color: #222;
     text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 .sub-shop-wrapper .main-btn {
