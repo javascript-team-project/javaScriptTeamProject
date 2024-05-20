@@ -213,7 +213,7 @@
         width: 430px;
         height: max-content;
         position: absolute;
-        top: 38%;
+        top: 36%;
         font-size: 30px;
         padding: 5px;
     }
@@ -221,8 +221,8 @@
     /*- 핑크색 뒤로 들어가는 검정 박스 -*/
     .main-page-wrapper .brand-name-box::before {
         font-size: 28px;
-        left: 15.6%;
-        top: 10%;
+        left: 20.7%;
+        top: 9%;
         transform: rotate(-35deg);
         width: 800px;
         height: max-content;
