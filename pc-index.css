@@ -161,7 +161,8 @@
 
     /***** main-page *****/
     .main-page-wrapper {
-        height: 90vh;
+        /* height: 90vh; */
+        height: 856px;
     }
 
     .main-page-wrapper .brand-name-box {
@@ -186,8 +187,7 @@
     /*- 릴리바이레드 핑크색 -*/
     .main-page-wrapper .brand-name-box::after {
         width: 430px;
-        height: 4.5vh;
-        line-height: 3.5vh;
+        height: max-content;
         position: absolute;
         top: 38%;
         font-size: 30px;
@@ -201,8 +201,7 @@
         top: 11%;
         transform: rotate(-35deg);
         width: 800px;
-        height: 4.5vh;
-        line-height: 3.5vh;
+        height: max-content;
     }
 
     /*- 릴리!체키!샤시! -*/
@@ -393,6 +392,11 @@
         border-radius: 50%;
         text-indent: -9999px;
         background: url(./images/brand_intro-icon-home.png) no-repeat 50%;
+        transform: scale(1);
+        transition: .4s;
+    }
+    .brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand:hover {
+        transform: scale(1.2);
     }
 
     /* 모바일 요소 제거 */
@@ -463,8 +467,6 @@
     }
     .event-wrapper .event-box .event-btn {
         font-size: 14px;
-        padding: 10px 25px;
-        border-radius: 50px;
         margin-right: 10%;
     }
     .event-wrapper img[alt="event-img"] {

@@ -82,6 +82,7 @@ header.active {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 9999;
 }
 header.active .logo a img {
   display: block;
