@@ -3,8 +3,17 @@
 /***** tablet *****/
 @media (min-width: 834px) {
   .notice {
-    margin: 200px 50px 280px;
+    margin: 180px 50px 280px;
    }
+
+   .notice .main-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 110px;
+    width: 200px;
+    font-size: 16px;
+    color: #6d6d6d;
+  }
   
    .notice .button-box {
     width: 100%;
