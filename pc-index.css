@@ -355,12 +355,8 @@
     }
 
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo {
-<<<<<<< HEAD
         width: 45%;
-=======
-        width: 40%;
         margin: 0;
->>>>>>> 1a419ba99d654fd470032924e110162b81d9ce11
     }
 
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo img {
@@ -374,11 +370,8 @@
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des {
         width: 80%;
         text-align: left;
-<<<<<<< HEAD
         margin: 10px 0 0 0;
-=======
         margin: 10px 0 0;
->>>>>>> 1a419ba99d654fd470032924e110162b81d9ce11
         word-break: keep-all;
         font-size: 14px;
     }
@@ -390,14 +383,9 @@
     /* 바로가기 버튼 */
     .brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand {
         position: absolute;
-<<<<<<< HEAD
         top: 50%;
         right: 7%;
         transform: translateY(-50%);
-=======
-        top: 37%;
-        right: 0;
->>>>>>> 1a419ba99d654fd470032924e110162b81d9ce11
         display: block;
         padding: 0;
         width: 45px;
