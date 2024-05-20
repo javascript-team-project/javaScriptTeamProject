@@ -7,7 +7,9 @@
    width: 100%;
  }
 
- .notice {}
+ .notice {
+  margin-bottom: 150px;
+ }
 
  .notice .sub-menu {
    display: none;
@@ -16,18 +18,18 @@
  .notice .sub-menu li {}
 
  .notice .main-title {
-   font-size: var(--font-m-lg);
+   font-size: 30px;
    color: var(--color-primary);
-   padding: 130px 0px 0px;
-   margin: 95px auto 30px;
+   /* padding: 130px 0px 0px; */
+   margin: 120px auto 30px;
  }
 
  .notice .main-menu {
    display: flex;
    justify-content: space-around;
-   margin: 0 auto 40px;
+   margin: 0 auto 37px;
    width: 140px;
-   font-size: var(--font-m-sm);
+   font-size: 14px;
    color: #6d6d6d;
  }
 
@@ -103,31 +105,35 @@
  }
 
  .notice .button-box .week-btn {
-  padding: 7px 25px 7px 10px;
+  width: 18%;
+  padding: 8px 0px;
   border: 1px solid #ddd;
-  background: url(./images/arrow.png) no-repeat 80% 50%;
+  background: url(./images/arrow.png) no-repeat 90% 50%;
  }
 
  .notice .button-box .title-btn {
-  padding: 7px 25px 7px 10px;
+  width: 13%;
+  padding: 8px 0px;
   border: 1px solid #ddd;
-  background: url(./images/arrow.png) no-repeat 80% 50%;
+  background: url(./images/arrow.png) no-repeat 90% 50%;
  }
 
  .notice .button-box .empty-btn {
-  padding: 7px 45px;
+  width: 43%;
+  padding: 8px 0px;
   border: 1px solid #ddd;
+  text-indent: -9999px;
  }
 
  .notice .button-box .search-btn {
-  padding: 7px 18px;
-  border: 1px solid #ddd;
+  width: 18%;
+  padding: 8px 0px;
+  border: 1px solid #6D6D6D;
  }
 
  .notice .prev-btn {
-  background: url(./images/arrow.png) no-repeat 80% 50%;
-  text-indent: -9999px;
-  /* 텍스트 안사라짐 */
+  background: url(./images/arrow-left.png) no-repeat 50% 50%;
+  text-indent: -9999px; /* 텍스트 안사라짐 */
  }
 
  .notice .page-btn {
@@ -136,6 +142,6 @@
  }
 
  .notice .next-btn {
-  background: url(./images/arrow.png) no-repeat 80% 50%;
+  background: url(./images/arrow-right.png) no-repeat 50% 50%;
   text-indent: -9999px;
  }

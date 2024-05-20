@@ -9,7 +9,7 @@ body {
 
 /****** menu *******/
 .sub-shop-wrapper {
-    padding: 95px 0px 50px;
+    padding: 120px 0px 50px;
 }
 
 .sub-shop-wrapper .sub-shop-box .main-title {
@@ -23,7 +23,7 @@ body {
     justify-content: space-around;
     margin: 0 auto 60px;
     width: calc(100% - 60px);
-    font-size: 12px;
+    font-size: 14px;
     color: #6d6d6d;
 }
 
