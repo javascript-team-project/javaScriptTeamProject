@@ -26,6 +26,15 @@
         font-size: 24px;
         top: 70%; left: 58%;
     }
+    /*- main-imgs -*/
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
+        width: 60px;
+        right: 5%;
+    }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
+        width: 120px;
+        right: ;
+    }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
         max-width: 834px;
