@@ -59,3 +59,7 @@ stroke-dashoffset: svg을 나타낼 지점 지정
 	2.0% { stroke-offset == stroke-dasharray의 최대값 -> 안보이는 상태 }<br> 
 	  50% { stroke-offset == 0 -> 그림이 다 나타난 상태 }<br>
 	  100% {  stroke-offset == -(stroke-dasharray) -> 반대로 그려지는 상태 } 
+
+***.draggable()***
+.ddraggable()은 지정된 요소를 드래그 할 수 있게 만듦.
+
