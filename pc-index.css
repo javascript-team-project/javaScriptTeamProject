@@ -127,6 +127,16 @@
         margin: 0 auto;
         justify-content: center;
     }
+    .youtube-wrapper .edition-box .edition-box-flex .edition-sub-title::after {
+        content: "";
+        display: inline-block;
+        background-color: rgba(62, 30, 46, 0.6);
+        width: 3px; height: 75px;
+        position: absolute;
+        left: 52%;
+        transform: rotate(-33deg);
+        border-radius: 20px;
+    }
     .youtube-wrapper .edition-img-box img[alt="icon-star"] {
         top: 17%; left: 75%;
     }
@@ -355,6 +365,7 @@
 
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo {
         width: 40%;
+        margin: 0;
     }
 
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .brand-logo img {
@@ -365,7 +376,7 @@
     .brand-intro-wrapper .slide-wrapper .family-site-box .brand-intro .des {
         width: 70%;
         text-align: left;
-        margin-bottom: 0;
+        margin: 10px 0 0;
         word-break: keep-all;
         font-size: 14px;
     }
@@ -378,7 +389,7 @@
     .brand-intro-wrapper .slide-wrapper .family-site-box .go-to-brand {
         position: absolute;
         top: 37%;
-        right: 18%;
+        right: 0;
         display: block;
         padding: 0;
         width: 45px;
@@ -428,21 +439,27 @@
         font-size: 35px;
     }
     .event-wrapper .event-box .front {
+        max-width: 70%;
         transform: rotate(-1deg);
         position: absolute;
-        top: 18%; left: 20%;
+        top: 13%; left: 15%;
+
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     .event-wrapper .event-box .back {
         transform: initial;
+        position: absolute;
+        top: 7%; left: 10%;
     }
     .event-wrapper .event-box .title {
         font-size: 24px;
-        padding-top: 10%;
-        background: url(./images/event-star.svg) no-repeat 50% 120% / 300px;
+        padding-top: 23%; margin-right: 10%;
+        background: url(./images/event-star.svg) no-repeat 50% 110% / 300px;
     }
     .event-wrapper .event-box .event-des {
         padding-top: 3%;
         font-size: 16px;
+        margin-right: 10%; margin-bottom: 10%;
     }
     .event-wrapper img {
         position: initial;
@@ -451,7 +468,11 @@
     .event-wrapper .event-box .event-btn {
         font-size: 14px;
         padding: 10px 25px;
-
+        border-radius: 50px;
+        margin-right: 10%;
+    }
+    .event-wrapper img[alt="event-img"] {
+        transform: initial;
     }
 
     /***** 유튜브 *****/
@@ -470,16 +491,20 @@
     .youtube-wrapper .edition-box .edition-box-flex .edition-sub-title::after {
         content: "";
         display: inline-block;
-        background-color: rgba(62, 30, 46, 0.8);
+        background-color: rgba(62, 30, 46, 0.6);
         width: 3px; height: 100px;
         position: absolute;
-        top: 20%; left: 50%;
-        transform: rotate(-5deg);
-        z-index: 999;
+        top: 30%; left: 51%;
+        transform: rotate(-43deg);
+        border-radius: 20px;
+    }
+    .youtube-wrapper .edition-img-box img[alt="icon-star"] {
+        top: 13%; left: 68%;
     }
     /*- 유튜브 박스 -*/
     .youtube-wrapper .video-wrapper {
         width: 80%;
+        min-width: 395px;
         margin: 0 auto;
         padding-bottom: 70px;
     }
