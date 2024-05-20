@@ -247,8 +247,9 @@
         width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 224px);
-        min-width: 1200px;
+        min-width: 1000px;
         max-width: 1200px;
+        gap: 0;
     }
 
     /*- 릴리바이레드 소개 -*/
@@ -265,7 +266,9 @@
         display: block;
         position: absolute;
         top: 0;
-        left: 8%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -99;
     }
 
     .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
@@ -331,6 +334,7 @@
         display: block;
         top: 0;
         left: 0;
+        z-index: -999;
     }
 
     /*- 패밀리 사이트 소개 -*/
