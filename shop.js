@@ -17,8 +17,8 @@ $(document).mousemove(function (event) {
   });
 });
 
-// 상품 배치 드롭다운 메뉴 (작동됩니당 ♥)
-$('.btn-arrange li').on('click', () => {
+// 상품 배치 드롭다운 메뉴 (작동됩니당 ♥) - li 대신 ul을 클릭해도 메뉴 내려오도록 수정했어요!
+$('.btn-arrange').on('click', () => {
   $('.btn-arrange .category').toggleClass('show');
 });
 // document.addEventListener('DOMContentLoaded', function () {
