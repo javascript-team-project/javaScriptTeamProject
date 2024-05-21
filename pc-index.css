@@ -31,13 +31,18 @@
         width: 60px;
         right: 5%;
     }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
+        display: block;
+        width: 70px;
+        top: 75%; left: 10%;
+    }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
         width: 120px;
         left: 75%; top: 34%;
     }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
-        width: 200px;
-        left: 15%;
+        width: 225px;
+        left: 17%; top: 50%;
     }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
@@ -251,6 +256,9 @@
     .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star1"] {
         width: 9%;
         right: -5%;
+    }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
+
     }
 
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {

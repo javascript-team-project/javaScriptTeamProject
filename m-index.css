@@ -155,6 +155,9 @@
   right: 15%;
   animation: glitter 1.5s linear infinite;
 }
+.main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
+  display: none;
+}
 .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
   width: 110px;
   top: 35%;
