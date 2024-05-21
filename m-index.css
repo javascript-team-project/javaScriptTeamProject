@@ -19,6 +19,9 @@
   max-width: 390px;
   margin: 0 auto;
 }
+.main-page-wrapper .brand-name-box .bg-img-box img {
+  display: none;
+}
 
 /*- 웰컴투릴리바이레드 -*/
 .main-page-wrapper .brand-name-box .title-box {
