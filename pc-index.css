@@ -33,7 +33,7 @@
     }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
         width: 120px;
-        right: ;
+        /* right: ; */
     }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
