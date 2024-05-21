@@ -272,6 +272,11 @@
         width: 9%;
         right: -5%;
     }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
+        width: 110px;
+        top: 80%;
+        left: 0;
+    }
 
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cherry"] {
         width: 13%;
