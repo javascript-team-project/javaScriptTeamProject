@@ -1,9 +1,5 @@
 // 로딩 페이지 화면
-window.onload = function() {
-  var path = document.getElementById('myPath');
-  var length = path.getTotalLength();
-  console.log('The total length of the path is: ' + length);
-};
+
 
 // a 요소가 가지고 있는 기본 이벤트 제거
 $('a[href="#').on('click', (e) => {
