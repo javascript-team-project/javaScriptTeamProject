@@ -8,6 +8,7 @@ body {
 .brand-main {
   text-align: center;
   width: 100%;
+  /* 너비값 추가 */
   margin: 0;
   height: 680px;
   font-family: var(--font-m-en);
@@ -53,60 +54,53 @@ body {
   border-radius: 50px;
 }
 
-.brand-main .main-img-box {
-  width: 100%;
+.brand-main .main-title-wrapper .main-img-box {
+  /* width: 100%;
+  max-width: 390px; */
+  width: 390px;
   height: 630px;
+  margin: 0 auto;
+  position: absolute;
 }
 
-.brand-main .main-img-box img {
+.brand-main .main-title-wrapper .main-img-box img {
   position: absolute;
 }
 
 .brand-main .main-img-box img[alt="tint1"] {
-  /* bottom: 0px;
-  right: 10px; */
-  top: 10%;
-  left: 0%;
+  top: 5%;
+  left: -10%;
   width: 160px;
 }
 
 .brand-main .main-img-box img[alt="cherry1"] {
-  /* bottom: 110px;
-  left: -30px; */
-  top: 50%;
-  left: -13%;
+  top: 45%;
+  left: -15%;
   width: 180px;
 }
 
-.brand-main .main-img-box img[alt="grape"] {
-  /* bottom: 0px;
-  left: 0px; */
+.brand-main img[alt="grape"] {
+  position: absolute;
   bottom: 0%;
   left: 0%;
   width: 153px;
 }
 
 .brand-main .main-img-box img[alt="cherry2"] {
-  /* top: 40px;
-  right: -20px; */
   top: 10%;
-  right: 0%;
+  right: -10%;
   width: 180px;
 }
 
 .brand-main .main-img-box img[alt="berry"] {
-  /* top: 170px;
-  right: 30px; */
   top: 65%;
-  right: 5%;
+  right: 0%;
   width: 140px;
 }
 
 .brand-main .main-img-box img[alt="tint2"] {
-  /* top: 70px;
-  left: 10px; */
-  top: 75%;
-  left: 65%;
+  bottom: 0%;
+  right: -10%;
   width: 160px;
 }
 

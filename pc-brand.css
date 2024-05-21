@@ -10,80 +10,82 @@
     /* brand main */
     .brand-main {
         height: 90vh;
-        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 522px 554px, url(./images/brand-main-line.png) no-repeat 30% 30%/ 150%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 450px 478px, url(./images/brand-main-line.png) no-repeat 30% 30%/ 150%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
     }
 
     .brand-main .main-title-wrapper {
-        width: 100%;
+        max-width: 834px;
+        /* width: 100%; */
         height: 90vh;
         margin: 0 auto;
-        /* height: 637px; */
     }
 
     .brand-main .main-title-wrapper .main-title {
-        font-size: 90px;
-        line-height: 90px;
+        font-size: 80px;
+        line-height: 80px;
         margin: 100px auto 0px;
-        /* margin-left: -4px; */
         -webkit-text-stroke: 2px var(--color-main-pink);
         font-weight: 900;
     }
 
     .brand-main .main-title-wrapper .lbr-sticker {
         background-color: var(--color-primary);
-        width: 250px;
-        height: 70px;
-        line-height: 70px;
-        font-size: 35px;
+        width: 220px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 30px;
         border-radius: 50px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
-    .brand-main .main-img-box {
+    .brand-main .main-title-wrapper .main-img-box {
+        max-width: 834px;
+        /* min-width: 500px; */
         width: 100%;
-        height: 105vh;
+        height: 90vh;
         margin: 0 auto;
-    }
-
-    .brand-main .main-img-box img {
         position: absolute;
     }
-
-    .brand-main .main-img-box img[alt="tint1"] {
+      
+      .brand-main .main-title-wrapper .main-img-box img {
+        position: absolute;
+      }
+      
+      .brand-main .main-img-box img[alt="tint1"] {
         top: 10%;
-        left: 5%;
-        width: 250px;
-    }
-
-    .brand-main .main-img-box img[alt="cherry1"] {
-        top: 40%;
-        left: 10%;
-        width: 300px;
-    }
-
-    .brand-main .main-img-box img[alt="grape"] {
-        bottom: 2%;
+        left: -10%;
+        width: 230px;
+      }
+      
+      .brand-main .main-img-box img[alt="cherry1"] {
+        top: 45%;
         left: 0%;
         width: 230px;
-    }
-
-    .brand-main .main-img-box img[alt="cherry2"] {
+      }
+      
+      .brand-main img[alt="grape"] {
+        bottom: 0%;
+        left: 0%;
+        width: 200px;
+      }
+      
+      .brand-main .main-img-box img[alt="cherry2"] {
         top: 5%;
-        right: 10%;
-        width: 240px;
-    }
-
-    .brand-main .main-img-box img[alt="berry"] {
-        top: 60%;
-        right: 18%;
-        width: 160px;
-    }
-
-    .brand-main .main-img-box img[alt="tint2"] {
-        top: 70%;
-        left: 70%;
+        right: -5%;
         width: 230px;
-    }
+      }
+      
+      .brand-main .main-img-box img[alt="berry"] {
+        top: 70%;
+        right: 5%;
+        width: 170px;
+      }
+      
+      .brand-main .main-img-box img[alt="tint2"] {
+        bottom: 0%;
+        right: -5%;
+        width: 210px;
+      }
 
 
     /* brand info */
@@ -243,10 +245,12 @@
         margin-top: 50px;
     }
 
-    .brand-main .main-img-box {
+    .brand-main .main-title-wrapper .main-img-box {
+        max-width: 1200px;
         width: 100%;
         height: 105vh;
         margin: 0 auto;
+        position: absolute;
     }
 
     .brand-main .main-img-box img {
@@ -254,39 +258,39 @@
     }
 
     .brand-main .main-img-box img[alt="tint1"] {
-        top: 45px;
-        left: 80px;
-        width: 320px;
+        top: 10%;
+        left: 0%;
+        width: 250px;
     }
 
     .brand-main .main-img-box img[alt="cherry1"] {
-        bottom: 70px;
-        left: 420px;
-        width: 320px;
-    }
-
-    .brand-main .main-img-box img[alt="grape"] {
-        bottom: -10px;
-        left: 0px;
-        width: 280px;
-    }
-
-    .brand-main .main-img-box img[alt="cherry2"] {
-        top: 40px;
-        right: 200px;
+        top: 35%;
+        left: 5%;
         width: 300px;
     }
 
-    .brand-main .main-img-box img[alt="berry"] {
-        top: 75%;
-        right: 400px;
+    .brand-main img[alt="grape"] {
+        bottom: 2%;
+        left: 0%;
         width: 230px;
     }
 
+    .brand-main .main-img-box img[alt="cherry2"] {
+        top: 15%;
+        right: 00%;
+        width: 240px;
+    }
+
+    .brand-main .main-img-box img[alt="berry"] {
+        top: 60%;
+        right: 15%;
+        width: 160px;
+    }
+
     .brand-main .main-img-box img[alt="tint2"] {
-        top: 400px;
-        left: 1500px;
-        width: 280px;
+        top: 68%;
+        right: 0%;
+        width: 230px;
     }
 
 
