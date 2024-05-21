@@ -26,6 +26,25 @@
         font-size: 24px;
         top: 70%; left: 58%;
     }
+    /*- main-imgs -*/
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star1"] {
+        width: 60px;
+        right: 5%;
+    }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
+        display: block;
+        width: 70px;
+        top: 75%; left: 10%;
+        animation: glitter 1.5s linear infinite;
+    }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="cherry"] {
+        width: 120px;
+        left: 75%; top: 34%;
+    }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
+        width: 225px;
+        left: 17%; top: 50%;
+    }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
         max-width: 834px;
@@ -235,15 +254,18 @@
     }
 
     /*- main-imgs -*/
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star1"] {
         width: 9%;
         right: -5%;
     }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
 
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
+    }
+
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="cherry"] {
         width: 13%;
-        right: 8%;
-        top: 34%;
+        left: 79%;
+        top: 33%;
     }
 
     .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {

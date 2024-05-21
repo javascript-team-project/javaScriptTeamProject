@@ -11,6 +11,7 @@
   position: relative;
   text-align: center;
   animation: grid-move 7s infinite linear;
+  overflow: hidden;
 }
 .main-page-wrapper .brand-name-box {
   position: relative;
@@ -148,13 +149,16 @@
   position: absolute;
   z-index: 999;
 }
-.main-page-wrapper .brand-name-box .main-img-box img[alt="black-star"] {
+.main-page-wrapper .brand-name-box .main-img-box img[alt="black-star1"] {
   width: 50px;
   top: 20%;
   right: 15%;
   animation: glitter 1.5s linear infinite;
 }
-.main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
+.main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
+  display: none;
+}
+.main-page-wrapper .brand-name-box .main-img-box img[alt="cherry"] {
   width: 110px;
   top: 35%;
   right: -7%;
