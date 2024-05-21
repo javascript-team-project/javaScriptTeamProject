@@ -37,6 +37,7 @@ github organization 생성.</br>
 메인페이지 .dragable 사용하여 드래그 이벤트 추가
 메인페이지 pc, tablet  css 작업
 
+## 사용 기능
 
 ***svg가 그려지는 효과***
 svg태그에는 path 엘리먼트가 있어, 선과 곡선, 호 등 다양한 형태를 그릴 수 있음.
