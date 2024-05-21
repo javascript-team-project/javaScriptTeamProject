@@ -1,3 +1,19 @@
+// 로딩 페이지 화면
+var counter = 0;
+var c = 0;
+var i = setInterval(function () {
+  $(".loading-page .counter h1").html(c + "%");
+  $(".loading-page .counter hr").css("width", c + "%");
+
+  counter++;
+  c++;
+
+  if (counter == 101) {
+    clearInterval(i);
+    $('.loading-page').addClass('hide');
+  }
+}, 50);
+
 // a 요소가 가지고 있는 기본 이벤트 제거
 $('a[href="#').on('click', (e) => {
   e.preventDefault();
@@ -94,7 +110,7 @@ $('header .global-menu li').hover(
 );
 
 // 자동으로 브랜드 소개 넘겨지기
-const $slideBtns = $('.brand-intro-wrapper .slide-button li'); 
+const $slideBtns = $('.brand-intro-wrapper .slide-button li');
 let currentIdx = 0; // 현재 활성화된 슬라이드의 인덱스 추적
 const $slides = $('.slide-wrapper .slide-item');
 const slideCount = $slides.length;
@@ -126,7 +142,7 @@ const autoSlide = () => {
 };
 
 // 뷰포트의 너비가 변경될 때마다 자동 슬라이드 상태 업데이트
-$(window).on('resize', function() {
+$(window).on('resize', function () {
   if (800 >= $(window).width()) {
     clearInterval(mainSlide); // 슬라이드 중단
     mainSlide = setInterval(autoSlide, 3000); // 슬라이드 시작
