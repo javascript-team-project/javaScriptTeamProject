@@ -5,6 +5,7 @@
     /***** main-page *****/
     .main-page-wrapper .brand-name-box {
         min-width: 834px;
+        position: initial;
     }
     .main-page-wrapper .brand-name-box .title-box {
         font-size: 43px;
@@ -19,7 +20,7 @@
     }
     /*- 검정색 박스 -*/
     .main-page-wrapper .brand-name-box::before {
-        left: 18.5%; top: 9%;
+        left: 24.5%; top: 9%;
     }
     /*- 릴리체키샤시 -*/
     .main-page-wrapper .brand-name-box .main-intro {
@@ -44,6 +45,17 @@
     .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
         width: 225px;
         left: 17%; top: 50%;
+    }
+    .main-page-wrapper .brand-name-box .bg-img-box img {
+        display: block;
+        position: absolute;
+        z-index: 9;
+    }
+    .main-page-wrapper .brand-name-box .bg-img-box img[alt= "main-left"] {
+        left: 0%; top: 10%;
+    }
+    .main-page-wrapper .brand-name-box .bg-img-box img[alt= "main-right"] {
+        right: 0; top: 40%;
     }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
@@ -257,9 +269,6 @@
     .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star1"] {
         width: 9%;
         right: -5%;
-    }
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="black-star2"] {
-
     }
 
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cherry"] {
