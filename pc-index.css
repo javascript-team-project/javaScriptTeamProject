@@ -33,7 +33,11 @@
     }
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
         width: 120px;
-        /* right: ; */
+        left: 75%; top: 34%;
+    }
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
+        width: 200px;
+        left: 15%;
     }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
@@ -251,8 +255,8 @@
 
     .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
         width: 13%;
-        right: 8%;
-        top: 34%;
+        left: 79%;
+        top: 33%;
     }
 
     .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
