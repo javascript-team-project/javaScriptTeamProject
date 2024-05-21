@@ -28,7 +28,7 @@
 }
 .main-page-wrapper .brand-name-box .title-box .title-back {
   background-color: var(--color-white);
-  color: var(--color-primary);
+  color: var(--color-main-title);
   padding: 5px 60px;
   position: absolute;
   top: 50%;
@@ -59,7 +59,7 @@
 }
 .main-page-wrapper .brand-name-box .title-box .title-front {
   background-color: var(--color-white);
-  color: var(--color-primary);
+  color: var(--color-main-title);
   padding: 5px 50px;
   border-top: 1px solid var(--color-main-pink);
   position: absolute;
@@ -170,23 +170,6 @@
   left: -7%;
   animation: main-img-mov infinite 1.5s linear;
 }
-/* .main-page-wrapper .brand-name-box .main-img-box img::before, .main-page-wrapper .brand-name-box .main-img-box img::after {
-  content: "";
-}
-.main-page-wrapper .brand-name-box .main-img-box img::before {
-  border: 1px dashed #fff;
-  position: absolute;
-}
-.main-page-wrapper .brand-name-box .main-img-box img::after {
-  top: -6px;
-  left: -6px;
-  right: -6px;
-  bottom: -6px;
-  background-image: url(./images/bounding-box1.svg),url(./images/bounding-box1.svg),url(./images/bounding-box1.svg),url(./images/bounding-box1.svg);
-  background-position: top left, top right, bottom left, bottom right;
-  background-repeat: no-repeat;
-  z-index: 10;
-} */
 
 /***** brand-intro / 사용자가 보는 slide 영역  *****/
 .brand-intro-wrapper {
@@ -408,13 +391,13 @@
 }
 .event-wrapper .event-box .front {
   color: var(--color-white);
-  -webkit-text-stroke: 1.2px var(--color-primary);
+  -webkit-text-stroke: 1.2px var(--color-main-title);
   top: 30px; left: 55%;
   transform: translateX(-50%);
   z-index: 1;
 }
 .event-wrapper .event-box .back {
-  color: var(--color-primary);
+  color: var(--color-main-title);
   top: 0; left: 45%;
   transform: translateX(-50%);
 }
