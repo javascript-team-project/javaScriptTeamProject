@@ -3,6 +3,7 @@
 body {
   font-family: var(--font-m-ko);
   cursor: url(../../images/mouse-deco.png), pointer;
+  /* cursor: url(../../images/Vector\ \(5\).png), pointer; */
 }
 
 section {
