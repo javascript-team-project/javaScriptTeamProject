@@ -1,18 +1,9 @@
 // 로딩 페이지 화면
-var counter = 0;
-var c = 0;
-var i = setInterval(function () {
-  $(".loading-page .counter h1").html(c + "%");
-  $(".loading-page .counter hr").css("width", c + "%");
-
-  counter++;
-  c++;
-
-  if (counter == 101) {
-    clearInterval(i);
-    $('.loading-page').addClass('hide');
-  }
-}, 50);
+window.onload = function() {
+  var path = document.getElementById('myPath');
+  var length = path.getTotalLength();
+  console.log('The total length of the path is: ' + length);
+};
 
 // a 요소가 가지고 있는 기본 이벤트 제거
 $('a[href="#').on('click', (e) => {
