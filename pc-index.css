@@ -35,8 +35,9 @@
         display: block;
         width: 70px;
         top: 75%; left: 10%;
+        animation: glitter 1.5s linear infinite;
     }
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="cherry"] {
         width: 120px;
         left: 75%; top: 34%;
     }
@@ -261,7 +262,7 @@
 
     }
 
-    .main-page-wrapper .brand-name-box .main-img-box img[alt="cheery"] {
+    .main-page-wrapper .brand-name-box .main-img-box img[alt="cherry"] {
         width: 13%;
         left: 79%;
         top: 33%;
