@@ -5,7 +5,7 @@
     /***** main-page *****/
     .main-page-wrapper .brand-name-box {
         min-width: 834px;
-        position: initial;
+        /* position: initial; */
     }
     .main-page-wrapper .brand-name-box .title-box {
         font-size: 43px;
@@ -52,10 +52,12 @@
         z-index: 9;
     }
     .main-page-wrapper .brand-name-box .bg-img-box img[alt= "main-left"] {
-        left: 0%; top: 10%;
+        left: -170px; top: 10%;
+        width: 50%;
     }
     .main-page-wrapper .brand-name-box .bg-img-box img[alt= "main-right"] {
-        right: 0; top: 40%;
+        right: -200px; top: 30%;
+        width: 50%;
     }
     /***** brand-intro / 사용자가 보는 slide 영역  *****/
     .brand-intro-wrapper {
@@ -280,6 +282,14 @@
     .main-page-wrapper .brand-name-box .main-img-box img[alt="tint"] {
         width: 28%;
         left: 7%;
+    }
+    .main-page-wrapper .brand-name-box .bg-img-box img[alt= "main-left"] {
+        left: -310px; top: 10%;
+        width: 50%;
+    }
+    .main-page-wrapper .brand-name-box .bg-img-box img[alt= "main-right"] {
+        right: -310px; top: 40%;
+        width: 50%;
     }
 
     /***** brand-intro  *****/
