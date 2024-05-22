@@ -249,7 +249,7 @@ body {
   margin: 13px 0px 0px;
   line-height: 1.8;
   width: 130px;
-  white-space: break-word;
+  word-break: break-word;
 }
 
 .brand-info .right-box .brand-info-txt p strong {

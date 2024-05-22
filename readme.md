@@ -9,6 +9,12 @@
 기술 리더 : 공한나
 
 ----
+## 240522
+메인, 서브페이지 완성<br>
+주석 및 필요없는 파일 정리<br>
+모든 페이지 유효성 검사 완료<br>
+발표준비 및 프로젝트 구성 작성을 목표로 함
+
 ## 240521
 로딩 페이지 디자인 및 구현 작업<br>
 커서 수정<br>
@@ -42,7 +48,7 @@ github organization 생성.</br>
 다음날인 16일까지 각자 맡은 서브 페이지 html과 css 작업
 +공통 헤더와 푸터 작업을 목표로 함.
 
-
+----
 ## 기술 작성
 
 ***svg가 그려지는 효과*** <br>
@@ -54,24 +60,109 @@ stroke-dasharray: 점선을 만드는 간격을 의미 (값을 부여한 만큼 
 stroke-dashoffset: svg을 나타낼 지점 지정
 
 *svg에 애니메이션 효과 주기*
- 1. stroke-dasharray 설정
+ 1. stroke-dasharray 설정<br>
               1. stroke-dasharray을 최대값으로 설정.
 
-2. stroke-offset 설정
-              1. stroke-offset을 stroke-dasharray와 같은 값으로 설정.
+2. stroke-offset 설정<br>
+              1. stroke-offset을 stroke-dasharray와 같은 값으로 설정.<br>
               2. stroke-offset == stroke-dasharray인 경우 그림이 보이지 않음.
 
-3. keyframe으로 애니메이션 추가
+3. keyframe으로 애니메이션 추가<br>
               1. stroke-offset을 사용하여 어떤 지점에서 시작할지 애니메이션으로 설정.<br>
 	2.0% { stroke-offset == stroke-dasharray의 최대값 -> 안보이는 상태 }<br> 
 	  50% { stroke-offset == 0 -> 그림이 다 나타난 상태 }<br>
 	  100% {  stroke-offset == -(stroke-dasharray) -> 반대로 그려지는 상태 } 
 
-----
-***.draggable()***<br>
-.draggable()은 지정된 요소를 드래그 할 수 있게 만듦.<br>
+
+***.draggable()*** <br>
+.draggable(): 지정된 요소를 드래그 할 수 있게 만듦.<br>
+jQuery UI의 기능이므로 사전 연결 필요.<br>
+
+모든 DOM 요소에서 드래그 가능한 기능을 활성화.
 
 기본 형태
 <script>
 $('옮길 요소').draggable();
 </script>
+
+***자동 슬라이드***<br>
+
+
+***.mousemove***<br>
+마우스(포인팅)이 움직일 때 발생하는 이벤트. 핸드폰이나 태블릿같은 장치에서도 발생<br>
+
+addeventListener("mousemove", (event) => {});의 형태나 onmousemove = (event) => {}; 형태로 사용.
+
+----
+## 디렉터리 구조
+(퍼온거라 수정필요합니다..^^*)
+─src
+    │  App.js
+    │  index.js
+    │  setupProxy.js
+    │
+    ├─assets
+    │      logo.svg
+    │
+    ├─components
+    │  │  ReduxTest.js
+    │  │
+    │  ├─atoms
+    │  │      BackArrow.js
+    │  │      CardDate.js
+    │  │      CardImg.js
+    │  │      CardTitle.js
+    │  │      Container.js
+    │  │      ContentBody.js
+    │  │      ContentHeader.js
+    │  │      ContentMove.js
+    │  │      ContentTitle.js
+    │  │      ContentYoutube.js
+    │  │      Likes.js
+    │  │      Loading.js
+    │  │      Main.js
+    │  │      MoreButton.js
+    │  │      Share.js
+    │  │      SliderButton.js
+    │  │      SliderDots.js
+    │  │      SliderInfo.js
+    │  │
+    │  ├─molecules
+    │  │      CardList.js
+    │  │      ScrollTop.js
+    │  │      Slider.js
+    │  │      Subscribe.js
+    │  │      Title.js
+    │  │
+    │  ├─organisms
+    │  │      DetailContent.js
+    │  │      header.js
+    │  │      MainList.js
+    │  │      MainSlider.js
+    │  │
+    │  └─pages
+    │          Detail.js
+    │          Home.js
+    │
+    ├─services
+    │      dataServices.js
+    │      defaultClient.js
+    │
+    ├─static
+    │      dummyContent.js
+    │      dummySector.js
+    │
+    ├─store
+    │  │  index.js
+    │  │
+    │  ├─data
+    │  │      dataAsyncThunk.js
+    │  │      dataSlice.js
+    │  │
+    │  └─tab
+    │          tabIndexSlice.js
+    │
+    └─styles
+            globalStyle.js
+            theme.js
+
