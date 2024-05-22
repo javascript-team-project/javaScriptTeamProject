@@ -385,48 +385,15 @@ footer address .copy {
   }
   /*- 말풍선 박스 -*/
   footer .contact-wrapper .contact-box {
-    width: 250px;
-    height: 190px;
-    padding: 15px 20px 20px;
-    top: -70px;
     left: 80%;
-    transform: translateX(-70%);
   }
   footer .contact-wrapper .contact-box::after {
-    content: "";
-    background-color: var(--color-footer);
-    position: absolute;
     bottom: -20px;
-    right: 60px;
-    border-top: solid 20px var(--color-footer);
-    border-left: solid 50px var(--color-primary);
-  }
-  footer .contact-wrapper .contact-box .contact-num {
-    font-size: 33px;
-    margin: 10px 0px 0px;
-  }
-  footer .contact-wrapper .contact-box .contact-sub {
-    font-size: 13px;
-    padding-left: 60px;
-    margin: 5px 0px 20px;
-    background: url(../../images/footer-icon-call.svg) no-repeat 10%;
-  }
-  footer .contact-wrapper .contact-box .contact-btn {
-    font-size: var(--font-pc-md);
-    padding: 5px 25px 10px;
-  }
-  footer .contact-wrapper .contact-box .footer-eyes {
-    position: absolute;
-    top: 120px;
-    left: 100%;
-    z-index: 99;
   }
   /*- footer address -*/
   footer address {
     margin: 30px auto;
     text-align: center;
-    display: flex;
-    justify-content: space-between;
   }
   footer address .adress {
     padding: 0;
@@ -435,11 +402,5 @@ footer address .copy {
     list-style: none;
     display: flex;
     text-align: left;
-  }
-  footer address .address-list li:last-child {
-    margin-left: 10px;
-  }
-  footer address .copy {
-    margin: 0;
   }
 }
