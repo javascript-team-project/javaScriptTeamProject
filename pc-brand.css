@@ -318,7 +318,7 @@
         height: 105%;  /* 부모 컨테이너의 높이에 맞게 SVG 크기를 조정 */
         display: block;  /* SVG 요소 주위의 공백을 제거 */
         position: absolute;
-        top: -250px; left: -10px;
+        top: -150px; left: -10px;
       }
 
 
