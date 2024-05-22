@@ -8,7 +8,6 @@ body {
 .brand-main {
   text-align: center;
   width: 100%;
-  /* 너비값 추가 */
   margin: 0;
   height: 680px;
   font-family: var(--font-m-en);
@@ -20,8 +19,7 @@ body {
 }
 
 .brand-main .main-title-wrapper {
-  /* width: 100%; */
-  max-width: 390px; 
+  max-width: 390px;
   margin: 0 auto;
   height: 680px;
   display: flex;
@@ -35,7 +33,6 @@ body {
   color: var(--color-primary);
   -webkit-text-stroke: 2px var(--color-main-pink);
   font-weight: 900;
-  /* 원래 700인데 외곽선이 두께를 얇게 만들어서 일단 900으로 키워뒀어요 */
   line-height: 55px;
   font-size: 55px;
   margin: 80px 0px 25px;
@@ -56,8 +53,6 @@ body {
 }
 
 .brand-main .main-title-wrapper .main-img-box {
-  /* width: 100%;
-  max-width: 390px; */
   width: 390px;
   height: 630px;
   margin: 0 auto;
@@ -67,42 +62,32 @@ body {
 .brand-main .main-title-wrapper .main-img-box img {
   position: absolute;
   z-index: 99;
-  /* animation: bounce-img 2s ease infinite; */
 }
 
-/* @keyframes bounce-img {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-30px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(-30px);
-  }
-} */
-
+/* sticker animation */
 @keyframes float-img1 {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px) rotate(10deg);
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 @keyframes float-img2 {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(10px) rotate(-15deg);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -151,37 +136,32 @@ body {
   animation: float-img2 2.5s ease-in-out infinite;
 }
 
- /* svg {
-  position: absolute;
-  top: 150px; left: 10%;
-} */
-
+/* line svg animation */
 .brand-main .svg-container {
-  width: 200%;  /* 부모 컨테이너의 너비를 원하는 크기로 설정 */
-  height: 200%;  /* 필요에 따라 높이도 설정 */
+  width: 200%;
+  height: 200%;
 }
 
 .brand-main .svg-container svg {
-  width: 200%;  /* 부모 컨테이너의 너비에 맞게 SVG 크기를 조정 */
-  height: 200%;  /* 부모 컨테이너의 높이에 맞게 SVG 크기를 조정 */
-  display: block;  /* SVG 요소 주위의 공백을 제거 */
+  width: 200%;
+  height: 200%;
+  display: block;
   position: absolute;
-  top: -400px; left: -400px;
+  top: -400px;
+  left: -400px;
 }
 
 .brand-main .svg-container svg path {
-  stroke-dasharray: 3000; /* 경로의 길이보다 큰 값 */
-  stroke-dashoffset: 3000; /* 경로의 길이보다 큰 값 */
-  animation: draw 3s ease forwards; /* 4초 동안 그리는 애니메이션 */
+  stroke-dasharray: 3000;
+  stroke-dashoffset: 3000;
+  animation: draw 3.5s ease forwards;
 }
 
 @keyframes draw {
   to {
-    stroke-dashoffset: 0; /* 애니메이션 종료 시 경로를 완전히 그리도록 설정 */
+    stroke-dashoffset: 0;
   }
 }
-
-
 
 /* brand info */
 .brand-info {
@@ -193,12 +173,10 @@ body {
   grid-template-rows: 30px 1fr 30px;
 }
 
-
 .image-container {
   position: relative;
   width: 100%;
-  /* 모바일 기본 비율 설정 (2:3) */
-  padding-bottom: 150%; /* 2:3 비율 */
+  padding-bottom: 150%;
   overflow: hidden;
   border-radius: 30px;
 }
@@ -232,7 +210,7 @@ body {
 }
 
 .brand-info .right-box {
-  grid-row: 2 / 3;  
+  grid-row: 2 / 3;
   grid-column: 3 / 4;
   width: 100%;
   display: grid;
