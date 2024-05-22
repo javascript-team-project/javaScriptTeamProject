@@ -1,5 +1,16 @@
 @charset "utf-8";
 
+/* 로딩 페이지 애니메이션 */
+@keyframes jumb {
+  0% {
+    transform: translateY(0px)
+  } 50% {
+    transform: translateY(-30px);
+  } 100% {
+    transform: translateY(0px)
+  }
+}
+
 /* 격자무늬 움직임 */
 @keyframes grid-move {
   0% { background-position: 300px 300px; } 

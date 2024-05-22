@@ -1,5 +1,6 @@
 // 로딩 페이지 화면
-
+setTimeout(() => $('.loading-page').removeClass('hide'), 0),
+setTimeout(() => $('.loading-page').addClass('hide'), 2000);
 
 // a 요소가 가지고 있는 기본 이벤트 제거
 $('a[href="#').on('click', (e) => {
@@ -8,26 +9,21 @@ $('a[href="#').on('click', (e) => {
 
 // 마우스 따라 움직이는 눈
 $(document).mousemove(function (event) {
-  // 각 '.eye' 클래스를 가진 요소에 대해 반복합니다.
   $('.eye').each(function () {
-    // 현재 눈의 중심 좌표를 계산합니다. 
-    const centerX = $(this).offset().left + $(this).width() / 2;
-    const centerY = $(this).offset().top + $(this).height() / 2;
+    const eye = $(this);
+    const centerX = eye.offset().left + eye.width() / 2;
+    const centerY = eye.offset().top + eye.height() / 2;
 
-    // 마우스 위치와 눈의 중심 사이의 각도를 계산합니다.
-    const angle = Math.atan2(event.pageX - centerX, event.pageY - centerY);
+    const angle = Math.atan2(event.pageY - centerY, event.pageX - centerX);
+    const rotateDeg = angle * (180 / Math.PI) + 90;
 
-    // 각도를 도(degree) 단위로 변환하고, 270도를 더해 눈동자가 마우스를 바라보도록 조정합니다.
-    const rotateDeg = (angle * (180 / Math.PI) * -1) + 270;
-
-    // 계산된 각도로 눈동자의 회전을 설정합니다.
-    $(this).css('transform', `rotate(${rotateDeg}deg)`);
+    eye.css('transform', `rotate(${rotateDeg}deg)`);
   });
 });
 
-
 // 메인 페이지 드래그 이벤트
 $(".draggable").draggable();
+
 
 // 스크롤 이벤트
 $(window).on('scroll', () => {
@@ -98,7 +94,7 @@ $('header .global-menu li').hover(
 
 // 자동으로 브랜드 소개 넘겨지기
 const $slideBtns = $('.brand-intro-wrapper .slide-button li');
-let currentIdx = 0; // 현재 활성화된 슬라이드의 인덱스 추적
+let currentIdx = 0;
 const $slides = $('.slide-wrapper .slide-item');
 const slideCount = $slides.length;
 let mainSlide;
