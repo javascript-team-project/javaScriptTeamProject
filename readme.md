@@ -84,3 +84,85 @@ jQuery UI의 기능이므로 사전 연결 필요.<br>
 <script>
 $('옮길 요소').draggable();
 </script>
+
+***자동 슬라이드***<br>
+
+
+***.mousemove***<br>
+마우스(포인팅)이 움직일 때 발생하는 이벤트. 핸드폰이나 태블릿같은 장치에서도 발생<br>
+
+addeventListener("mousemove", (event) => {});의 형태나 onmousemove = (event) => {}; 형태로 사용.
+
+----
+## 디렉터리 구조
+(퍼온거라 수정필요합니다..^^*)
+─src
+    │  App.js
+    │  index.js
+    │  setupProxy.js
+    │
+    ├─assets
+    │      logo.svg
+    │
+    ├─components
+    │  │  ReduxTest.js
+    │  │
+    │  ├─atoms
+    │  │      BackArrow.js
+    │  │      CardDate.js
+    │  │      CardImg.js
+    │  │      CardTitle.js
+    │  │      Container.js
+    │  │      ContentBody.js
+    │  │      ContentHeader.js
+    │  │      ContentMove.js
+    │  │      ContentTitle.js
+    │  │      ContentYoutube.js
+    │  │      Likes.js
+    │  │      Loading.js
+    │  │      Main.js
+    │  │      MoreButton.js
+    │  │      Share.js
+    │  │      SliderButton.js
+    │  │      SliderDots.js
+    │  │      SliderInfo.js
+    │  │
+    │  ├─molecules
+    │  │      CardList.js
+    │  │      ScrollTop.js
+    │  │      Slider.js
+    │  │      Subscribe.js
+    │  │      Title.js
+    │  │
+    │  ├─organisms
+    │  │      DetailContent.js
+    │  │      header.js
+    │  │      MainList.js
+    │  │      MainSlider.js
+    │  │
+    │  └─pages
+    │          Detail.js
+    │          Home.js
+    │
+    ├─services
+    │      dataServices.js
+    │      defaultClient.js
+    │
+    ├─static
+    │      dummyContent.js
+    │      dummySector.js
+    │
+    ├─store
+    │  │  index.js
+    │  │
+    │  ├─data
+    │  │      dataAsyncThunk.js
+    │  │      dataSlice.js
+    │  │
+    │  └─tab
+    │          tabIndexSlice.js
+    │
+    └─styles
+            globalStyle.js
+            theme.js
+
