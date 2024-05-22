@@ -15,12 +15,9 @@
    display: none;
  }
 
- .notice .sub-menu li {}
-
  .notice .main-title {
    font-size: 30px;
    color: var(--color-primary);
-   /* padding: 130px 0px 0px; */
    margin: 120px auto 30px;
  }
 
@@ -41,21 +38,9 @@
    text-underline-offset: 4px;
  }
 
- .notice .main-menu li {}
-
  .notice .notice-title-box {
    display: none;
  }
-
- .notice .notice-title-box .num {}
-
- .notice .notice-title-box .title {}
-
- .notice .notice-title-box .writer {}
-
- .notice .notice-title-box .date {}
-
- .notice .notice-title-box .views {}
 
  .notice .notice-contents-box {
   width: 100%;
@@ -92,8 +77,6 @@
  .notice .notice-contents-box li .date {
   margin-right: 20px;
  }
-
- .notice .notice-contents-box li .views {}
 
  .notice .notice-contents-box li:nth-child(2) {
    border-top: none;
@@ -163,7 +146,6 @@
   border: 1px solid #ddd;
   width: 45px; height: 45px;
   line-height: 44px;
-  /* padding: 6px 14px 8px; */
  }
 
  .notice .page-btn-wrapper .next-btn {

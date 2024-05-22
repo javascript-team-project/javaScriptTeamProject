@@ -170,10 +170,7 @@ body {
     cursor: pointer;
 }
 
-
-
 /* 상품 이미지 hover */
-
 .product-box .hover-img {
     display: none;
 }
@@ -195,9 +192,7 @@ body {
     width: 100%;
 }
 
-
 /* 더보기 버튼 누르면 추가 상품 */
-
 .sub-shop-wrapper .hidden {
     display: none;
 }
@@ -211,6 +206,5 @@ body {
 }
 
 .product-box {
-    margin-bottom: 20px;
-    /* 각 상품 박스 사이의 간격 설정 */
+    margin-bottom: 20px; /* 각 상품 박스 사이의 간격 설정 */
 }

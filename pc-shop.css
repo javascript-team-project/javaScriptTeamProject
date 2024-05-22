@@ -9,41 +9,26 @@
   }
 
   .sub-shop-wrapper .sub-shop-box .main-title {
-    font-size: 30px;
     font-weight: 700;
     margin: 0px auto 25px;
   }
 
   .sub-shop-wrapper .sub-shop-box .main-list {
     font-size: 16px;
-    margin: 0 auto 60px;
     width: 500px;
   }   
-
-  .sub-shop-wrapper .main-btn {}
 
   .sub-shop-wrapper .main-btn .btn-arrange {
     margin-left: 50px;
   }
 
-  .sub-shop-wrapper .main-btn .btn-arrange li {}
-
   .sub-shop-wrapper .main-btn .btn-arr {
     margin-right: 50px;
   }
 
-  .sub-shop-wrapper .main-btn .btn-arr li {}
-
-  .sub-shop-wrapper .main-btn .btn-arr li:last-of-type {}
-
-  .sub-shop-wrapper .main-btn .btn-arr li img {}
-
   /* 상품 나열 */
 
   .sub-shop-wrapper .product {
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
     padding: 0px 50px;
     margin-bottom: 60px;
     justify-content: space-between;
@@ -71,12 +56,8 @@
 
   /* 더보기 버튼 */
   .sub-shop-wrapper .more-btn {
-    color: #fff;
     padding: 15px 70px 15px 40px;
-    border-radius: 50px;
-    font-weight: 400;
     font-size: var(--font-pc-);
-    background: url(./images/arrow-white.png) no-repeat 80% 50% var(--color-primary);
   }
 }
 
@@ -89,7 +70,6 @@
   }
 
   .sub-shop-wrapper .sub-shop-box .main-title {
-    font-size: 30px;
     font-weight: 700;
     margin: 0px auto 25px;
   }
@@ -100,30 +80,16 @@
     width: 500px;
   }
 
-  .sub-shop-wrapper .main-btn {}
-
   .sub-shop-wrapper .main-btn .btn-arrange {
     margin-left: 80px;
   }
 
-  .sub-shop-wrapper .main-btn .btn-arrange li {}
-
   .sub-shop-wrapper .main-btn .btn-arr {
     margin-right: 80px;
   }
-
-  .sub-shop-wrapper .main-btn .btn-arr li {}
-
-  .sub-shop-wrapper .main-btn .btn-arr li:last-of-type {}
-
-  .sub-shop-wrapper .main-btn .btn-arr li img {}
-
   
   /* 상품 나열 */
   .sub-shop-wrapper .product {
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
     padding: 0px 80px;
     margin-bottom: 80px;
     justify-content: space-between;
@@ -152,11 +118,7 @@
   /* 더보기 버튼 */
 
   .sub-shop-wrapper .more-btn {
-    color: #fff;
     padding: 20px 70px 20px 50px;
-    border-radius: 50px;
-    font-weight: 400;
     font-size: var(--font-pc-lg);
-    background: url(./images/arrow-white.png) no-repeat 80% 50% var(--color-primary);
   }
 }

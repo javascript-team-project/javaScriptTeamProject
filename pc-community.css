@@ -2,49 +2,35 @@
 
 /***** tablet *****/
 @media (min-width: 834px) {
+
   .notice {
     margin: 180px 50px 280px;
    }
 
    .notice .main-menu {
-    display: flex;
-    justify-content: space-around;
     margin: 0 auto 110px;
     width: 200px;
     font-size: 16px;
-    color: #6d6d6d;
   }
   
    .notice .button-box {
-    width: 100%;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
     margin: 16px 0px 130px;
    }
   
    .notice .button-box .week-btn {
     width: 19%;
-    padding: 8px 0px;
-    border: 1px solid #ddd;
    }
   
    .notice .button-box .title-btn {
     width: 14%;
-    padding: 8px 0px;
-    border: 1px solid #ddd;
    }
   
    .notice .button-box .empty-btn {
     width: 44%;
-    padding: 8px 0px;
-    border: 1px solid #ddd;
    }
   
    .notice .button-box .search-btn {
     width: 19%;
-    padding: 8px 0px;
-    border: 1px solid #6D6D6D;
    }
 
 }
@@ -63,10 +49,6 @@
     right: 20px;
     font-size: 12px;
     text-transform: capitalize;
-  }
-
-  .notice .sub-menu .active {
-    font-weight: 700;
   }
 
   .notice .main-title {
@@ -147,34 +129,7 @@
 
   .notice .button-box {
     width: 40%;
-    font-size: 12px;
-    display: flex;
-    justify-content: space-between;
     margin: 16px 0px 200px;
-  }
-
-  .notice .button-box .week-btn {
-    width: 18%;
-    padding: 8px 0px;
-    border: 1px solid #ddd;
-  }
-
-  .notice .button-box .title-btn {
-    width: 13%;
-    padding: 8px 0px;
-    border: 1px solid #ddd;
-  }
-
-  .notice .button-box .empty-btn {
-    width: 43%;
-    padding: 8px 0px;
-    border: 1px solid #ddd;
-  }
-
-  .notice .button-box .search-btn {
-    width: 18%;
-    padding: 8px 0px;
-    border: 1px solid #6D6D6D;
   }
 
 }
