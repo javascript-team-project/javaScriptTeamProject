@@ -78,9 +78,3 @@
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-
-/***** tablet *****/
-@media (min-width: 834px) {}
-
-/***** pc *****/
-@media (min-width: 1200px) {}

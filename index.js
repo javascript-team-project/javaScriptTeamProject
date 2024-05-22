@@ -46,14 +46,19 @@ $(window).on('scroll', () => {
     waveElements.forEach((wave) => {
       const text = wave.textContent;
       wave.innerHTML = "";
+
       text.split("").forEach((letter) => {
+
         const span = document.createElement("span");
+
         span.textContent = letter;
+
         if (letter !== " ") {
           span.style.animationDelay = `${delay}ms`;
           span.classList.add("letter");
           delay += 40; // 각 문자당 50ms 딜레이
         }
+        
         wave.appendChild(span);
       });
     });
