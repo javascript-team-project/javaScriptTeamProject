@@ -1,6 +1,6 @@
 // 로딩 페이지 화면
 setTimeout(() => $('.loading-page').removeClass('hide'), 0),
-setTimeout(() => $('.loading-page').addClass('hide'), 2000);
+setTimeout(() => $('.loading-page').addClass('hide'), 1000);
 
 // a 요소가 가지고 있는 기본 이벤트 제거
 $('a[href="#').on('click', (e) => {
@@ -58,7 +58,7 @@ $(window).on('scroll', () => {
           span.classList.add("letter");
           delay += 40; // 각 문자당 50ms 딜레이
         }
-        
+
         wave.appendChild(span);
       });
     });
