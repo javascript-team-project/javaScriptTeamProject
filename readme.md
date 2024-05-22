@@ -13,13 +13,17 @@
 날짜 및 일지 <- 매일 업데이트
 
 ----
+## 240521
+로딩 페이지 디자인 및 구현 작업<br>
+커서 수정<br>
+메인페이지 메인 화면 배경 추가
 
 ## 240518-240519
-메인페이지 .dragable 사용하여 드래그 이벤트 추가
+메인페이지 .dragable 사용하여 드래그 이벤트 추가<br>
 메인페이지 pc, tablet  css 작업
 
 ## 240517
-메인페이지 css 작업 마무리
+메인페이지 css 작업 마무리<br>
 서브페이지 shop css 작업
 
 ## 240516
@@ -68,8 +72,19 @@ stroke-dashoffset: svg을 나타낼 지점 지정
 	  100% {  stroke-offset == -(stroke-dasharray) -> 반대로 그려지는 상태 } 
 
 ***.draggable()***<br>
-.draggable()은 지정된 요소를 드래그 할 수 있게 만듦.
+.draggable()은 지정된 요소를 드래그 할 수 있게 만듦.<br>
 
-Ex1) 
-Ex2)
+Ex1) 기본
+<script>
+$('옮길 요소').draggable();
+</script>
+
+Ex2) 겹쳤을 때 클릭한 것 제일 위로오게
+<script>
+$('옮길 요소').draggable()
+.mousedown(function(){// mousedown 이벤트 생성
+  $(this).css('z-index', css_text_idx);//클릭한 이미지만 z-index 증가
+  css_test_idx++; // 이미지가 겹칠경우 클릭한 것이 항상 위에 표시
+});
+</script>
 

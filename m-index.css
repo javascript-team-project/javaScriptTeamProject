@@ -597,7 +597,7 @@
   position: absolute; 
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 20s linear infinite;
+  animation: marquee 35s linear infinite;
 }
 .insta-animated-box .insta-animated-box-track .insta-animated-content {
   font-family: var(--font-m-en);
