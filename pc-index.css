@@ -91,7 +91,7 @@
     /*- 릴리바이레드 이미지 -*/
     .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box .brand-box {
         height: 100%;
-        z-index: -99px;
+        z-index: -99;
     }
     .brand-intro-wrapper .slide-wrapper .lilyByRed-box .brand-intro-img-box img[alt="heart-icon"] {
         top: 40%; left: 27%;
