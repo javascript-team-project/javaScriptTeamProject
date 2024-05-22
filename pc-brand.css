@@ -10,7 +10,8 @@
     /* brand main */
     .brand-main {
         height: 90vh;
-        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 450px 478px, url(./images/brand-main-line.png) no-repeat 30% 30%/ 150%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 450px 478px, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        /* background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 450px 478px, url(./images/brand-main-line.png) no-repeat 30% 30%/ 150%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary); */
     }
 
     .brand-main .main-title-wrapper {
@@ -49,6 +50,7 @@
 
     .brand-main .main-title-wrapper .main-img-box img {
         position: absolute;
+        z-index: 99;
     }
 
     .brand-main .main-img-box img[alt="tint1"] {
@@ -87,6 +89,18 @@
         width: 210px;
     }
 
+    .brand-main .svg-container {
+        width: 130%;  /* 부모 컨테이너의 너비를 원하는 크기로 설정 */
+        height: 130%;  /* 필요에 따라 높이도 설정 */
+      }
+      
+      .brand-main .svg-container svg {
+        width: 130%;  /* 부모 컨테이너의 너비에 맞게 SVG 크기를 조정 */
+        height: 130%;  /* 부모 컨테이너의 높이에 맞게 SVG 크기를 조정 */
+        display: block;  /* SVG 요소 주위의 공백을 제거 */
+        position: absolute;
+        top: -200px; left: -150px;
+      }
 
     /* brand info */
     .brand-info {
@@ -217,7 +231,8 @@
     .brand-main {
         height: 90vh;
         /* height: 690px; */
-        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 522px 554px, url(./images/brand-main-line.png) no-repeat 24% 0%/ 130%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 522px 554px, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary);
+        /* background: url(./images/brand-main-backgroundimg.png) no-repeat 50% 55% / 522px 554px, url(./images/brand-main-line.png) no-repeat 24% 0%/ 130%, url(./images/brand-main-grid.png) no-repeat 50% / cover, var(--color-primary); */
     }
 
     .brand-main .main-title-wrapper {
@@ -293,6 +308,18 @@
         right: 0%;
         width: 230px;
     }
+    .brand-main .svg-container {
+        width: 105%;  /* 부모 컨테이너의 너비를 원하는 크기로 설정 */
+        height: 105%;  /* 필요에 따라 높이도 설정 */
+      }
+      
+      .brand-main .svg-container svg {
+        width: 105%;  /* 부모 컨테이너의 너비에 맞게 SVG 크기를 조정 */
+        height: 105%;  /* 부모 컨테이너의 높이에 맞게 SVG 크기를 조정 */
+        display: block;  /* SVG 요소 주위의 공백을 제거 */
+        position: absolute;
+        top: -250px; left: -10px;
+      }
 
 
     /* brand info */
