@@ -27,7 +27,7 @@ $('.sub-shop-wrapper .more-btn').on('click', (e) => {
 
 // Ajax
 $.ajax({
-  url: "./shop-list-data.json",
+  url: "https://javascript-team-project.github.io/javaScriptTeamProject/shop-list-data.json",
   dataType: "json",
   success: (data) => {
     if (data) {
