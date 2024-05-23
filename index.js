@@ -132,10 +132,10 @@ const autoSlide = () => {
 // 뷰포트의 너비가 변경될 때마다 자동 슬라이드 상태 업데이트
 $(window).on('resize', function () {
   if (800 >= $(window).width()) {
-    clearInterval(mainSlide); // 슬라이드 중단
-    mainSlide = setInterval(autoSlide, 3000); // 슬라이드 시작
+    clearInterval(mainSlide);
+    mainSlide = setInterval(autoSlide, 3000);
   } else {
-    clearInterval(mainSlide); // 슬라이드 중단
+    clearInterval(mainSlide);
   }
 }).trigger('resize'); // 페이지 로드시 한번 실행
 
