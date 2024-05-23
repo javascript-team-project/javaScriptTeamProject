@@ -84,3 +84,12 @@ jQuery UI의 기능이므로 사전 연결 필요.<br>
 <script>
 $('옮길 요소').draggable();
 </script>
+
+***자동 슬라이드***<br>
+
+
+***.mousemove***<br>
+마우스(포인팅)이 움직일 때 발생하는 이벤트. 핸드폰이나 태블릿같은 장치에서도 발생<br>
+
+addeventListener("mousemove", (event) => {});의 형태나 onmousemove = (event) => {}; 형태로 사용.
+

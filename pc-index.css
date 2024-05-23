@@ -572,8 +572,12 @@
 
     /***** best seller *****/
     .best-wrapper .best-text-box .best-main-title {
-        font-size: var(--font-pc-lg);
+        font-size: var(--font-pc-xlg);
     }
+
+      .best-wrapper .best-text-box .best-sub-title {
+        font-size: var(--font-pc-md);
+      }
 
     /*- 제품 리스트 -*/
     .best-wrapper {
@@ -627,6 +631,13 @@
         min-width: 1200px;
         max-width: 2000px;
     }
+
+    .insta-wrapper .insta-text-box .insta-main-title{
+        font-size: var(--font-pc-xlg);
+      }
+      .insta-wrapper .insta-text-box .insta-sub-title {
+        font-size: var(--font-pc-md);
+      }
 
     .insta-wrapper .insta-text-box {
         margin-bottom: 60px;
