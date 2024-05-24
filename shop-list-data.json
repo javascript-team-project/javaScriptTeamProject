@@ -38,7 +38,7 @@
   {
     "id": 5,
     "url": "./images/shop-mood.jpg",
-    "hover": "/images/shop-mood-hover.jpg",
+    "hover": "./images/shop-mood-hover.jpg",
     "title": "[회원only] 무드치트킷",
     "discount": "63%", 
     "discountPrice" : "9,900원",
