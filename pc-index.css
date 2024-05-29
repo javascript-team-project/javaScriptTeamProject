@@ -163,6 +163,9 @@
     .event-wrapper .event-box .title {
         padding-top: 180px;
     }
+    .event-wrapper .event-box .event-btn {
+        display: block;
+    }
     .event-wrapper .event-box .event-btn:hover {
         border-radius: 20px;
     }

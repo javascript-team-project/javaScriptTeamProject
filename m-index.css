@@ -432,6 +432,7 @@
   font-weight: 900;
   padding: 10px 20px;
   transition: .4s;
+  display: none;
 }
 .event-wrapper img {
   width: 100%;
