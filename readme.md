@@ -57,7 +57,7 @@ github organization 생성.</br>
 ----
 ## 기술 작성
 
-***svg가 그려지는 효과*** <br>
+**1. svg가 그려지는 효과** <br>
 svg태그에는 path 엘리먼트가 있어, 선과 곡선, 호 등 다양한 형태를 그릴 수 있음.
 
 stroke-dasharray: 점선을 만드는 간격을 의미 (값을 부여한 만큼 점선의 길이가 늘어남)
@@ -79,8 +79,9 @@ stroke-dashoffset: svg을 나타낼 지점 지정
 	  50% { stroke-offset == 0 -> 그림이 다 나타난 상태 }<br>
 	  100% {  stroke-offset == -(stroke-dasharray) -> 반대로 그려지는 상태 } 
 
+<br>
 
-***.draggable()*** <br>
+**2. .draggable()** <br>
 .draggable(): 지정된 요소를 드래그 할 수 있게 만듦.<br>
 jQuery UI의 기능이므로 사전 연결 필요.<br>
 
@@ -91,7 +92,10 @@ jQuery UI의 기능이므로 사전 연결 필요.<br>
 $('옮길 요소').draggable();
 </script>
 
-***.mousemove***<br>
+<br>
+<br>
+
+**3. .mousemove**<br>
 마우스(포인팅)이 움직일 때 발생하는 이벤트. 핸드폰이나 태블릿같은 장치에서도 발생<br>
 
 addeventListener("mousemove", (event) => {});의 형태나 onmousemove = (event) => {}; 형태로 사용.
